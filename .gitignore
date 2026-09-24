@@ -1,0 +1,10 @@
+# Simulator build products
+simv*
+csrc/
+ucli.key
+DVEfiles/
+*.vcd
+*.vpd
+*.fsdb
+*.vdb/
+# Keep curated text logs/reports trackable
