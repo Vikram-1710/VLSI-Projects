@@ -6,6 +6,10 @@ Verilog datapath development, Design Compiler synthesis, ICC2 physical implement
 
 The datapath unpacks FP16 operands, performs iterative significand multiplication, aligns products into an 80-bit fixed-point window, and accumulates into an 88-bit magnitude with a separate sign. The default accumulator has 48 fractional bits. Significand width is configurable at elaboration. Subnormals, infinities, and NaNs are outside the implemented arithmetic scope.
 
+## Headline results
+
+User-reported reductions are **21.78% in synthesis area** and **28% in estimated power**. Matching baseline/configuration reports for these percentages remain to be identified. The archived 11-bit versus 9-bit comparison below yields different percentages.
+
 ## Synthesis comparison
 
 The two archived core synthesis runs use a 5 ns target.
