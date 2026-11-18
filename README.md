@@ -1,14 +1,15 @@
 # VLSI Projects — Vikram Raghavan
 
-RTL design and verification projects, with source code, reproducible commands, and documented results.
+RTL design, verification, synthesis, and physical implementation projects, with source code, flow scripts, and documented results.
 
 | Project | Scope | Status / results |
 |---|---|---|
+| [FP16 Multiply–Accumulate — UMN](umn/fp16-mac) | 16 nm RTL, synthesis, ICC2 floorplanning/placement/CTS/routing, and PrimeTime analysis | 2.73% synthesis area and 5.48% estimated-power reduction in width comparison. Routed 3,691-cell design. Verification fixes and timing closure remain open. |
 | [MOD-12 Counter](maven-silicon/mod12-counter) | 4-bit counter; class-based SystemVerilog verification | 259 passing comparisons; 100% of defined functional coverage in VCS |
 | [Traffic-Light Controller](maven-silicon/traffic-light-controller) | Five-state FSM; self-checking testbench | 72 passing output checks in VCS |
 | [1×3 Packet Router](maven-silicon/router-1x3) | 8-bit datapath; three FIFOs; eight-state FSM | RTL implemented; debugging and UVM verification in progress |
 
-Results describe the specific documented simulations. Each project README distinguishes completed work from pending validation.
+Results describe the specific documented simulation, synthesis, and implementation runs. Each project README distinguishes completed work from pending validation.
 
 ## Documentation and evidence
 
