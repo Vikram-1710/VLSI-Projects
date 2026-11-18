@@ -1,0 +1,405 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -group reg2reg
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : fp16_fpfma_top
+Version: U-2022.12-SP5
+Date   : Mon Nov 24 12:42:03 2025
+****************************************
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: U_MUL_ALN_partial_regx15x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: U_ACC_acc_mag_regx87x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fp16_fpfma_top     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                   Fanout       Cap     Trans      Incr       Path
+  ------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                   0.00       0.00
+  clock network delay (ideal)                                             0.00       0.00
+  U_MUL_ALN_partial_regx15x/CP (DFCNQD1BWP20P90)                0.00      0.00       0.00 r
+  U_MUL_ALN_partial_regx15x/Q (DFCNQD1BWP20P90)                 0.12      0.11       0.11 r
+  U_MUL_ALN_partial[15] (net)              30         0.03                0.00       0.11 r
+  U1449/I (INVD1BWP20P90)                                       0.12      0.00       0.11 r
+  U1449/ZN (INVD1BWP20P90)                                      0.04      0.04       0.15 f
+  intadd_5_CI (net)                         4         0.01                0.00       0.15 f
+  U2828/CI (FA1D1BWP20P90)                                      0.04      0.00       0.15 f
+  U2828/CO (FA1D1BWP20P90)                                      0.02      0.04       0.19 f
+  intadd_5_n6 (net)                         1         0.00                0.00       0.19 f
+  intadd_5_U6/CI (FA1D1BWP20P90)                                0.02      0.00       0.19 f
+  intadd_5_U6/CO (FA1D1BWP20P90)                                0.02      0.03       0.22 f
+  intadd_5_n5 (net)                         1         0.00                0.00       0.22 f
+  intadd_5_U5/CI (FA1D1BWP20P90)                                0.02      0.00       0.22 f
+  intadd_5_U5/CO (FA1D1BWP20P90)                                0.02      0.03       0.25 f
+  intadd_5_n4 (net)                         1         0.00                0.00       0.25 f
+  intadd_5_U4/CI (FA1D1BWP20P90)                                0.02      0.00       0.25 f
+  intadd_5_U4/CO (FA1D1BWP20P90)                                0.02      0.03       0.28 f
+  intadd_5_n3 (net)                         1         0.00                0.00       0.28 f
+  intadd_5_U3/CI (FA1D1BWP20P90)                                0.02      0.00       0.28 f
+  intadd_5_U3/CO (FA1D1BWP20P90)                                0.02      0.03       0.32 f
+  intadd_5_n2 (net)                         1         0.00                0.00       0.32 f
+  intadd_5_U2/CI (FA1D1BWP20P90)                                0.02      0.00       0.32 f
+  intadd_5_U2/CO (FA1D1BWP20P90)                                0.02      0.03       0.35 f
+  intadd_5_n1 (net)                         2         0.00                0.00       0.35 f
+  U1453/A1 (XOR2D1BWP20P90)                                     0.02      0.00       0.35 f
+  U1453/Z (XOR2D1BWP20P90)                                      0.02      0.03       0.38 f
+  n1231 (net)                               4         0.00                0.00       0.38 f
+  U1454/B1 (INR2D1BWP20P90)                                     0.02      0.00       0.38 f
+  U1454/ZN (INR2D1BWP20P90)                                     0.03      0.02       0.40 r
+  n1247 (net)                               5         0.00                0.00       0.40 r
+  U1724/B1 (IND2D1BWP20P90)                                     0.03      0.00       0.40 r
+  U1724/ZN (IND2D1BWP20P90)                                     0.14      0.09       0.50 f
+  n1383 (net)                              30         0.03                0.00       0.50 f
+  U1977/A1 (OAI22D1BWP20P90)                                    0.14      0.00       0.50 f
+  U1977/ZN (OAI22D1BWP20P90)                                    0.06      0.05       0.55 r
+  n1823 (net)                               5         0.00                0.00       0.55 r
+  U2020/A1 (INR2D1BWP20P90)                                     0.06      0.00       0.55 r
+  U2020/ZN (INR2D1BWP20P90)                                     0.02      0.03       0.58 r
+  n1390 (net)                               2         0.00                0.00       0.58 r
+  U2161/A1 (AOAI211D1BWP20P90)                                  0.02      0.00       0.58 r
+  U2161/ZN (AOAI211D1BWP20P90)                                  0.02      0.02       0.60 f
+  n1391 (net)                               1         0.00                0.00       0.60 f
+  U2162/B1 (IND2D1BWP20P90)                                     0.02      0.00       0.60 f
+  U2162/ZN (IND2D1BWP20P90)                                     0.01      0.01       0.60 r
+  n1395 (net)                               1         0.00                0.00       0.60 r
+  U2165/A2 (AOAI211D1BWP20P90)                                  0.01      0.00       0.60 r
+  U2165/ZN (AOAI211D1BWP20P90)                                  0.02      0.02       0.62 f
+  n1401 (net)                               1         0.00                0.00       0.62 f
+  U2172/A2 (AOAI211D1BWP20P90)                                  0.02      0.00       0.62 f
+  U2172/ZN (AOAI211D1BWP20P90)                                  0.02      0.02       0.64 r
+  n1409 (net)                               1         0.00                0.00       0.64 r
+  U2177/A1 (AOI211D1BWP20P90)                                   0.02      0.00       0.64 r
+  U2177/ZN (AOI211D1BWP20P90)                                   0.01      0.01       0.65 f
+  n1412 (net)                               1         0.00                0.00       0.65 f
+  U2181/A2 (OAOI211D1BWP20P90)                                  0.01      0.00       0.65 f
+  U2181/ZN (OAOI211D1BWP20P90)                                  0.02      0.02       0.67 r
+  n1424 (net)                               1         0.00                0.00       0.67 r
+  U2190/A2 (OAOI211D1BWP20P90)                                  0.02      0.00       0.67 r
+  U2190/ZN (OAOI211D1BWP20P90)                                  0.01      0.01       0.69 f
+  n1428 (net)                               1         0.00                0.00       0.69 f
+  U2196/A2 (OAI21D1BWP20P90)                                    0.01      0.00       0.69 f
+  U2196/ZN (OAI21D1BWP20P90)                                    0.01      0.01       0.70 r
+  n1449 (net)                               1         0.00                0.00       0.70 r
+  U2218/A1 (AOAI211D1BWP20P90)                                  0.01      0.00       0.70 r
+  U2218/ZN (AOAI211D1BWP20P90)                                  0.02      0.02       0.72 f
+  n1470 (net)                               1         0.00                0.00       0.72 f
+  U2233/A2 (AOAI211D1BWP20P90)                                  0.02      0.00       0.72 f
+  U2233/ZN (AOAI211D1BWP20P90)                                  0.02      0.02       0.74 r
+  n1504 (net)                               1         0.00                0.00       0.74 r
+  U2276/A2 (AOAI211D1BWP20P90)                                  0.02      0.00       0.74 r
+  U2276/ZN (AOAI211D1BWP20P90)                                  0.02      0.02       0.76 f
+  n1512 (net)                               1         0.00                0.00       0.76 f
+  U2282/A2 (AOI21D1BWP20P90)                                    0.02      0.00       0.76 f
+  U2282/ZN (AOI21D1BWP20P90)                                    0.01      0.02       0.77 r
+  n1522 (net)                               1         0.00                0.00       0.77 r
+  U2296/A2 (OAOI211D1BWP20P90)                                  0.01      0.00       0.77 r
+  U2296/ZN (OAOI211D1BWP20P90)                                  0.01      0.01       0.78 f
+  n1539 (net)                               1         0.00                0.00       0.78 f
+  U2316/A2 (OAOI211D1BWP20P90)                                  0.01      0.00       0.78 f
+  U2316/ZN (OAOI211D1BWP20P90)                                  0.02      0.02       0.80 r
+  n1549 (net)                               1         0.00                0.00       0.80 r
+  U2324/A2 (OA21D1BWP20P90)                                     0.02      0.00       0.80 r
+  U2324/Z (OA21D1BWP20P90)                                      0.13      0.09       0.90 r
+  n2086 (net)                              40         0.04                0.00       0.90 r
+  U1236/I (CKND4BWP20P90)                                       0.13      0.00       0.90 r
+  U1236/ZN (CKND4BWP20P90)                                      0.19      0.15       1.05 f
+  n690 (net)                              225         0.20                0.00       1.05 f
+  U2829/I (BUFFD1BWP20P90)                                      0.19      0.00       1.05 f
+  U2829/Z (BUFFD1BWP20P90)                                      0.17      0.13       1.18 f
+  n2237 (net)                              56         0.05                0.00       1.18 f
+  U1227/A1 (ND2D1BWP20P90)                                      0.17      0.00       1.18 f
+  U1227/ZN (ND2D1BWP20P90)                                      0.03      0.02       1.20 r
+  n1826 (net)                               1         0.00                0.00       1.20 r
+  U1148/B (OAI21D1BWP20P90)                                     0.03      0.00       1.20 r
+  U1148/ZN (OAI21D1BWP20P90)                                    0.04      0.02       1.22 f
+  C1_Z_3 (net)                              1         0.00                0.00       1.22 f
+  DP_OP_43J1_124_456_U86/A (FA1D1BWP20P90)                      0.04      0.00       1.22 f
+  DP_OP_43J1_124_456_U86/CO (FA1D1BWP20P90)                     0.02      0.04       1.26 f
+  DP_OP_43J1_124_456_n85 (net)              1         0.00                0.00       1.26 f
+  DP_OP_43J1_124_456_U85/CI (FA1D1BWP20P90)                     0.02      0.00       1.26 f
+  DP_OP_43J1_124_456_U85/CO (FA1D1BWP20P90)                     0.02      0.03       1.30 f
+  DP_OP_43J1_124_456_n84 (net)              1         0.00                0.00       1.30 f
+  DP_OP_43J1_124_456_U84/CI (FA1D1BWP20P90)                     0.02      0.00       1.30 f
+  DP_OP_43J1_124_456_U84/CO (FA1D1BWP20P90)                     0.02      0.03       1.33 f
+  DP_OP_43J1_124_456_n83 (net)              1         0.00                0.00       1.33 f
+  DP_OP_43J1_124_456_U83/CI (FA1D1BWP20P90)                     0.02      0.00       1.33 f
+  DP_OP_43J1_124_456_U83/CO (FA1D1BWP20P90)                     0.02      0.03       1.36 f
+  DP_OP_43J1_124_456_n82 (net)              1         0.00                0.00       1.36 f
+  DP_OP_43J1_124_456_U82/CI (FA1D1BWP20P90)                     0.02      0.00       1.36 f
+  DP_OP_43J1_124_456_U82/CO (FA1D1BWP20P90)                     0.02      0.03       1.39 f
+  DP_OP_43J1_124_456_n81 (net)              1         0.00                0.00       1.39 f
+  DP_OP_43J1_124_456_U81/CI (FA1D1BWP20P90)                     0.02      0.00       1.39 f
+  DP_OP_43J1_124_456_U81/CO (FA1D1BWP20P90)                     0.02      0.03       1.43 f
+  DP_OP_43J1_124_456_n80 (net)              1         0.00                0.00       1.43 f
+  DP_OP_43J1_124_456_U80/CI (FA1D1BWP20P90)                     0.02      0.00       1.43 f
+  DP_OP_43J1_124_456_U80/CO (FA1D1BWP20P90)                     0.02      0.03       1.46 f
+  DP_OP_43J1_124_456_n79 (net)              1         0.00                0.00       1.46 f
+  DP_OP_43J1_124_456_U79/CI (FA1D1BWP20P90)                     0.02      0.00       1.46 f
+  DP_OP_43J1_124_456_U79/CO (FA1D1BWP20P90)                     0.02      0.03       1.49 f
+  DP_OP_43J1_124_456_n78 (net)              1         0.00                0.00       1.49 f
+  DP_OP_43J1_124_456_U78/CI (FA1D1BWP20P90)                     0.02      0.00       1.49 f
+  DP_OP_43J1_124_456_U78/CO (FA1D1BWP20P90)                     0.02      0.03       1.53 f
+  DP_OP_43J1_124_456_n77 (net)              1         0.00                0.00       1.53 f
+  DP_OP_43J1_124_456_U77/CI (FA1D1BWP20P90)                     0.02      0.00       1.53 f
+  DP_OP_43J1_124_456_U77/CO (FA1D1BWP20P90)                     0.02      0.03       1.56 f
+  DP_OP_43J1_124_456_n76 (net)              1         0.00                0.00       1.56 f
+  DP_OP_43J1_124_456_U76/CI (FA1D1BWP20P90)                     0.02      0.00       1.56 f
+  DP_OP_43J1_124_456_U76/CO (FA1D1BWP20P90)                     0.02      0.03       1.59 f
+  DP_OP_43J1_124_456_n75 (net)              1         0.00                0.00       1.59 f
+  DP_OP_43J1_124_456_U75/CI (FA1D1BWP20P90)                     0.02      0.00       1.59 f
+  DP_OP_43J1_124_456_U75/CO (FA1D1BWP20P90)                     0.02      0.03       1.63 f
+  DP_OP_43J1_124_456_n74 (net)              1         0.00                0.00       1.63 f
+  DP_OP_43J1_124_456_U74/CI (FA1D1BWP20P90)                     0.02      0.00       1.63 f
+  DP_OP_43J1_124_456_U74/CO (FA1D1BWP20P90)                     0.02      0.03       1.66 f
+  DP_OP_43J1_124_456_n73 (net)              1         0.00                0.00       1.66 f
+  DP_OP_43J1_124_456_U73/CI (FA1D1BWP20P90)                     0.02      0.00       1.66 f
+  DP_OP_43J1_124_456_U73/CO (FA1D1BWP20P90)                     0.02      0.03       1.69 f
+  DP_OP_43J1_124_456_n72 (net)              1         0.00                0.00       1.69 f
+  DP_OP_43J1_124_456_U72/CI (FA1D1BWP20P90)                     0.02      0.00       1.69 f
+  DP_OP_43J1_124_456_U72/CO (FA1D1BWP20P90)                     0.02      0.03       1.73 f
+  DP_OP_43J1_124_456_n71 (net)              1         0.00                0.00       1.73 f
+  DP_OP_43J1_124_456_U71/CI (FA1D1BWP20P90)                     0.02      0.00       1.73 f
+  DP_OP_43J1_124_456_U71/CO (FA1D1BWP20P90)                     0.02      0.03       1.76 f
+  DP_OP_43J1_124_456_n70 (net)              1         0.00                0.00       1.76 f
+  DP_OP_43J1_124_456_U70/CI (FA1D1BWP20P90)                     0.02      0.00       1.76 f
+  DP_OP_43J1_124_456_U70/CO (FA1D1BWP20P90)                     0.02      0.03       1.79 f
+  DP_OP_43J1_124_456_n69 (net)              1         0.00                0.00       1.79 f
+  DP_OP_43J1_124_456_U69/CI (FA1D1BWP20P90)                     0.02      0.00       1.79 f
+  DP_OP_43J1_124_456_U69/CO (FA1D1BWP20P90)                     0.02      0.03       1.82 f
+  DP_OP_43J1_124_456_n68 (net)              1         0.00                0.00       1.82 f
+  DP_OP_43J1_124_456_U68/CI (FA1D1BWP20P90)                     0.02      0.00       1.82 f
+  DP_OP_43J1_124_456_U68/CO (FA1D1BWP20P90)                     0.02      0.03       1.86 f
+  DP_OP_43J1_124_456_n67 (net)              1         0.00                0.00       1.86 f
+  DP_OP_43J1_124_456_U67/CI (FA1D1BWP20P90)                     0.02      0.00       1.86 f
+  DP_OP_43J1_124_456_U67/CO (FA1D1BWP20P90)                     0.02      0.03       1.89 f
+  DP_OP_43J1_124_456_n66 (net)              1         0.00                0.00       1.89 f
+  DP_OP_43J1_124_456_U66/CI (FA1D1BWP20P90)                     0.02      0.00       1.89 f
+  DP_OP_43J1_124_456_U66/CO (FA1D1BWP20P90)                     0.02      0.03       1.92 f
+  DP_OP_43J1_124_456_n65 (net)              1         0.00                0.00       1.92 f
+  DP_OP_43J1_124_456_U65/CI (FA1D1BWP20P90)                     0.02      0.00       1.92 f
+  DP_OP_43J1_124_456_U65/CO (FA1D1BWP20P90)                     0.02      0.03       1.96 f
+  DP_OP_43J1_124_456_n64 (net)              1         0.00                0.00       1.96 f
+  DP_OP_43J1_124_456_U64/CI (FA1D1BWP20P90)                     0.02      0.00       1.96 f
+  DP_OP_43J1_124_456_U64/CO (FA1D1BWP20P90)                     0.02      0.03       1.99 f
+  DP_OP_43J1_124_456_n63 (net)              1         0.00                0.00       1.99 f
+  DP_OP_43J1_124_456_U63/CI (FA1D1BWP20P90)                     0.02      0.00       1.99 f
+  DP_OP_43J1_124_456_U63/CO (FA1D1BWP20P90)                     0.02      0.03       2.02 f
+  DP_OP_43J1_124_456_n62 (net)              1         0.00                0.00       2.02 f
+  DP_OP_43J1_124_456_U62/CI (FA1D1BWP20P90)                     0.02      0.00       2.02 f
+  DP_OP_43J1_124_456_U62/CO (FA1D1BWP20P90)                     0.02      0.03       2.06 f
+  DP_OP_43J1_124_456_n61 (net)              1         0.00                0.00       2.06 f
+  DP_OP_43J1_124_456_U61/CI (FA1D1BWP20P90)                     0.02      0.00       2.06 f
+  DP_OP_43J1_124_456_U61/CO (FA1D1BWP20P90)                     0.02      0.03       2.09 f
+  DP_OP_43J1_124_456_n60 (net)              1         0.00                0.00       2.09 f
+  DP_OP_43J1_124_456_U60/CI (FA1D1BWP20P90)                     0.02      0.00       2.09 f
+  DP_OP_43J1_124_456_U60/CO (FA1D1BWP20P90)                     0.02      0.03       2.12 f
+  DP_OP_43J1_124_456_n59 (net)              1         0.00                0.00       2.12 f
+  DP_OP_43J1_124_456_U59/CI (FA1D1BWP20P90)                     0.02      0.00       2.12 f
+  DP_OP_43J1_124_456_U59/CO (FA1D1BWP20P90)                     0.02      0.03       2.16 f
+  DP_OP_43J1_124_456_n58 (net)              1         0.00                0.00       2.16 f
+  DP_OP_43J1_124_456_U58/CI (FA1D1BWP20P90)                     0.02      0.00       2.16 f
+  DP_OP_43J1_124_456_U58/CO (FA1D1BWP20P90)                     0.02      0.03       2.19 f
+  DP_OP_43J1_124_456_n57 (net)              1         0.00                0.00       2.19 f
+  DP_OP_43J1_124_456_U57/CI (FA1D1BWP20P90)                     0.02      0.00       2.19 f
+  DP_OP_43J1_124_456_U57/CO (FA1D1BWP20P90)                     0.02      0.03       2.22 f
+  DP_OP_43J1_124_456_n56 (net)              1         0.00                0.00       2.22 f
+  DP_OP_43J1_124_456_U56/CI (FA1D1BWP20P90)                     0.02      0.00       2.22 f
+  DP_OP_43J1_124_456_U56/CO (FA1D1BWP20P90)                     0.02      0.03       2.25 f
+  DP_OP_43J1_124_456_n55 (net)              1         0.00                0.00       2.25 f
+  DP_OP_43J1_124_456_U55/CI (FA1D1BWP20P90)                     0.02      0.00       2.25 f
+  DP_OP_43J1_124_456_U55/CO (FA1D1BWP20P90)                     0.02      0.03       2.29 f
+  DP_OP_43J1_124_456_n54 (net)              1         0.00                0.00       2.29 f
+  DP_OP_43J1_124_456_U54/CI (FA1D1BWP20P90)                     0.02      0.00       2.29 f
+  DP_OP_43J1_124_456_U54/CO (FA1D1BWP20P90)                     0.02      0.03       2.32 f
+  DP_OP_43J1_124_456_n53 (net)              1         0.00                0.00       2.32 f
+  DP_OP_43J1_124_456_U53/CI (FA1D1BWP20P90)                     0.02      0.00       2.32 f
+  DP_OP_43J1_124_456_U53/CO (FA1D1BWP20P90)                     0.02      0.03       2.35 f
+  DP_OP_43J1_124_456_n52 (net)              1         0.00                0.00       2.35 f
+  DP_OP_43J1_124_456_U52/CI (FA1D1BWP20P90)                     0.02      0.00       2.35 f
+  DP_OP_43J1_124_456_U52/CO (FA1D1BWP20P90)                     0.02      0.03       2.39 f
+  DP_OP_43J1_124_456_n51 (net)              1         0.00                0.00       2.39 f
+  DP_OP_43J1_124_456_U51/CI (FA1D1BWP20P90)                     0.02      0.00       2.39 f
+  DP_OP_43J1_124_456_U51/CO (FA1D1BWP20P90)                     0.02      0.03       2.42 f
+  DP_OP_43J1_124_456_n50 (net)              1         0.00                0.00       2.42 f
+  DP_OP_43J1_124_456_U50/CI (FA1D1BWP20P90)                     0.02      0.00       2.42 f
+  DP_OP_43J1_124_456_U50/CO (FA1D1BWP20P90)                     0.02      0.03       2.45 f
+  DP_OP_43J1_124_456_n49 (net)              1         0.00                0.00       2.45 f
+  DP_OP_43J1_124_456_U49/CI (FA1D1BWP20P90)                     0.02      0.00       2.45 f
+  DP_OP_43J1_124_456_U49/CO (FA1D1BWP20P90)                     0.02      0.03       2.49 f
+  DP_OP_43J1_124_456_n48 (net)              1         0.00                0.00       2.49 f
+  DP_OP_43J1_124_456_U48/CI (FA1D1BWP20P90)                     0.02      0.00       2.49 f
+  DP_OP_43J1_124_456_U48/CO (FA1D1BWP20P90)                     0.02      0.03       2.52 f
+  DP_OP_43J1_124_456_n47 (net)              1         0.00                0.00       2.52 f
+  DP_OP_43J1_124_456_U47/CI (FA1D1BWP20P90)                     0.02      0.00       2.52 f
+  DP_OP_43J1_124_456_U47/CO (FA1D1BWP20P90)                     0.02      0.03       2.55 f
+  DP_OP_43J1_124_456_n46 (net)              1         0.00                0.00       2.55 f
+  DP_OP_43J1_124_456_U46/CI (FA1D1BWP20P90)                     0.02      0.00       2.55 f
+  DP_OP_43J1_124_456_U46/CO (FA1D1BWP20P90)                     0.02      0.03       2.59 f
+  DP_OP_43J1_124_456_n45 (net)              1         0.00                0.00       2.59 f
+  DP_OP_43J1_124_456_U45/CI (FA1D1BWP20P90)                     0.02      0.00       2.59 f
+  DP_OP_43J1_124_456_U45/CO (FA1D1BWP20P90)                     0.02      0.03       2.62 f
+  DP_OP_43J1_124_456_n44 (net)              1         0.00                0.00       2.62 f
+  DP_OP_43J1_124_456_U44/CI (FA1D1BWP20P90)                     0.02      0.00       2.62 f
+  DP_OP_43J1_124_456_U44/CO (FA1D1BWP20P90)                     0.02      0.03       2.65 f
+  DP_OP_43J1_124_456_n43 (net)              1         0.00                0.00       2.65 f
+  DP_OP_43J1_124_456_U43/CI (FA1D1BWP20P90)                     0.02      0.00       2.65 f
+  DP_OP_43J1_124_456_U43/CO (FA1D1BWP20P90)                     0.02      0.03       2.68 f
+  DP_OP_43J1_124_456_n42 (net)              1         0.00                0.00       2.68 f
+  DP_OP_43J1_124_456_U42/CI (FA1D1BWP20P90)                     0.02      0.00       2.68 f
+  DP_OP_43J1_124_456_U42/CO (FA1D1BWP20P90)                     0.02      0.03       2.72 f
+  DP_OP_43J1_124_456_n41 (net)              1         0.00                0.00       2.72 f
+  DP_OP_43J1_124_456_U41/CI (FA1D1BWP20P90)                     0.02      0.00       2.72 f
+  DP_OP_43J1_124_456_U41/CO (FA1D1BWP20P90)                     0.02      0.03       2.75 f
+  DP_OP_43J1_124_456_n40 (net)              1         0.00                0.00       2.75 f
+  DP_OP_43J1_124_456_U40/CI (FA1D1BWP20P90)                     0.02      0.00       2.75 f
+  DP_OP_43J1_124_456_U40/CO (FA1D1BWP20P90)                     0.02      0.03       2.78 f
+  DP_OP_43J1_124_456_n39 (net)              1         0.00                0.00       2.78 f
+  DP_OP_43J1_124_456_U39/CI (FA1D1BWP20P90)                     0.02      0.00       2.78 f
+  DP_OP_43J1_124_456_U39/CO (FA1D1BWP20P90)                     0.02      0.03       2.82 f
+  DP_OP_43J1_124_456_n38 (net)              1         0.00                0.00       2.82 f
+  DP_OP_43J1_124_456_U38/CI (FA1D1BWP20P90)                     0.02      0.00       2.82 f
+  DP_OP_43J1_124_456_U38/CO (FA1D1BWP20P90)                     0.02      0.03       2.85 f
+  DP_OP_43J1_124_456_n37 (net)              1         0.00                0.00       2.85 f
+  DP_OP_43J1_124_456_U37/CI (FA1D1BWP20P90)                     0.02      0.00       2.85 f
+  DP_OP_43J1_124_456_U37/CO (FA1D1BWP20P90)                     0.02      0.03       2.88 f
+  DP_OP_43J1_124_456_n36 (net)              1         0.00                0.00       2.88 f
+  DP_OP_43J1_124_456_U36/CI (FA1D1BWP20P90)                     0.02      0.00       2.88 f
+  DP_OP_43J1_124_456_U36/CO (FA1D1BWP20P90)                     0.02      0.03       2.92 f
+  DP_OP_43J1_124_456_n35 (net)              1         0.00                0.00       2.92 f
+  DP_OP_43J1_124_456_U35/CI (FA1D1BWP20P90)                     0.02      0.00       2.92 f
+  DP_OP_43J1_124_456_U35/CO (FA1D1BWP20P90)                     0.02      0.03       2.95 f
+  DP_OP_43J1_124_456_n34 (net)              1         0.00                0.00       2.95 f
+  DP_OP_43J1_124_456_U34/CI (FA1D1BWP20P90)                     0.02      0.00       2.95 f
+  DP_OP_43J1_124_456_U34/CO (FA1D1BWP20P90)                     0.02      0.03       2.98 f
+  DP_OP_43J1_124_456_n33 (net)              1         0.00                0.00       2.98 f
+  DP_OP_43J1_124_456_U33/CI (FA1D1BWP20P90)                     0.02      0.00       2.98 f
+  DP_OP_43J1_124_456_U33/CO (FA1D1BWP20P90)                     0.02      0.03       3.02 f
+  DP_OP_43J1_124_456_n32 (net)              1         0.00                0.00       3.02 f
+  DP_OP_43J1_124_456_U32/CI (FA1D1BWP20P90)                     0.02      0.00       3.02 f
+  DP_OP_43J1_124_456_U32/CO (FA1D1BWP20P90)                     0.02      0.03       3.05 f
+  DP_OP_43J1_124_456_n31 (net)              1         0.00                0.00       3.05 f
+  DP_OP_43J1_124_456_U31/CI (FA1D1BWP20P90)                     0.02      0.00       3.05 f
+  DP_OP_43J1_124_456_U31/CO (FA1D1BWP20P90)                     0.02      0.03       3.08 f
+  DP_OP_43J1_124_456_n30 (net)              1         0.00                0.00       3.08 f
+  DP_OP_43J1_124_456_U30/CI (FA1D1BWP20P90)                     0.02      0.00       3.08 f
+  DP_OP_43J1_124_456_U30/CO (FA1D1BWP20P90)                     0.02      0.03       3.12 f
+  DP_OP_43J1_124_456_n29 (net)              1         0.00                0.00       3.12 f
+  DP_OP_43J1_124_456_U29/CI (FA1D1BWP20P90)                     0.02      0.00       3.12 f
+  DP_OP_43J1_124_456_U29/CO (FA1D1BWP20P90)                     0.02      0.03       3.15 f
+  DP_OP_43J1_124_456_n28 (net)              1         0.00                0.00       3.15 f
+  DP_OP_43J1_124_456_U28/CI (FA1D1BWP20P90)                     0.02      0.00       3.15 f
+  DP_OP_43J1_124_456_U28/CO (FA1D1BWP20P90)                     0.02      0.03       3.18 f
+  DP_OP_43J1_124_456_n27 (net)              1         0.00                0.00       3.18 f
+  DP_OP_43J1_124_456_U27/CI (FA1D1BWP20P90)                     0.02      0.00       3.18 f
+  DP_OP_43J1_124_456_U27/CO (FA1D1BWP20P90)                     0.02      0.03       3.21 f
+  DP_OP_43J1_124_456_n26 (net)              1         0.00                0.00       3.21 f
+  DP_OP_43J1_124_456_U26/CI (FA1D1BWP20P90)                     0.02      0.00       3.21 f
+  DP_OP_43J1_124_456_U26/CO (FA1D1BWP20P90)                     0.02      0.03       3.25 f
+  DP_OP_43J1_124_456_n25 (net)              1         0.00                0.00       3.25 f
+  DP_OP_43J1_124_456_U25/CI (FA1D1BWP20P90)                     0.02      0.00       3.25 f
+  DP_OP_43J1_124_456_U25/CO (FA1D1BWP20P90)                     0.02      0.03       3.28 f
+  DP_OP_43J1_124_456_n24 (net)              1         0.00                0.00       3.28 f
+  DP_OP_43J1_124_456_U24/CI (FA1D1BWP20P90)                     0.02      0.00       3.28 f
+  DP_OP_43J1_124_456_U24/CO (FA1D1BWP20P90)                     0.02      0.03       3.31 f
+  DP_OP_43J1_124_456_n23 (net)              1         0.00                0.00       3.31 f
+  DP_OP_43J1_124_456_U23/CI (FA1D1BWP20P90)                     0.02      0.00       3.31 f
+  DP_OP_43J1_124_456_U23/CO (FA1D1BWP20P90)                     0.02      0.03       3.35 f
+  DP_OP_43J1_124_456_n22 (net)              1         0.00                0.00       3.35 f
+  DP_OP_43J1_124_456_U22/CI (FA1D1BWP20P90)                     0.02      0.00       3.35 f
+  DP_OP_43J1_124_456_U22/CO (FA1D1BWP20P90)                     0.02      0.03       3.38 f
+  DP_OP_43J1_124_456_n21 (net)              1         0.00                0.00       3.38 f
+  DP_OP_43J1_124_456_U21/CI (FA1D1BWP20P90)                     0.02      0.00       3.38 f
+  DP_OP_43J1_124_456_U21/CO (FA1D1BWP20P90)                     0.02      0.03       3.41 f
+  DP_OP_43J1_124_456_n20 (net)              1         0.00                0.00       3.41 f
+  DP_OP_43J1_124_456_U20/CI (FA1D1BWP20P90)                     0.02      0.00       3.41 f
+  DP_OP_43J1_124_456_U20/CO (FA1D1BWP20P90)                     0.02      0.03       3.45 f
+  DP_OP_43J1_124_456_n19 (net)              1         0.00                0.00       3.45 f
+  DP_OP_43J1_124_456_U19/CI (FA1D1BWP20P90)                     0.02      0.00       3.45 f
+  DP_OP_43J1_124_456_U19/CO (FA1D1BWP20P90)                     0.02      0.03       3.48 f
+  DP_OP_43J1_124_456_n18 (net)              1         0.00                0.00       3.48 f
+  DP_OP_43J1_124_456_U18/CI (FA1D1BWP20P90)                     0.02      0.00       3.48 f
+  DP_OP_43J1_124_456_U18/CO (FA1D1BWP20P90)                     0.02      0.03       3.51 f
+  DP_OP_43J1_124_456_n17 (net)              1         0.00                0.00       3.51 f
+  DP_OP_43J1_124_456_U17/CI (FA1D1BWP20P90)                     0.02      0.00       3.51 f
+  DP_OP_43J1_124_456_U17/CO (FA1D1BWP20P90)                     0.02      0.03       3.55 f
+  DP_OP_43J1_124_456_n16 (net)              1         0.00                0.00       3.55 f
+  DP_OP_43J1_124_456_U16/CI (FA1D1BWP20P90)                     0.02      0.00       3.55 f
+  DP_OP_43J1_124_456_U16/CO (FA1D1BWP20P90)                     0.02      0.03       3.58 f
+  DP_OP_43J1_124_456_n15 (net)              1         0.00                0.00       3.58 f
+  DP_OP_43J1_124_456_U15/CI (FA1D1BWP20P90)                     0.02      0.00       3.58 f
+  DP_OP_43J1_124_456_U15/CO (FA1D1BWP20P90)                     0.02      0.03       3.61 f
+  DP_OP_43J1_124_456_n14 (net)              1         0.00                0.00       3.61 f
+  DP_OP_43J1_124_456_U14/CI (FA1D1BWP20P90)                     0.02      0.00       3.61 f
+  DP_OP_43J1_124_456_U14/CO (FA1D1BWP20P90)                     0.02      0.03       3.64 f
+  DP_OP_43J1_124_456_n13 (net)              1         0.00                0.00       3.64 f
+  DP_OP_43J1_124_456_U13/CI (FA1D1BWP20P90)                     0.02      0.00       3.64 f
+  DP_OP_43J1_124_456_U13/CO (FA1D1BWP20P90)                     0.02      0.03       3.68 f
+  DP_OP_43J1_124_456_n12 (net)              1         0.00                0.00       3.68 f
+  DP_OP_43J1_124_456_U12/CI (FA1D1BWP20P90)                     0.02      0.00       3.68 f
+  DP_OP_43J1_124_456_U12/CO (FA1D1BWP20P90)                     0.02      0.03       3.71 f
+  DP_OP_43J1_124_456_n11 (net)              1         0.00                0.00       3.71 f
+  DP_OP_43J1_124_456_U11/CI (FA1D1BWP20P90)                     0.02      0.00       3.71 f
+  DP_OP_43J1_124_456_U11/CO (FA1D1BWP20P90)                     0.02      0.03       3.74 f
+  DP_OP_43J1_124_456_n10 (net)              1         0.00                0.00       3.74 f
+  DP_OP_43J1_124_456_U10/CI (FA1D1BWP20P90)                     0.02      0.00       3.74 f
+  DP_OP_43J1_124_456_U10/CO (FA1D1BWP20P90)                     0.01      0.03       3.78 f
+  DP_OP_43J1_124_456_n9 (net)               2         0.00                0.00       3.78 f
+  U1101/A1 (OR2D1BWP20P90)                                      0.01      0.00       3.78 f
+  U1101/Z (OR2D1BWP20P90)                                       0.01      0.02       3.79 f
+  n699 (net)                                2         0.00                0.00       3.79 f
+  U1099/A1 (OR2D1BWP20P90)                                      0.01      0.00       3.79 f
+  U1099/Z (OR2D1BWP20P90)                                       0.01      0.02       3.81 f
+  n695 (net)                                2         0.00                0.00       3.81 f
+  U1098/A1 (OR2D1BWP20P90)                                      0.01      0.00       3.81 f
+  U1098/Z (OR2D1BWP20P90)                                       0.01      0.02       3.83 f
+  n696 (net)                                2         0.00                0.00       3.83 f
+  U1097/A1 (OR2D1BWP20P90)                                      0.01      0.00       3.83 f
+  U1097/Z (OR2D1BWP20P90)                                       0.01      0.02       3.85 f
+  n693 (net)                                2         0.00                0.00       3.85 f
+  U1096/A1 (OR2D1BWP20P90)                                      0.01      0.00       3.85 f
+  U1096/Z (OR2D1BWP20P90)                                       0.01      0.02       3.87 f
+  n697 (net)                                2         0.00                0.00       3.87 f
+  U1095/A1 (OR2D1BWP20P90)                                      0.01      0.00       3.87 f
+  U1095/Z (OR2D1BWP20P90)                                       0.01      0.02       3.88 f
+  n694 (net)                                2         0.00                0.00       3.88 f
+  U1242/A1 (OR2D1BWP20P90)                                      0.01      0.00       3.88 f
+  U1242/Z (OR2D1BWP20P90)                                       0.01      0.02       3.90 f
+  n698 (net)                                1         0.00                0.00       3.90 f
+  U2799/A2 (XOR2D1BWP20P90)                                     0.01      0.00       3.90 f
+  U2799/Z (XOR2D1BWP20P90)                                      0.01      0.03       3.93 r
+  n2137 (net)                               1         0.00                0.00       3.93 r
+  U2802/A1 (IOA21D1BWP20P90)                                    0.01      0.00       3.93 r
+  U2802/ZN (IOA21D1BWP20P90)                                    0.01      0.02       3.94 r
+  n101 (net)                                1         0.00                0.00       3.94 r
+  U_ACC_acc_mag_regx87x/D (DFCNQD1BWP20P90)                     0.01      0.00       3.94 r
+  data arrival time                                                                  3.94
+
+  clock CLK (rise edge)                                                   5.00       5.00
+  clock network delay (ideal)                                             0.00       5.00
+  U_ACC_acc_mag_regx87x/CP (DFCNQD1BWP20P90)                              0.00       5.00 r
+  library setup time                                                     -0.02       4.98
+  data required time                                                                 4.98
+  ------------------------------------------------------------------------------------------
+  data required time                                                                 4.98
+  data arrival time                                                                 -3.94
+  ------------------------------------------------------------------------------------------
+  slack (MET)                                                                        1.04
+
+
+1
+LOGNAME = ragha084

@@ -1,0 +1,189 @@
+In mode: all_dft...
+  Pre-DFT DRC enabled
+
+Information: Starting test design rule checking. (TEST-222)
+  Loading test protocol
+  ...basic checks...
+  ...basic sequential cell checks...
+  ...checking vector rules...
+  ...checking pre-dft rules...
+
+-----------------------------------------------------------------
+  DRC Report
+
+  Total violations: 0
+
+-----------------------------------------------------------------
+
+
+Test Design rule checking did not find violations
+
+-----------------------------------------------------------------
+  Sequential Cell Report
+
+  0 out of 157 sequential cells have violations
+
+-----------------------------------------------------------------
+
+SEQUENTIAL CELLS WITHOUT VIOLATIONS
+      * 157 cells are valid scan cells
+         U_ACC/acc_mag_reg[0]
+         U_MUL_ALN/idx_reg[1]
+         U_MUL_ALN/idx_reg[0]
+         U_MUL_ALN/idx_reg[3]
+         U_MUL_ALN/state_reg[0]
+         U_MUL_ALN/a_sign_r_reg
+         U_MUL_ALN/b_sign_r_reg
+         U_MUL_ALN/a_sig_r_reg[3]
+         U_MUL_ALN/a_sig_r_reg[7]
+         U_MUL_ALN/a_sig_r_reg[8]
+         U_MUL_ALN/p_valid_reg
+         U_MUL_ALN/b_sig_r_reg[0]
+         U_MUL_ALN/b_sig_r_reg[1]
+         U_MUL_ALN/b_sig_r_reg[2]
+         U_MUL_ALN/b_sig_r_reg[3]
+         U_MUL_ALN/b_sig_r_reg[4]
+         U_MUL_ALN/b_sig_r_reg[5]
+         U_MUL_ALN/b_sig_r_reg[6]
+         U_MUL_ALN/b_sig_r_reg[7]
+         U_MUL_ALN/b_sig_r_reg[8]
+         U_MUL_ALN/partial_reg[20]
+         U_MUL_ALN/partial_reg[19]
+         U_MUL_ALN/partial_reg[15]
+         U_MUL_ALN/partial_reg[14]
+         U_MUL_ALN/partial_reg[13]
+         U_MUL_ALN/partial_reg[12]
+         U_MUL_ALN/partial_reg[11]
+         U_MUL_ALN/partial_reg[10]
+         U_MUL_ALN/partial_reg[8]
+         U_MUL_ALN/partial_reg[7]
+         U_MUL_ALN/partial_reg[6]
+         U_MUL_ALN/partial_reg[5]
+         U_MUL_ALN/partial_reg[4]
+         U_MUL_ALN/partial_reg[3]
+         U_MUL_ALN/partial_reg[2]
+         U_MUL_ALN/partial_reg[1]
+         U_MUL_ALN/partial_reg[21]
+         U_MUL_ALN/b_exp_r_reg[2]
+         U_MUL_ALN/b_exp_r_reg[4]
+         U_MUL_ALN/a_exp_r_reg[4]
+         U_MUL_ALN/a_exp_r_reg[2]
+         U_MUL_ALN/b_exp_r_reg[3]
+         U_MUL_ALN/a_exp_r_reg[3]
+         U_MUL_ALN/a_sig_r_reg[10]
+         U_MUL_ALN/b_zero_r_reg
+         U_MUL_ALN/a_zero_r_reg
+         U_MUL_ALN/a_sig_r_reg[9]
+         U_MUL_ALN/a_sig_r_reg[6]
+         U_MUL_ALN/a_sig_r_reg[4]
+         U_MUL_ALN/a_sig_r_reg[2]
+         U_MUL_ALN/a_sig_r_reg[1]
+         U_MUL_ALN/a_sig_r_reg[0]
+         U_ACC/acc_mag_reg[82]
+         U_ACC/acc_mag_reg[80]
+         U_MUL_ALN/b_exp_r_reg[1]
+         U_MUL_ALN/a_exp_r_reg[0]
+         U_MUL_ALN/a_exp_r_reg[1]
+         U_MUL_ALN/partial_reg[9]
+         U_MUL_ALN/partial_reg[16]
+         U_MUL_ALN/partial_reg[18]
+         U_MUL_ALN/partial_reg[17]
+         U_MUL_ALN/a_exp_r_reg[5]
+         U_MUL_ALN/b_exp_r_reg[0]
+         U_MUL_ALN/a_sig_r_reg[5]
+         U_MUL_ALN/idx_reg[2]
+         U_ACC/acc_mag_reg[52]
+         U_MUL_ALN/state_reg[1]
+         U_ACC/acc_mag_reg[72]
+         U_MUL_ALN/b_exp_r_reg[5]
+         U_ACC/acc_sign_reg
+         U_ACC/acc_mag_reg[26]
+         U_ACC/acc_mag_reg[37]
+         U_ACC/acc_mag_reg[10]
+         U_MUL_ALN/b_sig_r_reg[9]
+         U_MUL_ALN/b_sig_r_reg[10]
+         U_ACC/overflow_reg
+         U_ACC/acc_mag_reg[81]
+         U_ACC/acc_mag_reg[11]
+         U_ACC/acc_mag_reg[9]
+         U_ACC/acc_mag_reg[30]
+         U_ACC/acc_mag_reg[41]
+         U_ACC/acc_mag_reg[6]
+         U_ACC/acc_mag_reg[21]
+         U_ACC/acc_mag_reg[13]
+         U_ACC/acc_mag_reg[8]
+         U_ACC/acc_mag_reg[33]
+         U_ACC/acc_mag_reg[4]
+         U_ACC/acc_mag_reg[32]
+         U_ACC/acc_mag_reg[7]
+         U_ACC/acc_mag_reg[39]
+         U_ACC/acc_mag_reg[1]
+         U_ACC/acc_mag_reg[34]
+         U_ACC/acc_mag_reg[73]
+         U_ACC/acc_mag_reg[36]
+         U_ACC/acc_mag_reg[27]
+         U_ACC/acc_mag_reg[22]
+         U_ACC/acc_mag_reg[20]
+         U_ACC/acc_mag_reg[55]
+         U_ACC/acc_mag_reg[46]
+         U_ACC/acc_mag_reg[23]
+         U_ACC/acc_mag_reg[50]
+         U_ACC/acc_mag_reg[2]
+         U_ACC/acc_mag_reg[18]
+         U_ACC/acc_mag_reg[3]
+         U_ACC/acc_mag_reg[87]
+         U_ACC/acc_mag_reg[58]
+         U_ACC/acc_mag_reg[57]
+         U_ACC/acc_mag_reg[69]
+         U_ACC/acc_mag_reg[60]
+         U_ACC/acc_mag_reg[28]
+         U_ACC/acc_mag_reg[49]
+         U_ACC/acc_mag_reg[48]
+         U_ACC/acc_mag_reg[25]
+         U_ACC/acc_mag_reg[40]
+         U_ACC/acc_mag_reg[62]
+         U_ACC/acc_mag_reg[54]
+         U_ACC/acc_mag_reg[17]
+         U_ACC/acc_mag_reg[59]
+         U_ACC/acc_mag_reg[38]
+         U_ACC/acc_mag_reg[51]
+         U_ACC/acc_mag_reg[61]
+         U_ACC/acc_mag_reg[76]
+         U_ACC/acc_mag_reg[29]
+         U_ACC/acc_mag_reg[15]
+         U_ACC/acc_mag_reg[75]
+         U_ACC/acc_mag_reg[45]
+         U_ACC/acc_mag_reg[86]
+         U_ACC/acc_mag_reg[67]
+         U_MUL_ALN/partial_reg[0]
+         U_ACC/acc_mag_reg[14]
+         U_ACC/acc_mag_reg[84]
+         U_ACC/acc_mag_reg[53]
+         U_ACC/acc_mag_reg[83]
+         U_ACC/acc_mag_reg[68]
+         U_ACC/acc_mag_reg[63]
+         U_ACC/acc_mag_reg[47]
+         U_ACC/acc_mag_reg[56]
+         U_ACC/acc_mag_reg[64]
+         U_ACC/acc_mag_reg[31]
+         U_ACC/acc_mag_reg[78]
+         U_ACC/acc_mag_reg[43]
+         U_ACC/acc_mag_reg[65]
+         U_ACC/acc_mag_reg[85]
+         U_ACC/acc_mag_reg[44]
+         U_ACC/acc_mag_reg[70]
+         U_ACC/acc_mag_reg[74]
+         U_ACC/acc_mag_reg[79]
+         U_ACC/acc_mag_reg[19]
+         U_ACC/acc_mag_reg[24]
+         U_ACC/acc_mag_reg[66]
+         U_ACC/acc_mag_reg[71]
+         U_ACC/acc_mag_reg[42]
+         U_ACC/acc_mag_reg[35]
+         U_ACC/acc_mag_reg[5]
+         U_ACC/acc_mag_reg[77]
+         U_ACC/acc_mag_reg[12]
+         U_ACC/acc_mag_reg[16]
+
+Information: Test design rule checking completed. (TEST-123)
+1

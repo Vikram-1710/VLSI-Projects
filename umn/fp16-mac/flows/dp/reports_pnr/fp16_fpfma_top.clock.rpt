@@ -1,0 +1,27 @@
+****************************************
+Report : clock
+Design : full_chip_fp16_fpfma_top
+Mode   : default
+Version: R-2020.09-SP6
+Date   : Fri Nov 28 13:39:58 2025
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+CLK              1.00   {0 0.5}             p         {clk}
+
+****************************************
+Report : clock_skew
+Design : full_chip_fp16_fpfma_top
+Mode   : default
+Version: R-2020.09-SP6
+Date   : Fri Nov 28 13:39:58 2025
+****************************************
+
+1

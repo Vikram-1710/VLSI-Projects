@@ -1,0 +1,228 @@
+ 
+****************************************
+Report : reference
+Design : full_chip_fp16_fpfma_top
+Version: U-2022.12-SP5
+Date   : Thu Nov 27 23:33:50 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+fp16_fpfma_top                 1094.964492       1   1094.964492  b, h, n
+-----------------------------------------------------------------------------
+Total 1 references                                   1094.964492
+
+****************************************
+Design: fp16_fpfma_top 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AN2D1BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     0.259200       7     1.814400
+AN2D1BWP20P90      N16ADFP_StdCelltt0p8v25c_ccs     0.259200      69    17.884800
+AN2D2BWP16P90LVT   N16ADFP_StdCelltt0p8v25c_ccs     0.311040       1     0.311040
+AN3D1BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     0.311040       2     0.622080
+AN3D1BWP20P90      N16ADFP_StdCelltt0p8v25c_ccs     0.311040       5     1.555200
+AN4D1BWP20P90      N16ADFP_StdCelltt0p8v25c_ccs     0.362880       2     0.725760
+AO21D1BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.311040       2     0.622080
+AO21D1BWP16P90LVT  N16ADFP_StdCelltt0p8v25c_ccs     0.311040       2     0.622080
+AO21D1BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.311040       5     1.555200
+AO22D1BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.466560       1     0.466560
+AO22D1BWP16P90LVT  N16ADFP_StdCelltt0p8v25c_ccs     0.466560       2     0.933120
+AO22D1BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.466560       3     1.399680
+AOAI211D1BWP16P90  N16ADFP_StdCelltt0p8v25c_ccs     0.414720       3     1.244160
+AOI21D1BWP16P90    N16ADFP_StdCelltt0p8v25c_ccs     0.259200      34     8.812800
+AOI21D1BWP16P90LVT N16ADFP_StdCelltt0p8v25c_ccs     0.259200       2     0.518400
+AOI21D1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.259200     139    36.028801
+AOI21D2BWP16P90    N16ADFP_StdCelltt0p8v25c_ccs     0.414720       1     0.414720
+AOI21D2BWP16P90LVT N16ADFP_StdCelltt0p8v25c_ccs     0.414720       7     2.903040
+AOI21D4BWP16P90    N16ADFP_StdCelltt0p8v25c_ccs     0.725760       6     4.354560
+AOI21D4BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.725760       1     0.725760
+AOI22D1BWP16P90    N16ADFP_StdCelltt0p8v25c_ccs     0.311040      75    23.328001
+AOI22D1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.311040      41    12.752641
+AOI31D1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.311040       2     0.622080
+AOI32D1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.362880       4     1.451520
+AOI33D1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.414720       1     0.414720
+AOI211D1BWP16P90   N16ADFP_StdCelltt0p8v25c_ccs     0.311040       4     1.244160
+AOI211D1BWP20P90   N16ADFP_StdCelltt0p8v25c_ccs     0.311040       2     0.622080
+AOI222D1BWP20P90   N16ADFP_StdCelltt0p8v25c_ccs     0.518400       4     2.073600
+BUFFD1BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.207360       2     0.414720
+BUFFD2BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.259200       2     0.518400
+BUFFD2BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.259200       3     0.777600
+BUFFD4BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.414720       1     0.414720
+CKBD1BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     0.207360       4     0.829440
+CKBD1BWP20P90      N16ADFP_StdCelltt0p8v25c_ccs     0.207360       2     0.414720
+CKND1BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     0.155520       7     1.088640
+CKND1BWP20P90      N16ADFP_StdCelltt0p8v25c_ccs     0.155520      22     3.421440
+CKND2BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     0.207360       6     1.244160
+CKND2BWP16P90LVT   N16ADFP_StdCelltt0p8v25c_ccs     0.207360       4     0.829440
+CKND2D1BWP16P90    N16ADFP_StdCelltt0p8v25c_ccs     0.259200       1     0.259200
+CKND2D4BWP16P90    N16ADFP_StdCelltt0p8v25c_ccs     0.518400       2     1.036800
+CKND8BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     0.518400       1     0.518400
+CKNR2D1BWP16P90LVT N16ADFP_StdCelltt0p8v25c_ccs     0.259200       1     0.259200
+CKNR2D4BWP16P90    N16ADFP_StdCelltt0p8v25c_ccs     0.518400       3     1.555200
+CKNR2D4BWP16P90LVT N16ADFP_StdCelltt0p8v25c_ccs     0.518400       2     1.036800
+FA1D1BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     1.036800      10    10.368000 r
+FA1D1BWP20P90      N16ADFP_StdCelltt0p8v25c_ccs     1.036800       2     2.073600 r
+IAOI21D1BWP16P90   N16ADFP_StdCelltt0p8v25c_ccs     0.414720       3     1.244160
+IAOI21D1BWP20P90   N16ADFP_StdCelltt0p8v25c_ccs     0.414720       1     0.414720
+IAOI21D2BWP16P90LVT N16ADFP_StdCelltt0p8v25c_ccs     0.570240       3     1.710720
+IND2D1BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.259200      28     7.257600
+IND2D1BWP16P90LVT  N16ADFP_StdCelltt0p8v25c_ccs     0.259200       5     1.296000
+IND2D1BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.259200      26     6.739200
+IND2D1BWP20P90LVT  N16ADFP_StdCelltt0p8v25c_ccs     0.259200       1     0.259200
+IND2D2BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.362880       3     1.088640
+IND2D2BWP16P90LVT  N16ADFP_StdCelltt0p8v25c_ccs     0.362880       1     0.362880
+IND2D2BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.362880       1     0.362880
+IND2D4BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.622080       4     2.488320
+IND2D4BWP16P90LVT  N16ADFP_StdCelltt0p8v25c_ccs     0.622080       4     2.488320
+IND2D4BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.622080       1     0.622080
+INR2D1BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.259200      37     9.590400
+INR2D1BWP16P90LVT  N16ADFP_StdCelltt0p8v25c_ccs     0.259200       9     2.332800
+INR2D1BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.259200      29     7.516800
+INR2D2BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.362880       3     1.088640
+INR2D2BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.362880       1     0.362880
+INR2D2BWP20P90LVT  N16ADFP_StdCelltt0p8v25c_ccs     0.362880       1     0.362880
+INR2D4BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.622080       1     0.622080
+INR2D4BWP16P90LVT  N16ADFP_StdCelltt0p8v25c_ccs     0.622080       4     2.488320
+INR3D1BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.311040       5     1.555200
+INR3D1BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.311040       1     0.311040
+INR4D1BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.362880       1     0.362880
+INVD1BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     0.155520      45     6.998400
+INVD1BWP16P90LVT   N16ADFP_StdCelltt0p8v25c_ccs     0.155520       2     0.311040
+INVD1BWP20P90      N16ADFP_StdCelltt0p8v25c_ccs     0.155520     602    93.623044
+INVD1BWP20P90LVT   N16ADFP_StdCelltt0p8v25c_ccs     0.155520       3     0.466560
+INVD4BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     0.311040       2     0.622080
+INVD4BWP20P90      N16ADFP_StdCelltt0p8v25c_ccs     0.311040       2     0.622080
+IOA21D1BWP16P90    N16ADFP_StdCelltt0p8v25c_ccs     0.311040      37    11.508481
+IOA21D1BWP16P90LVT N16ADFP_StdCelltt0p8v25c_ccs     0.311040       2     0.622080
+IOA21D1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.311040      38    11.819521
+IOA22D1BWP16P90    N16ADFP_StdCelltt0p8v25c_ccs     0.466560       5     2.332800
+IOA22D1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.466560      10     4.665600
+IOAI21D1BWP20P90   N16ADFP_StdCelltt0p8v25c_ccs     0.414720       1     0.414720
+MAOI222D1BWP16P90  N16ADFP_StdCelltt0p8v25c_ccs     0.362880       1     0.362880
+MAOI222D1BWP20P90  N16ADFP_StdCelltt0p8v25c_ccs     0.362880       3     1.088640
+MOAI22D1BWP16P90   N16ADFP_StdCelltt0p8v25c_ccs     0.466560      16     7.464960
+MOAI22D1BWP16P90LVT N16ADFP_StdCelltt0p8v25c_ccs     0.466560       3     1.399680
+MOAI22D1BWP20P90   N16ADFP_StdCelltt0p8v25c_ccs     0.466560     148    69.050881
+MUX2D1BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.518400      23    11.923200
+MUX2D1BWP16P90LVT  N16ADFP_StdCelltt0p8v25c_ccs     0.518400       2     1.036800
+MUX2D1BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.518400       7     3.628800
+MUX2ND1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.622080       1     0.622080
+MUX2ND2BWP16P90    N16ADFP_StdCelltt0p8v25c_ccs     0.622080       5     3.110400
+MUX2ND2BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.622080       3     1.866240
+ND2D1BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     0.207360      72    14.929920
+ND2D1BWP16P90LVT   N16ADFP_StdCelltt0p8v25c_ccs     0.207360       4     0.829440
+ND2D1BWP20P90      N16ADFP_StdCelltt0p8v25c_ccs     0.207360     358    74.234880
+ND2D1BWP20P90LVT   N16ADFP_StdCelltt0p8v25c_ccs     0.207360       4     0.829440
+ND2D2BWP16P90LVT   N16ADFP_StdCelltt0p8v25c_ccs     0.311040       6     1.866240
+ND3D1BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     0.259200       5     1.296000
+ND3D1BWP16P90LVT   N16ADFP_StdCelltt0p8v25c_ccs     0.259200       1     0.259200
+ND3D1BWP20P90      N16ADFP_StdCelltt0p8v25c_ccs     0.259200       5     1.296000
+ND4D1BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     0.311040       2     0.622080
+ND4D1BWP20P90      N16ADFP_StdCelltt0p8v25c_ccs     0.311040       5     1.555200
+NR2D1BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     0.207360     120    24.883200
+NR2D1BWP16P90LVT   N16ADFP_StdCelltt0p8v25c_ccs     0.207360       4     0.829440
+NR2D1BWP20P90      N16ADFP_StdCelltt0p8v25c_ccs     0.207360     290    60.134400
+NR2D1BWP20P90LVT   N16ADFP_StdCelltt0p8v25c_ccs     0.207360       5     1.036800
+NR2D2BWP16P90LVT   N16ADFP_StdCelltt0p8v25c_ccs     0.311040       1     0.311040
+NR2D4BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     0.518400       1     0.518400
+NR3D1BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     0.259200      19     4.924800
+NR3D1BWP20P90      N16ADFP_StdCelltt0p8v25c_ccs     0.259200       7     1.814400
+NR3D1BWP20P90LVT   N16ADFP_StdCelltt0p8v25c_ccs     0.259200       1     0.259200
+NR3D4BWP16P90LVT   N16ADFP_StdCelltt0p8v25c_ccs     0.725760       1     0.725760
+NR4D1BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     0.311040      14     4.354560
+NR4D1BWP16P90LVT   N16ADFP_StdCelltt0p8v25c_ccs     0.311040       1     0.311040
+NR4D1BWP20P90      N16ADFP_StdCelltt0p8v25c_ccs     0.311040      22     6.842880
+OA21D1BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.311040       1     0.311040
+OA21D1BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.311040       4     1.244160
+OA22D1BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.466560       1     0.466560
+OAI21D1BWP16P90    N16ADFP_StdCelltt0p8v25c_ccs     0.259200      79    20.476801
+OAI21D1BWP16P90LVT N16ADFP_StdCelltt0p8v25c_ccs     0.259200       7     1.814400
+OAI21D1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.259200     185    47.952001
+OAI21D2BWP16P90    N16ADFP_StdCelltt0p8v25c_ccs     0.414720       3     1.244160
+OAI21D2BWP16P90LVT N16ADFP_StdCelltt0p8v25c_ccs     0.414720       1     0.414720
+OAI21D4BWP16P90LVT N16ADFP_StdCelltt0p8v25c_ccs     0.725760      17    12.337920
+OAI22D1BWP16P90    N16ADFP_StdCelltt0p8v25c_ccs     0.311040      21     6.531840
+OAI22D1BWP16P90LVT N16ADFP_StdCelltt0p8v25c_ccs     0.311040      10     3.110400
+OAI22D1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.311040      23     7.153920
+OAI22D1BWP20P90LVT N16ADFP_StdCelltt0p8v25c_ccs     0.311040       2     0.622080
+OAI22D2BWP16P90    N16ADFP_StdCelltt0p8v25c_ccs     0.518400       1     0.518400
+OAI31D1BWP16P90    N16ADFP_StdCelltt0p8v25c_ccs     0.311040       1     0.311040
+OAI31D1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.311040       1     0.311040
+OAI32D1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.362880       2     0.725760
+OAI33D1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.414720       1     0.414720
+OAI211D1BWP20P90   N16ADFP_StdCelltt0p8v25c_ccs     0.311040       2     0.622080
+OAI222D1BWP20P90   N16ADFP_StdCelltt0p8v25c_ccs     0.518400       1     0.518400
+OAOI211D1BWP16P90  N16ADFP_StdCelltt0p8v25c_ccs     0.414720       1     0.414720
+OAOI211D1BWP20P90  N16ADFP_StdCelltt0p8v25c_ccs     0.414720       1     0.414720
+OR2D1BWP16P90      N16ADFP_StdCelltt0p8v25c_ccs     0.259200      20     5.184000
+OR2D1BWP20P90      N16ADFP_StdCelltt0p8v25c_ccs     0.259200      58    15.033600
+OR4D1BWP20P90      N16ADFP_StdCelltt0p8v25c_ccs     0.362880       1     0.362880
+SDFCNQD1BWP16P90   N16ADFP_StdCelltt0p8v25c_ccs     1.347840      51    68.739838 n
+SDFCNQD1BWP16P90LVT N16ADFP_StdCelltt0p8v25c_ccs     1.347840       2     2.695680 n
+SDFCNQD1BWP20P90   N16ADFP_StdCelltt0p8v25c_ccs     1.347840      26    35.043839 n
+SDFCNQD2BWP16P90   N16ADFP_StdCelltt0p8v25c_ccs     1.347840      55    74.131197 n
+SDFCNQD2BWP16P90LVT N16ADFP_StdCelltt0p8v25c_ccs     1.347840      22    29.652479 n
+SNPS_CLOCK_GATE_HIGH_acc_signmag_sm_WIN_W80_EXTRA_HEAD8_ACC_W88     0.829440       1     0.829440 b, h
+SNPS_CLOCK_GATE_HIGH_fp16_mul_align_sm_ACC_FRAC48_OUT_W80_MANT_W11_0     0.829440       1     0.829440 b, h
+SNPS_CLOCK_GATE_HIGH_fp16_mul_align_sm_ACC_FRAC48_OUT_W80_MANT_W11_1     0.829440       1     0.829440 b, h
+SNPS_CLOCK_GATE_HIGH_fp16_mul_align_sm_ACC_FRAC48_OUT_W80_MANT_W11_2     0.829440       1     0.829440 b, h
+XNR2D1BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.518400      10     5.184000
+XNR2D1BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.518400     108    55.987201
+XNR3D1BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.984960       3     2.954880
+XOR2D1BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.518400      22    11.404800
+XOR2D1BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.518400      50    25.920001
+XOR2D2BWP16P90LVT  N16ADFP_StdCelltt0p8v25c_ccs     0.570240       1     0.570240
+XOR2D4BWP16P90     N16ADFP_StdCelltt0p8v25c_ccs     0.881280       2     1.762560
+XOR2D4BWP16P90LVT  N16ADFP_StdCelltt0p8v25c_ccs     0.881280       1     0.881280
+XOR3D1BWP20P90     N16ADFP_StdCelltt0p8v25c_ccs     0.984960       2     1.969920
+-----------------------------------------------------------------------------
+Total 159 references                                 1094.964492
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_acc_signmag_sm_WIN_W80_EXTRA_HEAD8_ACC_W88 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CKLNQD1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.829440       1     0.829440 b
+-----------------------------------------------------------------------------
+Total 1 references                                      0.829440
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_fp16_mul_align_sm_ACC_FRAC48_OUT_W80_MANT_W11_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CKLNQD1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.829440       1     0.829440 b
+-----------------------------------------------------------------------------
+Total 1 references                                      0.829440
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_fp16_mul_align_sm_ACC_FRAC48_OUT_W80_MANT_W11_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CKLNQD1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.829440       1     0.829440 b
+-----------------------------------------------------------------------------
+Total 1 references                                      0.829440
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_fp16_mul_align_sm_ACC_FRAC48_OUT_W80_MANT_W11_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CKLNQD1BWP20P90    N16ADFP_StdCelltt0p8v25c_ccs     0.829440       1     0.829440 b
+-----------------------------------------------------------------------------
+Total 1 references                                      0.829440
+1

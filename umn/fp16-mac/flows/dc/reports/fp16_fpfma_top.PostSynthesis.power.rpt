@@ -1,0 +1,73 @@
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+        -verbose
+Design : full_chip_fp16_fpfma_top
+Version: U-2022.12-SP5
+Date   : Thu Nov 27 23:33:51 2025
+****************************************
+
+
+Library(s) Used:
+
+    N16ADFP_StdCelltt0p8v25c_ccs (File: /soft/ece_soft_2/TSMCHOME/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCelltt0p8v25c_ccs.db)
+
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+full_chip_fp16_fpfma_top
+                       ZeroWireload      N16ADFP_StdCelltt0p8v25c_ccs
+fp16_fpfma_top         ZeroWireload      N16ADFP_StdCelltt0p8v25c_ccs
+SNPS_CLOCK_GATE_HIGH_fp16_mul_align_sm_ACC_FRAC48_OUT_W80_MANT_W11_2
+                       ZeroWireload      N16ADFP_StdCelltt0p8v25c_ccs
+SNPS_CLOCK_GATE_HIGH_fp16_mul_align_sm_ACC_FRAC48_OUT_W80_MANT_W11_1
+                       ZeroWireload      N16ADFP_StdCelltt0p8v25c_ccs
+SNPS_CLOCK_GATE_HIGH_fp16_mul_align_sm_ACC_FRAC48_OUT_W80_MANT_W11_0
+                       ZeroWireload      N16ADFP_StdCelltt0p8v25c_ccs
+SNPS_CLOCK_GATE_HIGH_acc_signmag_sm_WIN_W80_EXTRA_HEAD8_ACC_W88
+                       ZeroWireload      N16ADFP_StdCelltt0p8v25c_ccs
+
+
+Global Operating Voltage = 0.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 387.7463 uW   (78%)
+  Net Switching Power  = 107.6938 uW   (22%)
+                         ---------
+Total Dynamic Power    = 495.4401 uW  (100%)
+
+Cell Leakage Power     =   5.4926 uW
+
+                 Internal         Switching           Leakage            Total                         Cell
+Power Group      Power            Power               Power              Power   (   %    )  Attrs  Count
+---------------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+clock_network      0.3176        3.9747e-02            2.9929            0.3573  (  71.33%)            4
+                                                                                             i
+register       2.5292e-02        6.6609e-03        1.2645e+03        3.3218e-02  (   6.63%)            156
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+combinational  4.4894e-02        6.1286e-02        4.2251e+03            0.1104  (  22.04%)            3227
+---------------------------------------------------------------------------------------------------------
+Total              0.3877 mW         0.1077 mW     5.4926e+03 nW         0.5009 mW
+1
+ragha084

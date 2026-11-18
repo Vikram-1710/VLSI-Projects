@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : fp16_fpfma_top
+Version: O-2018.06-SP5-5
+Date   : Wed Dec  3 13:42:01 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    N16ADFP_StdCelltt0p8v25c_ccs (File: /soft/ece_soft_2/TSMCHOME/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCelltt0p8v25c_ccs.db)
+
+Number of ports:                          129
+Number of nets:                          5557
+Number of cells:                         5519
+Number of combinational cells:           5362
+Number of sequential cells:               157
+Number of macros/black boxes:               0
+Number of buf/inv:                       1168
+Number of references:                     271
+
+Combinational area:               1855.923870
+Buf/Inv area:                      246.602887
+Noncombinational area:             211.610872
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  2067.534742
+Total area:                 undefined
+1
+LOGNAME = ragha084

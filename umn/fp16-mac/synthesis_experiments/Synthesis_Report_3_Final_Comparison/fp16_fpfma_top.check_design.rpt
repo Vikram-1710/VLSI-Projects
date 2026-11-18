@@ -1,0 +1,20 @@
+ 
+****************************************
+check_design summary:
+Version:     U-2022.12-SP5
+Date:        Mon Nov 24 12:42:03 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      6
+    Unconnected ports (LINT-28)                                     6
+--------------------------------------------------------------------------------
+
+Warning: In design 'fp16_fpfma_top', port 'a_fp16[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'fp16_fpfma_top', port 'a_fp16[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'fp16_fpfma_top', port 'a_fp16[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'fp16_fpfma_top', port 'b_fp16[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'fp16_fpfma_top', port 'b_fp16[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'fp16_fpfma_top', port 'b_fp16[0]' is not connected to any nets. (LINT-28)
+1

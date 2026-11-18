@@ -1,0 +1,15 @@
+****************************************
+Report : congestion
+Design : full_chip_fp16_fpfma_top
+Version: R-2020.09-SP6
+Date   : Fri Nov 28 01:45:53 2025
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+Both Dirs |   16391 |    11 |    9464  ( 0.98%) |       1
+H routing |    4679 |    10 |    3558  ( 0.74%) |       1
+V routing |   11712 |    11 |    5906  ( 1.23%) |       1
+
+1

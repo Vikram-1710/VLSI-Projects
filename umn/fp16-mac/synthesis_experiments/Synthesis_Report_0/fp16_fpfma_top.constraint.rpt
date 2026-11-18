@@ -1,0 +1,19 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : fp16_fpfma_top
+Version: U-2022.12-SP5
+Date   : Fri Nov 21 12:25:47 2025
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   fp16_fpfma_top               0.00         836.02        -836.02  (VIOLATED)
+
+
+1

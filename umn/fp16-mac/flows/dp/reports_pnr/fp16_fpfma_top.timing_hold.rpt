@@ -1,0 +1,65 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : full_chip_fp16_fpfma_top
+Version: R-2020.09-SP6
+Date   : Fri Nov 28 13:40:00 2025
+****************************************
+Information: Timer using 'CRPR'. (TIM-050)
+
+  Startpoint: fp16_fpfma_top_inst/U_MUL_ALN_partial_regx13x (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: fp16_fpfma_top_inst/U_MUL_ALN_partial_regx14x (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: reg2reg
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                        0.00      0.00
+  clock network delay (propagated)                                             0.07      0.07
+
+  fp16_fpfma_top_inst/U_MUL_ALN_partial_regx13x/CP (SDFCNQD1BWP16P90)
+                                                                     0.01      0.00      0.07 r
+  fp16_fpfma_top_inst/U_MUL_ALN_partial_regx13x/Q (SDFCNQD1BWP16P90)
+                                                                     0.02      0.05      0.12 f
+  fp16_fpfma_top_inst/U_MUL_ALN_partial[13] (net)
+                                                    4      0.00
+  fp16_fpfma_top_inst/RBINV_20/I (INVD1BWP16P90)                     0.02      0.00      0.12 f
+  fp16_fpfma_top_inst/RBINV_20/ZN (INVD1BWP16P90)                    0.02      0.02      0.14 r
+  fp16_fpfma_top_inst/net_aps_20 (net)              1      0.00
+  fp16_fpfma_top_inst/intadd_1_U2/B (FA1D4BWP16P90LVT)               0.02      0.00      0.14 r
+  fp16_fpfma_top_inst/intadd_1_U2/CO (FA1D4BWP16P90LVT)              0.01      0.02      0.15 r
+  fp16_fpfma_top_inst/intadd_1_n1 (net)             3      0.00
+  fp16_fpfma_top_inst/clock_optctmTdsLR_1_9471/A1 (AOI211D1BWP16P90)
+                                                                     0.01      0.00      0.15 r
+  fp16_fpfma_top_inst/clock_optctmTdsLR_1_9471/ZN (AOI211D1BWP16P90)
+                                                                     0.01      0.01      0.16 f
+  fp16_fpfma_top_inst/U_MUL_ALN_N534 (net)          1      0.00
+  fp16_fpfma_top_inst/U_MUL_ALN_partial_regx14x/D (SDFCNQD1BWP16P90)
+                                                                     0.01      0.00      0.16 f
+  data arrival time                                                                      0.16
+
+  clock CLK (rise edge)                                                        0.00      0.00
+  clock network delay (propagated)                                             0.13      0.13
+  clock reconvergence pessimism                                               -0.00      0.13
+  fp16_fpfma_top_inst/U_MUL_ALN_partial_regx14x/CP (SDFCNQD1BWP16P90)
+                                                                     0.01      0.00      0.13 r
+  library hold time                                                            0.00      0.13
+  data required time                                                                     0.13
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.13
+  data arrival time                                                                     -0.16
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.03
+
+
+1

@@ -1,0 +1,164 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-input_pins
+	-nets
+	-max_paths 1
+	-group inputs
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : full_chip_fp16_fpfma_top
+Version: P-2019.03-SP5
+Date   : Thu Dec  4 11:12:58 2025
+****************************************
+
+
+  Startpoint: a_fp16[15] (input port clocked by CLK)
+  Endpoint: fp16_fpfma_top_inst/U_MUL_ALN_a_sign_r_reg
+               (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: min
+
+  Point                                                          Fanout    Cap      Trans       Incr       Path
+  ----------------------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                              0.00       0.00       0.00
+  clock network delay (ideal)                                                                   0.08       0.08
+  input external delay                                                                          0.02       0.10 f
+  a_fp16[15] (in)                                                                    0.20       0.00 &     0.10 f
+  a_fp16[15] (net)                                                  1     0.02 
+  fp16_fpfma_top_inst/U_MUL_ALN_a_sign_r_reg/D (SDFCNQD1BWP16P90)                    0.20       0.01 *     0.11 f
+  data arrival time                                                                                        0.11
+
+  clock CLK (rise edge)                                                              0.00       0.00       0.00
+  clock network delay (propagated)                                                              0.07 *     0.07
+  clock reconvergence pessimism                                                                 0.00       0.07
+  fp16_fpfma_top_inst/U_MUL_ALN_a_sign_r_reg/CP (SDFCNQD1BWP16P90)                                         0.07 r
+  library hold time                                                                             0.01 *     0.08
+  data required time                                                                                       0.08
+  ----------------------------------------------------------------------------------------------------------------
+  data required time                                                                                       0.08
+  data arrival time                                                                                       -0.11
+  ----------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                              0.03
+
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-input_pins
+	-nets
+	-max_paths 1
+	-group output
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : full_chip_fp16_fpfma_top
+Version: P-2019.03-SP5
+Date   : Thu Dec  4 11:12:58 2025
+****************************************
+
+
+  Startpoint: fp16_fpfma_top_inst/U_ACC_acc_mag_regx45x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: acc_mag[45]
+               (output port clocked by CLK)
+  Path Group: output
+  Path Type: min
+
+  Point                                                          Fanout    Cap      Trans       Incr       Path
+  ----------------------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                              0.00       0.00       0.00
+  clock network delay (propagated)                                                              0.08 *     0.08
+  fp16_fpfma_top_inst/U_ACC_acc_mag_regx45x/CP (SDFCNQD2BWP16P90)                    0.02       0.00       0.08 r
+  fp16_fpfma_top_inst/U_ACC_acc_mag_regx45x/Q (SDFCNQD2BWP16P90)                     0.01       0.05 *     0.13 r
+  fp16_fpfma_top_inst/acc_mag[45] (net)                             3     0.01 
+  ZBUF_123_inst_1180/I (BUFFD16BWP16P90LVT)                                          0.01       0.00 *     0.13 r
+  ZBUF_123_inst_1180/Z (BUFFD16BWP16P90LVT)                                          0.01       0.01 *     0.14 r
+  ZBUF_123_83 (net)                                                 5     0.04 
+  placePI_43_2364/I (BUFFD16BWP16P90LVT)                                             0.04       0.01 *     0.15 r
+  placePI_43_2364/Z (BUFFD16BWP16P90LVT)                                           471.57     241.72 *   241.87 r
+  acc_mag[45] (net)                                                 1  2500.00 
+  acc_mag[45] (out)                                                                704.13     170.53 *   412.40 r
+  data arrival time                                                                                      412.40
+
+  clock CLK (rise edge)                                                              0.00       0.00       0.00
+  clock network delay (ideal)                                                                   0.09       0.09
+  clock reconvergence pessimism                                                                 0.00       0.09
+  output external delay                                                                        -0.06       0.03
+  data required time                                                                                       0.03
+  ----------------------------------------------------------------------------------------------------------------
+  data required time                                                                                       0.03
+  data arrival time                                                                                     -412.40
+  ----------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                            412.37
+
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-input_pins
+	-nets
+	-max_paths 1
+	-group reg2reg
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : full_chip_fp16_fpfma_top
+Version: P-2019.03-SP5
+Date   : Thu Dec  4 11:12:58 2025
+****************************************
+
+
+  Startpoint: fp16_fpfma_top_inst/U_MUL_ALN_idx_regx1x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: fp16_fpfma_top_inst/U_MUL_ALN_state_regx0x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Last common pin: clk
+  Path Group: reg2reg
+  Path Type: min
+
+  Point                                                            Fanout    Cap      Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                                0.00       0.00       0.00
+  clock network delay (propagated)                                                                0.05 *     0.05
+  fp16_fpfma_top_inst/U_MUL_ALN_idx_regx1x/CP (SDFCNQD1BWP16P90)                       0.01       0.00       0.05 r
+  fp16_fpfma_top_inst/U_MUL_ALN_idx_regx1x/Q (SDFCNQD1BWP16P90)                        0.01       0.04 *     0.09 f
+  fp16_fpfma_top_inst/U_MUL_ALN_idx[1] (net)                          1     0.00 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13879/I (BUFFD2BWP16P90)                    0.01       0.00 *     0.09 f
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13879/Z (BUFFD2BWP16P90)                    0.02       0.02 *     0.11 f
+  fp16_fpfma_top_inst/ropt_net_4455 (net)                             7     0.01 
+  fp16_fpfma_top_inst/RBINV_10/I (INVD4BWP16P90)                                       0.02       0.00 *     0.11 f
+  fp16_fpfma_top_inst/RBINV_10/ZN (INVD4BWP16P90)                                      0.01       0.01 *     0.12 r
+  fp16_fpfma_top_inst/net_aps_10 (net)                                6     0.01 
+  fp16_fpfma_top_inst/U2322/A1 (NR2D8BWP16P90)                                         0.01       0.00 *     0.12 r
+  fp16_fpfma_top_inst/U2322/ZN (NR2D8BWP16P90)                                         0.01       0.01 *     0.13 f
+  fp16_fpfma_top_inst/n2398 (net)                                     9     0.01 
+  fp16_fpfma_top_inst/U3509/A3 (AOI32D1BWP20P90)                                       0.01       0.00 *     0.13 f
+  fp16_fpfma_top_inst/U3509/ZN (AOI32D1BWP20P90)                                       0.01       0.01 *     0.14 r
+  fp16_fpfma_top_inst/n2401 (net)                                     1     0.00 
+  fp16_fpfma_top_inst/clock_optctmTdsLR_1_9476/B2 (IOA22D1BWP16P90)                    0.01       0.00 *     0.14 r
+  fp16_fpfma_top_inst/clock_optctmTdsLR_1_9476/ZN (IOA22D1BWP16P90)                    0.01       0.01 *     0.15 f
+  fp16_fpfma_top_inst/n159 (net)                                      1     0.00 
+  fp16_fpfma_top_inst/U_MUL_ALN_state_regx0x/D (SDFCNQD1BWP16P90)                      0.01       0.00 *     0.15 f
+  data arrival time                                                                                          0.15
+
+  clock CLK (rise edge)                                                                0.00       0.00       0.00
+  clock network delay (propagated)                                                                0.11 *     0.11
+  clock reconvergence pessimism                                                                   0.00       0.11
+  fp16_fpfma_top_inst/U_MUL_ALN_state_regx0x/CP (SDFCNQD1BWP16P90)                                           0.11 r
+  library hold time                                                                               0.02 *     0.13
+  data required time                                                                                         0.13
+  ------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                         0.13
+  data arrival time                                                                                         -0.15
+  ------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                0.02
+
+
+1

@@ -1,0 +1,67 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : full_chip_fp16_fpfma_top
+Version: R-2020.09-SP6
+Date   : Fri Nov 28 13:39:58 2025
+****************************************
+Information: Activity propagation will be performed for scenario default.
+Information: Doing activity propagation for mode 'default' and corner 'default' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario default (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+
+ **** Information : No. of simulation cycles = 6 ****
+Mode: default
+Corner: default
+Scenario: default
+Voltage: 0.80
+Temperature: 25.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1pF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1nW
+Leakage Power Unit   : 1nW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell placePI_35_2356 for parameter Cout. Lowest table value = 0.000290, highest table value = 1.828000, value = 2500.002686 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port ZN on cell clock_optgre_d_INV_18_f_inst_11544 for parameter Cout. Lowest table value = 0.000290, highest table value = 1.663000, value = 2500.003174 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port ZN on cell clock_optgre_d_INV_29_f_inst_11580 for parameter Cout. Lowest table value = 0.000290, highest table value = 1.663000, value = 2500.004639 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port ZN on cell clock_optgre_d_INV_27_f_inst_11556 for parameter Cout. Lowest table value = 0.000290, highest table value = 1.663000, value = 2500.004883 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port ZN on cell clock_optgre_d_INV_27_f_inst_11550 for parameter Cout. Lowest table value = 0.000290, highest table value = 1.663000, value = 2500.002930 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port ZN on cell clock_optgre_d_INV_27_f_inst_11540 for parameter Cout. Lowest table value = 0.000290, highest table value = 1.663000, value = 2500.003174 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port ZN on cell clock_optgre_d_INV_27_f_inst_11558 for parameter Cout. Lowest table value = 0.000290, highest table value = 1.663000, value = 2500.004639 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port ZN on cell clock_optgre_d_INV_9_f_inst_11564 for parameter Cout. Lowest table value = 0.000290, highest table value = 1.663000, value = 2500.004639 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell placePI_38_2359 for parameter Cout. Lowest table value = 0.000290, highest table value = 1.831000, value = 2500.005127 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell clock_optropt_mt_inst_13797 for parameter Cout. Lowest table value = 0.000290, highest table value = 1.831000, value = 2500.005127 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+
+  Cell Internal Power    = 3.08e+05 nW (  0.3%)
+  Net Switching Power    = 9.97e+07 nW ( 99.7%)
+Total Dynamic Power      = 1.00e+08 nW (100.0%)
+
+Cell Leakage Power       = 3.81e+04 nW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             2.46e+05               1.59e+05               8.06e+02               4.06e+05    (  0.4%)         
+register                  1.17e+04               1.15e+04               2.27e+03               2.56e+04    (  0.0%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             4.99e+04               9.96e+07               3.51e+04               9.96e+07    ( 99.6%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     3.08e+05 nW            9.97e+07 nW            3.81e+04 nW            1.00e+08 nW
+1

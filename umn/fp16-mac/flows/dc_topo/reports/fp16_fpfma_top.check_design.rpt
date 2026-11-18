@@ -1,0 +1,15 @@
+ 
+****************************************
+check_design summary:
+Version:     U-2022.12-SP5
+Date:        Fri Nov 28 01:04:20 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      1
+    Shorted outputs (LINT-31)                                       1
+--------------------------------------------------------------------------------
+
+Warning: In design 'fp16_fpfma_top', output port 'overflow' is connected directly to output port 'test_so'. (LINT-31)
+1

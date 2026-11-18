@@ -1,0 +1,74 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -group inputs
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : fp16_fpfma_top
+Version: U-2022.12-SP5
+Date   : Sat Nov 22 09:13:01 2025
+****************************************
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: acc_clear (input port clocked by CLK)
+  Endpoint: U_ACC_acc_mag_regx87x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fp16_fpfma_top     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                              Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                              0.00       0.00
+  clock network delay (ideal)                                        0.00       0.00
+  input external delay                                               0.02       0.02 f
+  acc_clear (in)                                           0.01      0.01       0.03 f
+  acc_clear (net)                      3         0.01                0.00       0.03 f
+  U2515/A2 (NR2D1BWP20P90)                                 0.01      0.00       0.03 f
+  U2515/ZN (NR2D1BWP20P90)                                 0.02      0.01       0.04 r
+  n1856 (net)                          2         0.00                0.00       0.04 r
+  U2557/A2 (ND2D1BWP20P90)                                 0.02      0.00       0.04 r
+  U2557/ZN (ND2D1BWP20P90)                                 0.01      0.01       0.05 f
+  n1858 (net)                          1         0.00                0.00       0.05 f
+  U2558/A2 (NR2D1BWP20P90)                                 0.01      0.00       0.05 f
+  U2558/ZN (NR2D1BWP20P90)                                 0.10      0.07       0.12 r
+  n2376 (net)                         19         0.02                0.00       0.12 r
+  U2569/I (INVD1BWP20P90)                                  0.10      0.00       0.12 r
+  U2569/ZN (INVD1BWP20P90)                                 0.24      0.18       0.30 f
+  n2380 (net)                         75         0.07                0.00       0.30 f
+  U2801/A2 (NR2D1BWP20P90)                                 0.24      0.00       0.30 f
+  U2801/ZN (NR2D1BWP20P90)                                 0.05      0.04       0.35 r
+  n2382 (net)                          3         0.00                0.00       0.35 r
+  U3096/A1 (AOI31D1BWP20P90)                               0.05      0.00       0.35 r
+  U3096/ZN (AOI31D1BWP20P90)                               0.02      0.02       0.37 f
+  n2383 (net)                          1         0.00                0.00       0.37 f
+  U3097/B (IOA21D1BWP20P90)                                0.02      0.00       0.37 f
+  U3097/ZN (IOA21D1BWP20P90)                               0.01      0.01       0.38 r
+  n100 (net)                           1         0.00                0.00       0.38 r
+  U_ACC_acc_mag_regx87x/D (DFCNQD1BWP20P90)                0.01      0.00       0.38 r
+  data arrival time                                                             0.38
+
+  clock CLK (rise edge)                                              5.00       5.00
+  clock network delay (ideal)                                        0.00       5.00
+  U_ACC_acc_mag_regx87x/CP (DFCNQD1BWP20P90)                         0.00       5.00 r
+  library setup time                                                -0.02       4.98
+  data required time                                                            4.98
+  -------------------------------------------------------------------------------------
+  data required time                                                            4.98
+  data arrival time                                                            -0.38
+  -------------------------------------------------------------------------------------
+  slack (MET)                                                                   4.60
+
+
+1
+LOGNAME = ragha084

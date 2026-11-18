@@ -1,0 +1,122 @@
+ 
+****************************************
+Report : qor
+Design : full_chip_fp16_fpfma_top
+Version: U-2022.12-SP5
+Date   : Fri Nov 28 01:04:18 2025
+****************************************
+
+
+  Timing Path Group 'CLK'
+  -----------------------------------
+  Levels of Logic:              19.00
+  Critical Path Length:          0.45
+  Critical Path Slack:           0.47
+  Critical Path Clk Period:      1.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'inputs'
+  -----------------------------------
+  Levels of Logic:               4.00
+  Critical Path Length:          8.00
+  Critical Path Slack:          -7.17
+  Critical Path Clk Period:      1.00
+  Total Negative Slack:       -132.41
+  No. of Violating Paths:       90.00
+  Worst Hold Violation:         -0.03
+  Total Hold Violation:         -4.70
+  No. of Hold Violations:      182.00
+  -----------------------------------
+
+  Timing Path Group 'output'
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:       5128.87
+  Critical Path Slack:       -5127.98
+  Critical Path Clk Period:      1.00
+  Total Negative Slack:    -255150.75
+  No. of Violating Paths:       91.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'reg2reg'
+  -----------------------------------
+  Levels of Logic:              21.00
+  Critical Path Length:       6036.04
+  Critical Path Slack:       -6035.34
+  Critical Path Clk Period:      1.00
+  Total Negative Slack:    -822369.44
+  No. of Violating Paths:      179.00
+  Worst Hold Violation:         -0.02
+  Total Hold Violation:         -0.54
+  No. of Hold Violations:       65.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          5
+  Hierarchical Port Count:        151
+  Leaf Cell Count:               3365
+  Buf/Inv Cell Count:             688
+  Buf Cell Count:                   0
+  Inv Cell Count:                 688
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      3205
+  Sequential Cell Count:          160
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      875.266579
+  Noncombinational Area:   213.580792
+  Buf/Inv Area:            106.997765
+  Total Buffer Area:             0.00
+  Total Inverter Area:         107.00
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:              1088.847372
+  Design Area:            1088.847372
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          3415
+  Nets With Violations:          1725
+  Max Trans Violations:          1725
+  Max Cap Violations:              90
+  -----------------------------------
+
+
+  Hostname: ece-kh2120-18.ece.umn.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.00
+  Logic Optimization:                  0.00
+  Mapping Optimization:                0.00
+  -----------------------------------------
+  Overall Compile Time:                0.00
+  Overall Compile Wall Clock Time:     0.00
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 6035.34  TNS: 1077520.25  Number of Violating Paths: 270
+
+
+  Design (Hold)  WNS: 0.03  TNS: 5.24  Number of Violating Paths: 247
+
+  --------------------------------------------------------------------
+
+
+1

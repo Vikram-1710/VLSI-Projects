@@ -1,0 +1,62 @@
+****************************************
+Report : design
+Design : full_chip_fp16_fpfma_top
+Version: R-2020.09-SP6
+Date   : Fri Nov 28 01:45:53 2025
+****************************************
+
+Total number of std cells in library : 1480
+Total number of dont_use lib cells   : 120
+Total number of dont_touch lib cells : 120
+Total number of buffers              : 82
+Total number of inverters            : 70
+Total number of flip-flops           : 80
+Total number of latches              : 16
+Total number of ICGs                 : 20
+
+Cell Instance Type  Count         Area
+--------------------------------------
+TOTAL LEAF CELLS     3365     1088.847
+Standard cells       3365     1088.847
+Hard macro cells        0        0.000
+Soft macro cells        0        0.000
+Always on cells         0        0.000
+Physical only           0        0.000
+Fixed cells             0        0.000
+Moveable cells       3365     1088.847
+Sequential            160      213.581
+Buffer/inverter       688      106.998
+ICG cells               4        3.318
+
+Logic Hierarchies                    : 5
+Design Masters count                 : 140
+Total Flat nets count                : 3417
+Total FloatingNets count             : 0
+Total no of Ports                    : 131
+Number of Master Clocks in design    : 1
+Number of Generated Clocks in design : 0
+Number of Path Groups in design      : 11 (5 of them Non Default)
+Number of Scan Chains in design      : 1
+List of Modes                        : default
+List of Corners                      : default
+List of Scenarios                    : default
+
+Core Area                            : 102281.616
+Chip Area                            : 159993.600
+Total Site Row Area                  : 102281.616
+Number of Blockages                  : 0
+Total area of Blockages              : 0.000
+Number of Power Domains              : 1
+Number of Voltage Areas              : 1
+Number of Group Bounds               : 0
+Number of Exclusive MoveBounds       : 0
+Number of Hard or Soft MoveBounds    : 0
+Number of Multibit Registers         : 0
+Number of Multibit LS/ISO Cells      : 0
+Number of Top Level RP Groups        : 0
+Number of Tech Layers                : 49 (37 of them have unknown routing dir.)
+
+Total wire length                    : 0.00 micron
+Total number of wires                : 0
+Total number of contacts             : 1474543
+1

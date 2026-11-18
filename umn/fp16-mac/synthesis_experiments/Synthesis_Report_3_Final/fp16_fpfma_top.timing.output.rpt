@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -group output
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : fp16_fpfma_top
+Version: U-2022.12-SP5
+Date   : Mon Nov 24 12:29:25 2025
+****************************************
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: U_ACC_acc_mag_regx80x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: acc_mag[80]
+            (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fp16_fpfma_top     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                               Fanout       Cap     Trans      Incr       Path
+  --------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                               0.00       0.00
+  clock network delay (ideal)                                         0.00       0.00
+  U_ACC_acc_mag_regx80x/CP (DFCNQD1BWP20P90)                0.00      0.00       0.00 r
+  U_ACC_acc_mag_regx80x/Q (DFCNQD1BWP20P90)                 0.04      0.07       0.07 f
+  acc_mag[80] (net)                     9         0.01                0.00       0.07 f
+  acc_mag[80] (out)                                         0.04      0.00       0.07 f
+  data arrival time                                                              0.07
+
+  clock CLK (rise edge)                                               5.00       5.00
+  clock network delay (ideal)                                         0.00       5.00
+  output external delay                                              -0.06       4.94
+  data required time                                                             4.94
+  --------------------------------------------------------------------------------------
+  data required time                                                             4.94
+  data arrival time                                                             -0.07
+  --------------------------------------------------------------------------------------
+  slack (MET)                                                                    4.87
+
+
+1
+LOGNAME = ragha084

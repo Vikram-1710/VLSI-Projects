@@ -1,0 +1,196 @@
+In mode: all_dft...
+  Pre-DFT DRC enabled
+
+Information: Starting test design rule checking. (TEST-222)
+  Loading test protocol
+  ...basic checks...
+  ...basic sequential cell checks...
+  ...checking vector rules...
+  ...checking pre-dft rules...
+
+-----------------------------------------------------------------
+  DRC Report
+
+  Total violations: 0
+
+-----------------------------------------------------------------
+
+
+Test Design rule checking did not find violations
+
+-----------------------------------------------------------------
+  Sequential Cell Report
+
+  4 out of 160 sequential cells have violations
+
+-----------------------------------------------------------------
+
+SEQUENTIAL CELLS WITH VIOLATIONS
+      *   4 cells are clock gating cells
+         fp16_fpfma_top_inst/U_MUL_ALN_clk_gate_idx_reg/latch
+         fp16_fpfma_top_inst/U_MUL_ALN_clk_gate_partial_reg/latch
+         fp16_fpfma_top_inst/U_MUL_ALN_clk_gate_b_sig_r_reg/latch
+         fp16_fpfma_top_inst/U_ACC_clk_gate_acc_mag_reg/latch
+SEQUENTIAL CELLS WITHOUT VIOLATIONS
+      * 156 cells are valid scan cells
+         fp16_fpfma_top_inst/U_MUL_ALN_a_zero_r_reg
+         fp16_fpfma_top_inst/U_MUL_ALN_state_regx1x
+         fp16_fpfma_top_inst/U_MUL_ALN_state_regx0x
+         fp16_fpfma_top_inst/U_MUL_ALN_b_zero_r_reg
+         fp16_fpfma_top_inst/U_MUL_ALN_a_sign_r_reg
+         fp16_fpfma_top_inst/U_MUL_ALN_b_sign_r_reg
+         fp16_fpfma_top_inst/U_MUL_ALN_a_exp_r_regx3x
+         fp16_fpfma_top_inst/U_MUL_ALN_b_exp_r_regx4x
+         fp16_fpfma_top_inst/U_MUL_ALN_b_exp_r_regx3x
+         fp16_fpfma_top_inst/U_MUL_ALN_a_sig_r_regx10x
+         fp16_fpfma_top_inst/U_MUL_ALN_a_sig_r_regx9x
+         fp16_fpfma_top_inst/U_MUL_ALN_a_sig_r_regx8x
+         fp16_fpfma_top_inst/U_MUL_ALN_a_sig_r_regx7x
+         fp16_fpfma_top_inst/U_MUL_ALN_a_sig_r_regx6x
+         fp16_fpfma_top_inst/U_MUL_ALN_a_sig_r_regx3x
+         fp16_fpfma_top_inst/U_MUL_ALN_a_sig_r_regx2x
+         fp16_fpfma_top_inst/U_MUL_ALN_a_sig_r_regx1x
+         fp16_fpfma_top_inst/U_MUL_ALN_a_sig_r_regx0x
+         fp16_fpfma_top_inst/U_MUL_ALN_idx_regx1x
+         fp16_fpfma_top_inst/U_MUL_ALN_idx_regx3x
+         fp16_fpfma_top_inst/U_MUL_ALN_idx_regx4x
+         fp16_fpfma_top_inst/U_MUL_ALN_p_valid_reg
+         fp16_fpfma_top_inst/U_MUL_ALN_b_sig_r_regx0x
+         fp16_fpfma_top_inst/U_MUL_ALN_b_sig_r_regx1x
+         fp16_fpfma_top_inst/U_MUL_ALN_b_sig_r_regx2x
+         fp16_fpfma_top_inst/U_MUL_ALN_b_sig_r_regx3x
+         fp16_fpfma_top_inst/U_MUL_ALN_b_sig_r_regx4x
+         fp16_fpfma_top_inst/U_MUL_ALN_b_sig_r_regx6x
+         fp16_fpfma_top_inst/U_MUL_ALN_b_sig_r_regx8x
+         fp16_fpfma_top_inst/U_MUL_ALN_b_sig_r_regx9x
+         fp16_fpfma_top_inst/U_MUL_ALN_b_sig_r_regx10x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx20x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx19x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx18x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx17x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx16x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx15x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx14x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx13x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx12x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx10x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx9x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx7x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx6x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx5x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx4x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx3x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx2x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx1x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx0x
+         fp16_fpfma_top_inst/U_ACC_overflow_reg
+         fp16_fpfma_top_inst/U_MUL_ALN_idx_regx0x
+         fp16_fpfma_top_inst/U_MUL_ALN_a_exp_r_regx4x
+         fp16_fpfma_top_inst/U_MUL_ALN_a_exp_r_regx2x
+         fp16_fpfma_top_inst/U_MUL_ALN_a_exp_r_regx0x
+         fp16_fpfma_top_inst/U_MUL_ALN_b_exp_r_regx0x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx0x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx1x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx3x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx5x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx8x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx11x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx14x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx15x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx19x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx22x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx24x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx25x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx30x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx31x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx33x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx34x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx37x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx38x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx39x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx40x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx41x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx42x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx44x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx45x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx46x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx47x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx48x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx49x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx51x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx52x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx53x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx54x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx55x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx56x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx57x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx59x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx60x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx61x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx62x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx63x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx64x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx65x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx67x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx68x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx69x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx70x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx71x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx74x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx80x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx82x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx84x
+         fp16_fpfma_top_inst/U_MUL_ALN_a_exp_r_regx1x
+         fp16_fpfma_top_inst/U_MUL_ALN_b_exp_r_regx1x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx86x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx85x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx78x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx12x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx23x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx26x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx13x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx28x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx27x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx21x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx10x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx29x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx16x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx4x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx18x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx7x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx2x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx17x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx21x
+         fp16_fpfma_top_inst/U_MUL_ALN_a_sig_r_regx5x
+         fp16_fpfma_top_inst/U_MUL_ALN_b_sig_r_regx5x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx11x
+         fp16_fpfma_top_inst/U_MUL_ALN_idx_regx2x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx20x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx43x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx58x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx73x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx77x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx6x
+         fp16_fpfma_top_inst/U_MUL_ALN_b_exp_r_regx2x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx87x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx35x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx72x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx81x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx83x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx76x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx75x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx79x
+         fp16_fpfma_top_inst/U_MUL_ALN_a_sig_r_regx4x
+         fp16_fpfma_top_inst/U_MUL_ALN_b_sig_r_regx7x
+         fp16_fpfma_top_inst/U_MUL_ALN_partial_regx8x
+         fp16_fpfma_top_inst/U_ACC_acc_sign_reg
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx32x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx50x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx66x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx36x
+         fp16_fpfma_top_inst/U_ACC_acc_mag_regx9x
+
+Information: Test design rule checking completed. (TEST-123)
+  Warning: Test coverage estimation is not supported for pre-scan designs.
+  Information: '-coverage_estimation' option is ignored for this drc run.
+1

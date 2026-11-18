@@ -1,0 +1,56 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : full_chip_fp16_fpfma_top
+Version: R-2020.09-SP6
+Date   : Fri Nov 28 13:40:00 2025
+****************************************
+Information: Timer using 'CRPR'. (TIM-050)
+
+  Startpoint: fp16_fpfma_top_inst/U_MUL_ALN_b_sign_r_reg (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: test_so (output port clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: output
+  Path Type: max
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                        0.00      0.00
+  clock network delay (propagated)                                             0.09      0.09
+
+  fp16_fpfma_top_inst/U_MUL_ALN_b_sign_r_reg/CP (SDFCNQD2BWP16P90LVT)
+                                                                     0.03      0.00      0.09 r
+  fp16_fpfma_top_inst/U_MUL_ALN_b_sign_r_reg/Q (SDFCNQD2BWP16P90LVT)
+                                                                     0.02      0.04      0.13 r
+  fp16_fpfma_top_inst/dftopt0 (net)                 4      0.01
+  clock_optgre_mt_inst_10769/I (BUFFD2BWP16P90)                      0.02      0.00      0.13 r
+  clock_optgre_mt_inst_10769/Z (BUFFD2BWP16P90)                      0.01      0.02      0.15 r
+  ropt_net_4414 (net)                               1      0.00
+  clock_optropt_mt_inst_13797/I (CKBD16BWP16P90LVT)                  0.01      0.00      0.15 r
+  clock_optropt_mt_inst_13797/Z (CKBD16BWP16P90LVT)                  0.00      0.01      0.16 r
+  test_so (net)                                     1    2500.01
+  test_so (out)                                                    6743.16   2127.23   2127.39 r
+  data arrival time                                                                    2127.39
+
+  clock CLK (rise edge)                                                        1.00      1.00
+  clock network delay (propagated)                                             0.08      1.08
+  clock reconvergence pessimism                                                0.00      1.08
+  output external delay                                                       -0.06      1.02
+  data required time                                                                     1.02
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     1.02
+  data arrival time                                                                    -2127.39
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                     -2126.37
+
+
+1

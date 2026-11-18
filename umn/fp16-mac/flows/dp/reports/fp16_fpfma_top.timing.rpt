@@ -1,0 +1,46 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : full_chip_fp16_fpfma_top
+Version: R-2020.09-SP6
+Date   : Fri Nov 28 01:45:53 2025
+****************************************
+Information: Timer using 'CRPR'. (TIM-050)
+
+  Startpoint: fp16_fpfma_top_inst/U_ACC_acc_mag_regx6x (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: test_so (output port clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: output
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.20      0.20
+
+  fp16_fpfma_top_inst/U_ACC_acc_mag_regx6x/CP (SDFCNQD1BWP20P90)
+                                                   0.00      0.20 r
+  fp16_fpfma_top_inst/U_ACC_acc_mag_regx6x/Q (SDFCNQD1BWP20P90)
+                                                 6115.72   6115.92 r
+  test_so (out)                                  6143.56   12259.48 r
+  data arrival time                                        12259.48
+
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.20      1.20
+  clock reconvergence pessimism                    0.00      1.20
+  clock uncertainty                               -0.05      1.15
+  output external delay                           -0.06      1.09
+  data required time                                         1.09
+  ------------------------------------------------------------------------
+  data required time                                         1.09
+  data arrival time                                        -12259.48
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -12258.39
+
+
+1

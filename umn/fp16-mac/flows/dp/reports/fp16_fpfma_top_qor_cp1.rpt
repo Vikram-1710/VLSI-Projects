@@ -1,0 +1,108 @@
+****************************************
+Report : qor
+Design : full_chip_fp16_fpfma_top
+Version: R-2020.09-SP6
+Date   : Fri Nov 28 01:45:53 2025
+****************************************
+Information: Timer using 'CRPR'. (TIM-050)
+
+
+Scenario           'default'
+Timing Path Group  'inputs'
+----------------------------------------
+Levels of Logic:                      0
+Critical Path Length:              0.48
+Critical Path Slack:               0.05
+Critical Path Clk Period:          1.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:             -0.02
+Total Hold Violation:             -0.02
+No. of Hold Violations:               2
+----------------------------------------
+
+Scenario           'default'
+Timing Path Group  'output'
+----------------------------------------
+Levels of Logic:                      0
+Critical Path Length:          12259.28
+Critical Path Slack:          -12258.39
+Critical Path Clk Period:          1.00
+Total Negative Slack:        -359664.06
+No. of Violating Paths:              91
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'default'
+Timing Path Group  'reg2reg'
+----------------------------------------
+Levels of Logic:                     21
+Critical Path Length:           6116.82
+Critical Path Slack:           -6115.89
+Critical Path Clk Period:          1.00
+Total Negative Slack:        -550419.98
+No. of Violating Paths:              90
+Worst Hold Violation:             -0.01
+Total Hold Violation:             -0.01
+No. of Hold Violations:               1
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              5
+Hierarchical Port Count:            161
+Leaf Cell Count:                   3365
+Buf/Inv Cell Count:                 688
+Buf Cell Count:                       0
+Inv Cell Count:                     688
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:          3205
+   Single-bit Isolation Cell Count:                        0
+   Multi-bit Isolation Cell Count:                         0
+   Isolation Cell Banking Ratio:                           0.00%
+   Single-bit Level Shifter Cell Count:                    0
+   Multi-bit Level Shifter Cell Count:                     0
+   Level Shifter Cell Banking Ratio:                       0.00%
+   Single-bit ELS Cell Count:                              0
+   Multi-bit ELS Cell Count:                               0
+   ELS Cell Banking Ratio:                                 0.00%
+Sequential Cell Count:              160
+   Integrated Clock-Gating Cell Count:                     4
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       156
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            1.00
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:              875.27
+Noncombinational Area:           213.58
+Buf/Inv Area:                    107.00
+Total Buffer Area:                 0.00
+Total Inverter Area:             107.00
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                   33393.20
+Net YLength:                   31324.06
+----------------------------------------
+Cell Area (netlist):                           1088.85
+Cell Area (netlist and physical only):         1088.85
+Net Length:                    64717.25
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:              3417
+Nets with Violations:                94
+Max Trans Violations:                94
+Max Cap Violations:                  92
+----------------------------------------
+
+1

@@ -1,0 +1,9 @@
+
+  Linking design 'fp16_fpfma_top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (4 designs)               /home/ragha084/labs/project/fp16_fpfma_top.db, etc
+  N16ADFP_StdCelltt0p8v25c_ccs (library) /soft/ece_soft_2/TSMCHOME/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCelltt0p8v25c_ccs.db
+  dw_foundation.sldb (library) /soft/ece_soft_1/synopsys/syn_2022.12/libraries/syn/dw_foundation.sldb
+
+1

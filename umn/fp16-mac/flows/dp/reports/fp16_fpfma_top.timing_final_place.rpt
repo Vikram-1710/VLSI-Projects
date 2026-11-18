@@ -1,0 +1,49 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : full_chip_fp16_fpfma_top
+Version: R-2020.09-SP6
+Date   : Fri Nov 28 01:53:17 2025
+****************************************
+Information: Timer using 'CRPR'. (TIM-050)
+
+  Startpoint: fp16_fpfma_top_inst/U_ACC_acc_mag_regx32x (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: acc_mag[32] (output port clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: output
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.20      0.20
+
+  fp16_fpfma_top_inst/U_ACC_acc_mag_regx32x/CP (SDFCNQD2BWP16P90LVT)
+                                                   0.00      0.20 r
+  fp16_fpfma_top_inst/U_ACC_acc_mag_regx32x/Q (SDFCNQD2BWP16P90LVT)
+                                                   0.03      0.23 r
+  ZBUF_232_inst_1240/Z (BUFFD12BWP16P90LVT)        0.01      0.24 r
+  ZBUF_35_inst_1239/Z (BUFFD16BWP16P90LVT)         0.01      0.26 r
+  PI_56_1326/Z (CKBD16BWP16P90LVT)               241.76    242.01 r
+  acc_mag[32] (out)                              386.05    628.06 r
+  data arrival time                                        628.06
+
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.20      1.20
+  clock reconvergence pessimism                    0.00      1.20
+  clock uncertainty                               -0.05      1.15
+  output external delay                           -0.06      1.09
+  data required time                                         1.09
+  ------------------------------------------------------------------------
+  data required time                                         1.09
+  data arrival time                                        -628.06
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -626.97
+
+
+1

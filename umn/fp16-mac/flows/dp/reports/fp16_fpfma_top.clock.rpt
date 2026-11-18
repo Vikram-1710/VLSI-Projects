@@ -1,0 +1,33 @@
+****************************************
+Report : clock
+Design : full_chip_fp16_fpfma_top
+Mode   : default
+Version: R-2020.09-SP6
+Date   : Fri Nov 28 01:33:55 2025
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+CLK              1.00   {0 0.5}                       {clk}
+
+1
+****************************************
+Report : clock_skew
+Design : full_chip_fp16_fpfma_top
+Mode   : default
+Version: R-2020.09-SP6
+Date   : Fri Nov 28 01:33:55 2025
+****************************************
+
+              Min Rise  Min Fall  Max Rise  Max Fall     Hold          Setup        Related
+Object          Delay     Delay     Delay     Delay   Uncertainty   Uncertainty      Clock          Scenario      Origin
+-----------------------------------------------------------------------------------------------------------------------------
+CLK              0.20      0.20      0.20      0.20          0.05          0.05         --          default         user
+
+1

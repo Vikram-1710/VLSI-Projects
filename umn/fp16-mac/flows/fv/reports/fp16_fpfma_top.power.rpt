@@ -1,0 +1,57 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+        -verbose
+Design : fp16_fpfma_top
+Version: O-2018.06-SP5-5
+Date   : Wed Dec  3 13:42:02 2025
+****************************************
+
+
+Library(s) Used:
+
+    N16ADFP_StdCelltt0p8v25c_ccs (File: /soft/ece_soft_2/TSMCHOME/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCelltt0p8v25c_ccs.db)
+
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+fp16_fpfma_top         ZeroWireload      N16ADFP_StdCelltt0p8v25c_ccs
+
+
+Global Operating Voltage = 0.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   5.9750 mW   (80%)
+  Net Switching Power  =   1.5238 mW   (20%)
+                         ---------
+Total Dynamic Power    =   7.4988 mW  (100%)
+
+Cell Leakage Power     = 103.7822 uW
+
+                 Internal         Switching           Leakage            Total                         Cell
+Power Group      Power            Power               Power              Power   (   %    )  Attrs  Count
+---------------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+register           4.8039        9.0440e-02        5.4580e+03            4.8998  (  64.45%)            157
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+combinational      1.1711            1.4334        9.8324e+04            2.7028  (  35.55%)            5362
+---------------------------------------------------------------------------------------------------------
+Total              5.9750 mW         1.5238 mW     1.0378e+05 nW         7.6026 mW
+1
+LOGNAME = ragha084

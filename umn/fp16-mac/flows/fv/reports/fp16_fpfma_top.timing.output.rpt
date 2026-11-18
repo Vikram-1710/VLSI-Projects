@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -group output
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : fp16_fpfma_top
+Version: O-2018.06-SP5-5
+Date   : Wed Dec  3 13:42:02 2025
+****************************************
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: U_ACC_acc_mag_regx47x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: acc_mag[47]
+            (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fp16_fpfma_top     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  U_ACC_acc_mag_regx47x/CP (SDFCNQD1BWP16P90LVT)                    0.00      0.00       0.00 r
+  U_ACC_acc_mag_regx47x/Q (SDFCNQD1BWP16P90LVT)                     0.03      0.05       0.05 f
+  acc_mag[47] (net)                             8         0.01                0.00       0.05 f
+  acc_mag[47] (out)                                                 0.03      0.00       0.05 f
+  data arrival time                                                                      0.05
+
+  clock CLK (rise edge)                                                       0.10       0.10
+  clock network delay (ideal)                                                 0.00       0.10
+  output external delay                                                      -0.06       0.04
+  data required time                                                                     0.04
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.04
+  data arrival time                                                                     -0.05
+  ----------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.01
+
+
+1
+LOGNAME = ragha084

@@ -1,0 +1,505 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-input_pins
+	-nets
+	-max_paths 1
+	-group inputs
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : full_chip_fp16_fpfma_top
+Version: P-2019.03-SP5
+Date   : Thu Dec  4 11:13:01 2025
+****************************************
+
+
+  Startpoint: a_fp16[12] (input port clocked by CLK)
+  Endpoint: fp16_fpfma_top_inst/U_MUL_ALN_a_zero_r_reg
+               (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.05(cell)  1.00(net)
+  Min Clock Paths Derating Factor : 0.90(cell)  1.10(net)
+  Max Clock Paths Derating Factor : 1.05(cell)  1.00(net)
+
+  Point                                                            Fanout    Cap      Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                                0.00       0.00       0.00
+  clock network delay (ideal)                                                                     0.09       0.09
+  input external delay                                                                            0.02       0.11 f
+  a_fp16[12] (in)                                                                      0.20       0.00 &     0.11 f
+  a_fp16[12] (net)                                                    2     0.05 
+  RBINV_2/I (INVD1BWP20P90)                                                            0.20       0.03 *     0.14 f
+  RBINV_2/ZN (INVD1BWP20P90)                                                           0.10       0.09 *     0.23 r
+  net_aps_2 (net)                                                     1     0.02 
+  fp16_fpfma_top_inst/clock_optgre_mt_inst_12603/I (BUFFD1BWP16P90)                    0.10       0.01 *     0.24 r
+  fp16_fpfma_top_inst/clock_optgre_mt_inst_12603/Z (BUFFD1BWP16P90)                    0.22       0.13 *     0.37 r
+  fp16_fpfma_top_inst/gre_net_3311 (net)                              3     0.07 
+  fp16_fpfma_top_inst/U2356/A2 (ND3D1BWP16P90)                                         0.23       0.05 *     0.42 r
+  fp16_fpfma_top_inst/U2356/ZN (ND3D1BWP16P90)                                         0.15       0.13 *     0.54 f
+  fp16_fpfma_top_inst/n2390 (net)                                     1     0.02 
+  fp16_fpfma_top_inst/clock_optgre_mt_inst_13021/I (CKBD1BWP20P90)                     0.15       0.01 *     0.55 f
+  fp16_fpfma_top_inst/clock_optgre_mt_inst_13021/Z (CKBD1BWP20P90)                     0.14       0.09 *     0.65 f
+  fp16_fpfma_top_inst/gre_net_3687 (net)                              2     0.04 
+  fp16_fpfma_top_inst/clock_optctmTdsLR_1_9077/I0 (MUX2D2BWP20P90)                     0.14       0.02 *     0.67 f
+  fp16_fpfma_top_inst/clock_optctmTdsLR_1_9077/Z (MUX2D2BWP20P90)                      0.05       0.06 *     0.73 f
+  fp16_fpfma_top_inst/n3795 (net)                                    13     0.03 
+  fp16_fpfma_top_inst/RBINV_678/I (CKND1BWP16P90)                                      0.05       0.00 *     0.73 f
+  fp16_fpfma_top_inst/RBINV_678/ZN (CKND1BWP16P90)                                     0.15       0.06 *     0.79 r
+  fp16_fpfma_top_inst/net_aps_678 (net)                               1     0.04 
+  fp16_fpfma_top_inst/U_MUL_ALN_a_zero_r_reg/D (SDFCNQD1BWP16P90)                      0.18       0.07 *     0.86 r
+  data arrival time                                                                                          0.86
+
+  clock CLK (rise edge)                                                                0.00       1.00       1.00
+  clock network delay (propagated)                                                                0.05 *     1.05
+  clock reconvergence pessimism                                                                   0.00       1.05
+  fp16_fpfma_top_inst/U_MUL_ALN_a_zero_r_reg/CP (SDFCNQD1BWP16P90)                                           1.05 r
+  library setup time                                                                             -0.05 *     1.00
+  data required time                                                                                         1.00
+  ------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                         1.00
+  data arrival time                                                                                         -0.86
+  ------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                0.14
+
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-input_pins
+	-nets
+	-max_paths 1
+	-group output
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : full_chip_fp16_fpfma_top
+Version: P-2019.03-SP5
+Date   : Thu Dec  4 11:13:01 2025
+****************************************
+
+
+  Startpoint: fp16_fpfma_top_inst/U_MUL_ALN_b_sign_r_reg
+               (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: test_so (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.05(cell)  1.00(net)
+  Min Clock Paths Derating Factor : 0.90(cell)  1.10(net)
+  Max Clock Paths Derating Factor : 1.05(cell)  1.00(net)
+
+  Point                                                              Fanout    Cap      Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                                  0.00       0.00       0.00
+  clock network delay (propagated)                                                                  0.08 *     0.08
+  fp16_fpfma_top_inst/U_MUL_ALN_b_sign_r_reg/CP (SDFCNQD2BWP16P90LVT)                    0.03       0.00       0.08 r
+  fp16_fpfma_top_inst/U_MUL_ALN_b_sign_r_reg/Q (SDFCNQD2BWP16P90LVT)                     0.02       0.04 *     0.13 r
+  fp16_fpfma_top_inst/dftopt0 (net)                                     4     0.01 
+  clock_optgre_mt_inst_10769/I (BUFFD2BWP16P90)                                          0.02       0.00 *     0.13 r
+  clock_optgre_mt_inst_10769/Z (BUFFD2BWP16P90)                                          0.01       0.02 *     0.15 r
+  ropt_net_4414 (net)                                                   1     0.00 
+  clock_optropt_mt_inst_13797/I (CKBD16BWP16P90LVT)                                      0.01       0.00 *     0.15 r
+  clock_optropt_mt_inst_13797/Z (CKBD16BWP16P90LVT)                                      0.00       0.01 *     0.16 r
+  test_so (net)                                                         1  2500.01 
+  test_so (out)                                                                       4858.08    2127.23 *  2127.39 r
+  data arrival time                                                                                         2127.39
+
+  clock CLK (rise edge)                                                                  0.00       1.00       1.00
+  clock network delay (ideal)                                                                       0.08       1.08
+  clock reconvergence pessimism                                                                     0.00       1.08
+  output external delay                                                                            -0.06       1.02
+  data required time                                                                                           1.02
+  --------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                           1.02
+  data arrival time                                                                                        -2127.39
+  --------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                         -2126.36
+
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-input_pins
+	-nets
+	-max_paths 1
+	-group reg2reg
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : full_chip_fp16_fpfma_top
+Version: P-2019.03-SP5
+Date   : Thu Dec  4 11:13:01 2025
+****************************************
+
+
+  Startpoint: fp16_fpfma_top_inst/U_MUL_ALN_a_exp_r_regx3x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: fp16_fpfma_top_inst/U_ACC_acc_mag_regx85x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Last common pin: cto_buf_drc_4741/Z
+  Path Group: reg2reg
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.05(cell)  1.00(net)
+  Min Clock Paths Derating Factor : 0.90(cell)  1.10(net)
+  Max Clock Paths Derating Factor : 1.05(cell)  1.00(net)
+
+  Point                                                                      Fanout    Cap      Trans       Incr       Path
+  ----------------------------------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                                          0.00       0.00       0.00
+  clock network delay (propagated)                                                                          0.05 *     0.05
+  fp16_fpfma_top_inst/U_MUL_ALN_a_exp_r_regx3x/CP (SDFCNQD1BWP16P90)                             0.02       0.00       0.05 r
+  fp16_fpfma_top_inst/U_MUL_ALN_a_exp_r_regx3x/Q (SDFCNQD1BWP16P90)                              0.03       0.06 *     0.12 f
+  fp16_fpfma_top_inst/U_MUL_ALN_a_exp_r[3] (net)                                1     0.01 
+  fp16_fpfma_top_inst/clock_optropt_mt_inst_13782/I (BUFFD4BWP16P90)                             0.03       0.00 *     0.12 f
+  fp16_fpfma_top_inst/clock_optropt_mt_inst_13782/Z (BUFFD4BWP16P90)                             0.01       0.02 *     0.14 f
+  fp16_fpfma_top_inst/ropt_net_4399 (net)                                       1     0.01 
+  fp16_fpfma_top_inst/clock_optropt_mt_inst_13781/I (BUFFD4BWP16P90)                             0.02       0.01 *     0.15 f
+  fp16_fpfma_top_inst/clock_optropt_mt_inst_13781/Z (BUFFD4BWP16P90)                             0.01       0.02 *     0.17 f
+  fp16_fpfma_top_inst/ropt_net_4398 (net)                                       1     0.02 
+  fp16_fpfma_top_inst/clock_optropt_mt_inst_13779/I (BUFFD4BWP16P90)                             0.06       0.03 *     0.20 f
+  fp16_fpfma_top_inst/clock_optropt_mt_inst_13779/Z (BUFFD4BWP16P90)                             0.01       0.02 *     0.22 f
+  fp16_fpfma_top_inst/ropt_net_4396 (net)                                       1     0.02 
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_36_inst_11744/I (CKBD16BWP16P90LVT)                     0.03       0.01 *     0.23 f
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_36_inst_11744/Z (CKBD16BWP16P90LVT)                     0.01       0.01 *     0.24 f
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_36_190 (net)                           2     0.04 
+  fp16_fpfma_top_inst/clock_optgre_mt_inst_11370/I (BUFFD4BWP16P90LVT)                           0.11       0.06 *     0.30 f
+  fp16_fpfma_top_inst/clock_optgre_mt_inst_11370/Z (BUFFD4BWP16P90LVT)                           0.01       0.02 *     0.32 f
+  fp16_fpfma_top_inst/gre_net_2958 (net)                                        1     0.02 
+  fp16_fpfma_top_inst/clock_optgre_mt_inst_11369/I (BUFFD8BWP16P90)                              0.03       0.01 *     0.33 f
+  fp16_fpfma_top_inst/clock_optgre_mt_inst_11369/Z (BUFFD8BWP16P90)                              0.01       0.02 *     0.35 f
+  fp16_fpfma_top_inst/gre_net_2957 (net)                                        2     0.02 
+  fp16_fpfma_top_inst/clock_optgre_mt_inst_11368/I (BUFFD4BWP20P90LVT)                           0.02       0.01 *     0.36 f
+  fp16_fpfma_top_inst/clock_optgre_mt_inst_11368/Z (BUFFD4BWP20P90LVT)                           0.01       0.01 *     0.37 f
+  fp16_fpfma_top_inst/gre_net_2956 (net)                                        1     0.01 
+  fp16_fpfma_top_inst/U2344/A1 (ND2D4BWP16P90)                                                   0.02       0.01 *     0.38 f
+  fp16_fpfma_top_inst/U2344/ZN (ND2D4BWP16P90)                                                   0.02       0.01 *     0.39 r
+  fp16_fpfma_top_inst/n874 (net)                                                1     0.01 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13873/I (BUFFD2BWP16P90)                              0.03       0.01 *     0.40 r
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13873/Z (BUFFD2BWP16P90)                              0.02       0.02 *     0.42 r
+  fp16_fpfma_top_inst/ropt_net_4449 (net)                                       1     0.01 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13872/I (BUFFD4BWP16P90LVT)                           0.02       0.01 *     0.43 r
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13872/Z (BUFFD4BWP16P90LVT)                           0.01       0.01 *     0.44 r
+  fp16_fpfma_top_inst/ropt_net_4448 (net)                                       1     0.01 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13871/I (BUFFD2BWP16P90)                              0.02       0.01 *     0.45 r
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13871/Z (BUFFD2BWP16P90)                              0.02       0.02 *     0.47 r
+  fp16_fpfma_top_inst/ropt_net_4447 (net)                                       1     0.01 
+  fp16_fpfma_top_inst/U2448/A1 (INR2D4BWP16P90)                                                  0.03       0.01 *     0.48 r
+  fp16_fpfma_top_inst/U2448/ZN (INR2D4BWP16P90)                                                  0.02       0.03 *     0.52 r
+  fp16_fpfma_top_inst/n875 (net)                                                2     0.01 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13857/I (BUFFD4BWP16P90)                              0.03       0.01 *     0.53 r
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13857/Z (BUFFD4BWP16P90)                              0.01       0.02 *     0.55 r
+  fp16_fpfma_top_inst/ropt_net_4433 (net)                                       1     0.02 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13855/I (BUFFD2BWP16P90)                              0.04       0.02 *     0.57 r
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13855/Z (BUFFD2BWP16P90)                              0.02       0.02 *     0.59 r
+  fp16_fpfma_top_inst/ropt_net_4431 (net)                                       1     0.01 
+  fp16_fpfma_top_inst/U2450/A1 (INR2D8BWP16P90)                                                  0.03       0.01 *     0.60 r
+  fp16_fpfma_top_inst/U2450/ZN (INR2D8BWP16P90)                                                  0.02       0.02 *     0.62 r
+  fp16_fpfma_top_inst/n892 (net)                                                4     0.04 
+  fp16_fpfma_top_inst/U2411/A1 (IND2D1BWP16P90LVT)                                               0.12       0.06 *     0.68 r
+  fp16_fpfma_top_inst/U2411/ZN (IND2D1BWP16P90LVT)                                               0.01       0.02 *     0.70 r
+  fp16_fpfma_top_inst/n897 (net)                                                1     0.00 
+  fp16_fpfma_top_inst/clock_optgre_d_INV_719_inst_11737/I (INVD4BWP16P90LVT)                     0.01       0.00 *     0.70 r
+  fp16_fpfma_top_inst/clock_optgre_d_INV_719_inst_11737/ZN (INVD4BWP16P90LVT)                    0.01       0.01 *     0.71 f
+  fp16_fpfma_top_inst/clock_optgre_d_INV_719_190 (net)                          1     0.02 
+  fp16_fpfma_top_inst/clock_optgre_d_INV_643_inst_11736/I (INVD4BWP16P90LVT)                     0.03       0.02 *     0.73 f
+  fp16_fpfma_top_inst/clock_optgre_d_INV_643_inst_11736/ZN (INVD4BWP16P90LVT)                    0.02       0.01 *     0.74 r
+  fp16_fpfma_top_inst/clock_optgre_d_INV_643_190 (net)                          2     0.03 
+  fp16_fpfma_top_inst/clock_optctmTdsLR_1_9132/A1 (IOAI21D4BWP16P90LVT)                          0.06       0.02 *     0.76 r
+  fp16_fpfma_top_inst/clock_optctmTdsLR_1_9132/ZN (IOAI21D4BWP16P90LVT)                          0.01       0.01 *     0.77 f
+  fp16_fpfma_top_inst/n3821 (net)                                               1     0.00 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13861/I (BUFFD2BWP16P90)                              0.01       0.00 *     0.77 f
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13861/Z (BUFFD2BWP16P90)                              0.02       0.02 *     0.79 f
+  fp16_fpfma_top_inst/ropt_net_4437 (net)                                       1     0.01 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13860/I (BUFFD4BWP16P90LVT)                           0.02       0.01 *     0.80 f
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13860/Z (BUFFD4BWP16P90LVT)                           0.01       0.01 *     0.81 f
+  fp16_fpfma_top_inst/ropt_net_4436 (net)                                       1     0.01 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13859/I (BUFFD2BWP16P90)                              0.01       0.01 *     0.82 f
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13859/Z (BUFFD2BWP16P90)                              0.02       0.02 *     0.84 f
+  fp16_fpfma_top_inst/ropt_net_4435 (net)                                       1     0.01 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13858/I (BUFFD4BWP16P90LVT)                           0.02       0.01 *     0.85 f
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13858/Z (BUFFD4BWP16P90LVT)                           0.01       0.01 *     0.86 f
+  fp16_fpfma_top_inst/ropt_net_4434 (net)                                       1     0.01 
+  fp16_fpfma_top_inst/clock_optctmTdsLR_2_9136/I (INVD4BWP16P90LVT)                              0.02       0.01 *     0.87 f
+  fp16_fpfma_top_inst/clock_optctmTdsLR_2_9136/ZN (INVD4BWP16P90LVT)                             0.01       0.01 *     0.88 r
+  fp16_fpfma_top_inst/tmp_net1178 (net)                                         1     0.01 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13902/I (BUFFD4BWP16P90LVT)                           0.02       0.01 *     0.89 r
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13902/Z (BUFFD4BWP16P90LVT)                           0.01       0.01 *     0.91 r
+  fp16_fpfma_top_inst/ropt_net_4478 (net)                                       1     0.01 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13901/I (BUFFD2BWP16P90)                              0.01       0.00 *     0.91 r
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13901/Z (BUFFD2BWP16P90)                              0.02       0.02 *     0.93 r
+  fp16_fpfma_top_inst/ropt_net_4477 (net)                                       1     0.02 
+  fp16_fpfma_top_inst/clock_optctmTdsLR_1_9135/A1 (AN2D8BWP16P90)                                0.06       0.03 *     0.96 r
+  fp16_fpfma_top_inst/clock_optctmTdsLR_1_9135/Z (AN2D8BWP16P90)                                 0.02       0.04 *     1.00 r
+  fp16_fpfma_top_inst/n1327 (net)                                              12     0.05 
+  fp16_fpfma_top_inst/clock_optctmTdsLR_4_8544/A2 (NR2D1BWP16P90)                                0.04       0.02 *     1.02 r
+  fp16_fpfma_top_inst/clock_optctmTdsLR_4_8544/ZN (NR2D1BWP16P90)                                0.01       0.01 *     1.03 f
+  fp16_fpfma_top_inst/tmp_net1052 (net)                                         1     0.00 
+  fp16_fpfma_top_inst/clock_optctmTdsLR_3_8543/A1 (MAOI22D1BWP16P90)                             0.01       0.00 *     1.03 f
+  fp16_fpfma_top_inst/clock_optctmTdsLR_3_8543/ZN (MAOI22D1BWP16P90)                             0.01       0.01 *     1.04 r
+  fp16_fpfma_top_inst/tmp_net1053 (net)                                         1     0.00 
+  fp16_fpfma_top_inst/clock_optctmTdsLR_1_8541/B (OA21D4BWP16P90LVT)                             0.01       0.00 *     1.04 r
+  fp16_fpfma_top_inst/clock_optctmTdsLR_1_8541/Z (OA21D4BWP16P90LVT)                             0.02       0.03 *     1.07 r
+  fp16_fpfma_top_inst/n2674_CDR1 (net)                                          1     0.03 
+  fp16_fpfma_top_inst/clock_optropt_mt_inst_13733/I (BUFFD8BWP16P90)                             0.05       0.02 *     1.09 r
+  fp16_fpfma_top_inst/clock_optropt_mt_inst_13733/Z (BUFFD8BWP16P90)                             0.01       0.02 *     1.11 r
+  fp16_fpfma_top_inst/ropt_net_4357 (net)                                       2     0.01 
+  fp16_fpfma_top_inst/clock_optropt_mt_inst_13730/I (BUFFD4BWP16P90)                             0.02       0.01 *     1.12 r
+  fp16_fpfma_top_inst/clock_optropt_mt_inst_13730/Z (BUFFD4BWP16P90)                             0.01       0.01 *     1.13 r
+  fp16_fpfma_top_inst/ropt_net_4354 (net)                                       1     0.01 
+  fp16_fpfma_top_inst/clock_optropt_mt_inst_13729/I (BUFFD8BWP16P90)                             0.02       0.01 *     1.14 r
+  fp16_fpfma_top_inst/clock_optropt_mt_inst_13729/Z (BUFFD8BWP16P90)                             0.01       0.02 *     1.16 r
+  fp16_fpfma_top_inst/ropt_net_4353 (net)                                       7     0.03 
+  fp16_fpfma_top_inst/U2689/A1 (CKND2D8BWP16P90)                                                 0.02       0.01 *     1.17 r
+  fp16_fpfma_top_inst/U2689/ZN (CKND2D8BWP16P90)                                                 0.01       0.01 *     1.18 f
+  fp16_fpfma_top_inst/n2913 (net)                                               1     0.01 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13882/I (BUFFD4BWP16P90)                              0.02       0.01 *     1.19 f
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13882/Z (BUFFD4BWP16P90)                              0.02       0.02 *     1.21 f
+  fp16_fpfma_top_inst/ropt_net_4458 (net)                                       2     0.02 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13880/I (BUFFD4BWP16P90)                              0.02       0.01 *     1.22 f
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13880/Z (BUFFD4BWP16P90)                              0.01       0.02 *     1.25 f
+  fp16_fpfma_top_inst/ropt_net_4456 (net)                                       1     0.01 
+  fp16_fpfma_top_inst/U2690/A2 (OAI21D2BWP16P90)                                                 0.02       0.01 *     1.26 f
+  fp16_fpfma_top_inst/U2690/ZN (OAI21D2BWP16P90)                                                 0.04       0.02 *     1.28 r
+  fp16_fpfma_top_inst/n1208 (net)                                               1     0.00 
+  fp16_fpfma_top_inst/clock_optgre_d_INV_155_inst_11828/I (INVD4BWP16P90)                        0.04       0.00 *     1.28 r
+  fp16_fpfma_top_inst/clock_optgre_d_INV_155_inst_11828/ZN (INVD4BWP16P90)                       0.02       0.02 *     1.30 f
+  fp16_fpfma_top_inst/clock_optgre_d_INV_155_193 (net)                          1     0.01 
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_111_inst_11827/I (BUFFD4BWP16P90)                       0.03       0.01 *     1.31 f
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_111_inst_11827/Z (BUFFD4BWP16P90)                       0.01       0.02 *     1.33 f
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_111_193 (net)                          1     0.01 
+  fp16_fpfma_top_inst/clock_optgre_d_INV_14_inst_11826/I (CKND8BWP16P90)                         0.02       0.01 *     1.34 f
+  fp16_fpfma_top_inst/clock_optgre_d_INV_14_inst_11826/ZN (CKND8BWP16P90)                        0.01       0.01 *     1.35 r
+  fp16_fpfma_top_inst/clock_optgre_d_INV_14_193 (net)                           1     0.03 
+  fp16_fpfma_top_inst/U1877/B (AOI21D4BWP16P90)                                                  0.08       0.04 *     1.39 r
+  fp16_fpfma_top_inst/U1877/ZN (AOI21D4BWP16P90)                                                 0.02       0.02 *     1.41 f
+  fp16_fpfma_top_inst/n1210 (net)                                               1     0.01 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13870/I (BUFFD4BWP16P90)                              0.03       0.00 *     1.41 f
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13870/Z (BUFFD4BWP16P90)                              0.01       0.02 *     1.43 f
+  fp16_fpfma_top_inst/ropt_net_4446 (net)                                       1     0.01 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13869/I (BUFFD4BWP16P90)                              0.02       0.01 *     1.44 f
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13869/Z (BUFFD4BWP16P90)                              0.01       0.02 *     1.46 f
+  fp16_fpfma_top_inst/ropt_net_4445 (net)                                       1     0.02 
+  fp16_fpfma_top_inst/U2692/B (OAI21D4BWP16P90LVT)                                               0.05       0.03 *     1.49 f
+  fp16_fpfma_top_inst/U2692/ZN (OAI21D4BWP16P90LVT)                                              0.02       0.01 *     1.50 r
+  fp16_fpfma_top_inst/n1212 (net)                                               1     0.01 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13854/I (BUFFD4BWP16P90)                              0.03       0.01 *     1.51 r
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13854/Z (BUFFD4BWP16P90)                              0.01       0.02 *     1.53 r
+  fp16_fpfma_top_inst/ropt_net_4430 (net)                                       1     0.01 
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13853/I (BUFFD4BWP16P90)                              0.02       0.01 *     1.54 r
+  fp16_fpfma_top_inst/clock_optropt_d_inst_13853/Z (BUFFD4BWP16P90)                              0.01       0.02 *     1.56 r
+  fp16_fpfma_top_inst/ropt_net_4429 (net)                                       1     0.02 
+  fp16_fpfma_top_inst/U2693/B (AOI21D4BWP16P90LVT)                                               0.05       0.02 *     1.58 r
+  fp16_fpfma_top_inst/U2693/ZN (AOI21D4BWP16P90LVT)                                              0.02       0.01 *     1.60 f
+  fp16_fpfma_top_inst/n2378 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U1218/A2 (OAI21D4BWP16P90LVT)                                              0.02       0.00 *     1.60 f
+  fp16_fpfma_top_inst/U1218/ZN (OAI21D4BWP16P90LVT)                                              0.01       0.01 *     1.61 r
+  fp16_fpfma_top_inst/n3260 (net)                                               2     0.00 
+  fp16_fpfma_top_inst/U2806/A1 (AOI21D4BWP16P90LVT)                                              0.01       0.00 *     1.61 r
+  fp16_fpfma_top_inst/U2806/ZN (AOI21D4BWP16P90LVT)                                              0.01       0.01 *     1.62 f
+  fp16_fpfma_top_inst/n3169 (net)                                               3     0.00 
+  fp16_fpfma_top_inst/placectmTdsLR_1_2669/A1 (OA21D2BWP16P90LVT)                                0.01       0.00 *     1.62 f
+  fp16_fpfma_top_inst/placectmTdsLR_1_2669/Z (OA21D2BWP16P90LVT)                                 0.01       0.01 *     1.63 f
+  fp16_fpfma_top_inst/n3127 (net)                                               2     0.00 
+  fp16_fpfma_top_inst/U3181/A1 (OAI21D4BWP16P90LVT)                                              0.01       0.00 *     1.63 f
+  fp16_fpfma_top_inst/U3181/ZN (OAI21D4BWP16P90LVT)                                              0.02       0.01 *     1.64 r
+  fp16_fpfma_top_inst/n3087 (net)                                               2     0.00 
+  fp16_fpfma_top_inst/U2811/A1 (AOI21D4BWP16P90LVT)                                              0.02       0.00 *     1.64 r
+  fp16_fpfma_top_inst/U2811/ZN (AOI21D4BWP16P90LVT)                                              0.01       0.01 *     1.65 f
+  fp16_fpfma_top_inst/n3204 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U4231/A1 (OAI21D4BWP16P90LVT)                                              0.01       0.00 *     1.65 f
+  fp16_fpfma_top_inst/U4231/ZN (OAI21D4BWP16P90LVT)                                              0.02       0.01 *     1.66 r
+  fp16_fpfma_top_inst/n3273 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U4010/A1 (AOI21D4BWP16P90LVT)                                              0.02       0.00 *     1.66 r
+  fp16_fpfma_top_inst/U4010/ZN (AOI21D4BWP16P90LVT)                                              0.01       0.01 *     1.67 f
+  fp16_fpfma_top_inst/n3146 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U3990/A1 (OAI21D4BWP16P90LVT)                                              0.01       0.00 *     1.67 f
+  fp16_fpfma_top_inst/U3990/ZN (OAI21D4BWP16P90LVT)                                              0.01       0.01 *     1.68 r
+  fp16_fpfma_top_inst/n3232 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U2816/A1 (AOI21D4BWP16P90LVT)                                              0.01       0.00 *     1.68 r
+  fp16_fpfma_top_inst/U2816/ZN (AOI21D4BWP16P90LVT)                                              0.01       0.01 *     1.69 f
+  fp16_fpfma_top_inst/n3072 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U4232/A1 (OAI21D4BWP16P90LVT)                                              0.01       0.00 *     1.69 f
+  fp16_fpfma_top_inst/U4232/ZN (OAI21D4BWP16P90LVT)                                              0.01       0.01 *     1.70 r
+  fp16_fpfma_top_inst/n3245 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U4175/A1 (AOI21D4BWP16P90LVT)                                              0.01       0.00 *     1.70 r
+  fp16_fpfma_top_inst/U4175/ZN (AOI21D4BWP16P90LVT)                                              0.01       0.01 *     1.71 f
+  fp16_fpfma_top_inst/n3319 (net)                                               3     0.00 
+  fp16_fpfma_top_inst/placectmTdsLR_1_2673/A1 (OA21D2BWP16P90LVT)                                0.01       0.00 *     1.71 f
+  fp16_fpfma_top_inst/placectmTdsLR_1_2673/Z (OA21D2BWP16P90LVT)                                 0.01       0.02 *     1.73 f
+  fp16_fpfma_top_inst/n3340 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U4233/A1 (OAI21D4BWP16P90LVT)                                              0.01       0.00 *     1.73 f
+  fp16_fpfma_top_inst/U4233/ZN (OAI21D4BWP16P90LVT)                                              0.01       0.01 *     1.74 r
+  fp16_fpfma_top_inst/n3366 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U4187/A1 (AOI21D4BWP16P90LVT)                                              0.01       0.00 *     1.74 r
+  fp16_fpfma_top_inst/U4187/ZN (AOI21D4BWP16P90LVT)                                              0.01       0.01 *     1.75 f
+  fp16_fpfma_top_inst/n3381 (net)                                               2     0.00 
+  fp16_fpfma_top_inst/U4182/A1 (OAI21D4BWP16P90LVT)                                              0.01       0.00 *     1.75 f
+  fp16_fpfma_top_inst/U4182/ZN (OAI21D4BWP16P90LVT)                                              0.02       0.01 *     1.76 r
+  fp16_fpfma_top_inst/n3529 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U2824/A1 (AOI21D4BWP16P90LVT)                                              0.02       0.00 *     1.76 r
+  fp16_fpfma_top_inst/U2824/ZN (AOI21D4BWP16P90LVT)                                              0.02       0.01 *     1.77 f
+  fp16_fpfma_top_inst/n3348 (net)                                               3     0.01 
+  fp16_fpfma_top_inst/placectmTdsLR_5_2668/A1 (NR3D4BWP16P90LVT)                                 0.02       0.00 *     1.77 f
+  fp16_fpfma_top_inst/placectmTdsLR_5_2668/ZN (NR3D4BWP16P90LVT)                                 0.02       0.01 *     1.78 r
+  fp16_fpfma_top_inst/popt_net_976 (net)                                        1     0.00 
+  fp16_fpfma_top_inst/placectmTdsLR_1_2664/B1 (INR2D4BWP16P90LVT)                                0.02       0.00 *     1.78 r
+  fp16_fpfma_top_inst/placectmTdsLR_1_2664/ZN (INR2D4BWP16P90LVT)                                0.01       0.01 *     1.79 f
+  fp16_fpfma_top_inst/n3400 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U3822/A1 (OAI21D4BWP16P90LVT)                                              0.01       0.00 *     1.79 f
+  fp16_fpfma_top_inst/U3822/ZN (OAI21D4BWP16P90LVT)                                              0.02       0.01 *     1.81 r
+  fp16_fpfma_top_inst/n3511 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U3783/A1 (IAOI21D4BWP16P90LVT)                                             0.02       0.00 *     1.81 r
+  fp16_fpfma_top_inst/U3783/ZN (IAOI21D4BWP16P90LVT)                                             0.01       0.01 *     1.82 f
+  fp16_fpfma_top_inst/n3440 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U4222/A1 (OAI21D4BWP16P90LVT)                                              0.01       0.00 *     1.82 f
+  fp16_fpfma_top_inst/U4222/ZN (OAI21D4BWP16P90LVT)                                              0.01       0.01 *     1.83 r
+  fp16_fpfma_top_inst/n3495 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U2829/A1 (AOI21D4BWP16P90LVT)                                              0.01       0.00 *     1.83 r
+  fp16_fpfma_top_inst/U2829/ZN (AOI21D4BWP16P90LVT)                                              0.01       0.01 *     1.84 f
+  fp16_fpfma_top_inst/n3461 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U4236/A1 (OAI21D4BWP16P90LVT)                                              0.01       0.00 *     1.84 f
+  fp16_fpfma_top_inst/U4236/ZN (OAI21D4BWP16P90LVT)                                              0.01       0.01 *     1.85 r
+  fp16_fpfma_top_inst/n3545 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U4235/A1 (AOI21D4BWP16P90LVT)                                              0.01       0.00 *     1.85 r
+  fp16_fpfma_top_inst/U4235/ZN (AOI21D4BWP16P90LVT)                                              0.01       0.01 *     1.86 f
+  fp16_fpfma_top_inst/n3417 (net)                                               2     0.00 
+  fp16_fpfma_top_inst/U3971/A1 (OAI21D4BWP16P90LVT)                                              0.01       0.00 *     1.86 f
+  fp16_fpfma_top_inst/U3971/ZN (OAI21D4BWP16P90LVT)                                              0.02       0.01 *     1.87 r
+  fp16_fpfma_top_inst/n2959 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/clock_optctmTdsLR_1_9224/A1 (AOI21D4BWP16P90LVT)                           0.02       0.00 *     1.87 r
+  fp16_fpfma_top_inst/clock_optctmTdsLR_1_9224/ZN (AOI21D4BWP16P90LVT)                           0.01       0.01 *     1.88 f
+  fp16_fpfma_top_inst/n3036 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U4224/A1 (OAI21D4BWP16P90LVT)                                              0.01       0.00 *     1.88 f
+  fp16_fpfma_top_inst/U4224/ZN (OAI21D4BWP16P90LVT)                                              0.02       0.01 *     1.89 r
+  fp16_fpfma_top_inst/n3018 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U2834/A1 (AOI21D4BWP16P90LVT)                                              0.02       0.00 *     1.89 r
+  fp16_fpfma_top_inst/U2834/ZN (AOI21D4BWP16P90LVT)                                              0.01       0.01 *     1.90 f
+  fp16_fpfma_top_inst/n3004 (net)                                               2     0.00 
+  fp16_fpfma_top_inst/U2847/A1 (OAI21D4BWP16P90)                                                 0.01       0.00 *     1.90 f
+  fp16_fpfma_top_inst/U2847/ZN (OAI21D4BWP16P90)                                                 0.02       0.01 *     1.91 r
+  fp16_fpfma_top_inst/n3048 (net)                                               1     0.01 
+  fp16_fpfma_top_inst/clock_optgre_d_INV_177_inst_11838/I (CKND8BWP16P90)                        0.03       0.00 *     1.91 r
+  fp16_fpfma_top_inst/clock_optgre_d_INV_177_inst_11838/ZN (CKND8BWP16P90)                       0.01       0.01 *     1.92 f
+  fp16_fpfma_top_inst/clock_optgre_d_INV_177_193 (net)                          1     0.02 
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_78_inst_11837/I (BUFFD4BWP16P90)                        0.03       0.01 *     1.93 f
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_78_inst_11837/Z (BUFFD4BWP16P90)                        0.01       0.02 *     1.95 f
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_78_193 (net)                           1     0.02 
+  fp16_fpfma_top_inst/clock_optgre_d_INV_49_inst_11836/I (CKND8BWP16P90)                         0.02       0.01 *     1.96 f
+  fp16_fpfma_top_inst/clock_optgre_d_INV_49_inst_11836/ZN (CKND8BWP16P90)                        0.01       0.01 *     1.97 r
+  fp16_fpfma_top_inst/clock_optgre_d_INV_49_193 (net)                           2     0.01 
+  fp16_fpfma_top_inst/U2840/A1 (AOI21D4BWP16P90LVT)                                              0.02       0.01 *     1.98 r
+  fp16_fpfma_top_inst/U2840/ZN (AOI21D4BWP16P90LVT)                                              0.02       0.01 *     1.99 f
+  fp16_fpfma_top_inst/n3571 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U4192/A1 (OAI21D4BWP16P90)                                                 0.02       0.00 *     1.99 f
+  fp16_fpfma_top_inst/U4192/ZN (OAI21D4BWP16P90)                                                 0.02       0.02 *     2.01 r
+  fp16_fpfma_top_inst/n3589 (net)                                               1     0.01 
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_179_inst_11812/I (BUFFD4BWP16P90)                       0.03       0.01 *     2.02 r
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_179_inst_11812/Z (BUFFD4BWP16P90)                       0.01       0.02 *     2.04 r
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_179_192 (net)                          1     0.01 
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_60_inst_11811/I (BUFFD12BWP16P90)                       0.01       0.00 *     2.04 r
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_60_inst_11811/Z (BUFFD12BWP16P90)                       0.01       0.01 *     2.06 r
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_60_192 (net)                           2     0.02 
+  fp16_fpfma_top_inst/U2838/A1 (AOI21D4BWP16P90LVT)                                              0.02       0.01 *     2.07 r
+  fp16_fpfma_top_inst/U2838/ZN (AOI21D4BWP16P90LVT)                                              0.04       0.01 *     2.08 f
+  fp16_fpfma_top_inst/n3608 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U4228/A1 (OAI21D4BWP16P90LVT)                                              0.04       0.00 *     2.08 f
+  fp16_fpfma_top_inst/U4228/ZN (OAI21D4BWP16P90LVT)                                              0.02       0.01 *     2.09 r
+  fp16_fpfma_top_inst/n3624 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U2837/A1 (CKND2D4BWP16P90LVT)                                              0.02       0.00 *     2.09 r
+  fp16_fpfma_top_inst/U2837/ZN (CKND2D4BWP16P90LVT)                                              0.01       0.01 *     2.10 f
+  fp16_fpfma_top_inst/n3810 (net)                                               1     0.00 
+  fp16_fpfma_top_inst/U2836/B1 (IND2D4BWP16P90LVT)                                               0.01       0.00 *     2.10 f
+  fp16_fpfma_top_inst/U2836/ZN (IND2D4BWP16P90LVT)                                               0.01       0.01 *     2.11 r
+  fp16_fpfma_top_inst/n3632 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U4206/A1 (CKND2D8BWP16P90)                                                 0.01       0.00 *     2.11 r
+  fp16_fpfma_top_inst/U4206/ZN (CKND2D8BWP16P90)                                                 0.01       0.01 *     2.12 f
+  fp16_fpfma_top_inst/n3823 (net)                                               1     0.01 
+  fp16_fpfma_top_inst/U4200/A1 (ND2D8BWP20P90)                                                   0.02       0.01 *     2.13 f
+  fp16_fpfma_top_inst/U4200/ZN (ND2D8BWP20P90)                                                   0.02       0.01 *     2.14 r
+  fp16_fpfma_top_inst/n3649 (net)                                               1     0.01 
+  fp16_fpfma_top_inst/clock_optgre_d_INV_281_inst_11814/I (CKND4BWP16P90)                        0.02       0.01 *     2.15 r
+  fp16_fpfma_top_inst/clock_optgre_d_INV_281_inst_11814/ZN (CKND4BWP16P90)                       0.01       0.01 *     2.16 f
+  fp16_fpfma_top_inst/clock_optgre_d_INV_281_192 (net)                          1     0.01 
+  fp16_fpfma_top_inst/clock_optgre_d_INV_82_inst_11813/I (CKND8BWP16P90)                         0.01       0.00 *     2.16 f
+  fp16_fpfma_top_inst/clock_optgre_d_INV_82_inst_11813/ZN (CKND8BWP16P90)                        0.01       0.01 *     2.17 r
+  fp16_fpfma_top_inst/clock_optgre_d_INV_82_192 (net)                           2     0.02 
+  fp16_fpfma_top_inst/U3055/A1 (CKND2D4BWP16P90LVT)                                              0.03       0.01 *     2.18 r
+  fp16_fpfma_top_inst/U3055/ZN (CKND2D4BWP16P90LVT)                                              0.01       0.01 *     2.19 f
+  fp16_fpfma_top_inst/n3815 (net)                                               1     0.00 
+  fp16_fpfma_top_inst/U3053/B1 (IND2D4BWP16P90LVT)                                               0.01       0.00 *     2.19 f
+  fp16_fpfma_top_inst/U3053/ZN (IND2D4BWP16P90LVT)                                               0.01       0.01 *     2.20 r
+  fp16_fpfma_top_inst/n3663 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U1138/B1 (IND2D4BWP16P90LVT)                                               0.01       0.00 *     2.20 r
+  fp16_fpfma_top_inst/U1138/ZN (IND2D4BWP16P90LVT)                                               0.01       0.01 *     2.21 f
+  fp16_fpfma_top_inst/n3820 (net)                                               1     0.00 
+  fp16_fpfma_top_inst/U3510/A1 (ND2D4BWP16P90LVT)                                                0.01       0.00 *     2.21 f
+  fp16_fpfma_top_inst/U3510/ZN (ND2D4BWP16P90LVT)                                                0.01       0.01 *     2.22 r
+  fp16_fpfma_top_inst/n3680 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U4237/A1 (AOI21D4BWP16P90LVT)                                              0.01       0.00 *     2.22 r
+  fp16_fpfma_top_inst/U4237/ZN (AOI21D4BWP16P90LVT)                                              0.01       0.01 *     2.23 f
+  fp16_fpfma_top_inst/n3840 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U2833/A1 (OAI21D4BWP16P90LVT)                                              0.01       0.00 *     2.23 f
+  fp16_fpfma_top_inst/U2833/ZN (OAI21D4BWP16P90LVT)                                              0.03       0.01 *     2.24 r
+  fp16_fpfma_top_inst/n3754 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U2831/A1 (OAI21D4BWP16P90LVT)                                              0.03       0.00 *     2.24 r
+  fp16_fpfma_top_inst/U2831/ZN (OAI21D4BWP16P90LVT)                                              0.01       0.01 *     2.25 f
+  fp16_fpfma_top_inst/n3853 (net)                                               2     0.00 
+  fp16_fpfma_top_inst/U3108/A1 (NR2D4BWP16P90)                                                   0.01       0.00 *     2.25 f
+  fp16_fpfma_top_inst/U3108/ZN (NR2D4BWP16P90)                                                   0.01       0.01 *     2.26 r
+  fp16_fpfma_top_inst/n3746 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U4221/A1 (INR2D4BWP16P90LVT)                                               0.01       0.00 *     2.26 r
+  fp16_fpfma_top_inst/U4221/ZN (INR2D4BWP16P90LVT)                                               0.02       0.01 *     2.27 r
+  fp16_fpfma_top_inst/n3707 (net)                                               2     0.00 
+  fp16_fpfma_top_inst/U4220/B1 (IND2D2BWP16P90LVT)                                               0.02       0.00 *     2.27 r
+  fp16_fpfma_top_inst/U4220/ZN (IND2D2BWP16P90LVT)                                               0.02       0.02 *     2.29 f
+  fp16_fpfma_top_inst/n3858 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U3175/B1 (INR2D8BWP16P90)                                                  0.02       0.00 *     2.29 f
+  fp16_fpfma_top_inst/U3175/ZN (INR2D8BWP16P90)                                                  0.01       0.01 *     2.31 r
+  fp16_fpfma_top_inst/n3817 (net)                                               1     0.01 
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_431_inst_11920/I (BUFFD12BWP16P90)                      0.02       0.01 *     2.32 r
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_431_inst_11920/Z (BUFFD12BWP16P90)                      0.01       0.02 *     2.34 r
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_431_194 (net)                          2     0.01 
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_9_inst_11915/I (BUFFD8BWP16P90)                         0.02       0.01 *     2.35 r
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_9_inst_11915/Z (BUFFD8BWP16P90)                         0.01       0.02 *     2.37 r
+  fp16_fpfma_top_inst/clock_optgre_d_BUF_9_194 (net)                            1     0.02 
+  fp16_fpfma_top_inst/U3111/A1 (INR2D4BWP16P90LVT)                                               0.03       0.01 *     2.38 r
+  fp16_fpfma_top_inst/U3111/ZN (INR2D4BWP16P90LVT)                                               0.01       0.02 *     2.40 r
+  fp16_fpfma_top_inst/n3732 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/U4238/A2 (AN2D8BWP16P90)                                                   0.01       0.00 *     2.40 r
+  fp16_fpfma_top_inst/U4238/Z (AN2D8BWP16P90)                                                    0.01       0.02 *     2.42 r
+  fp16_fpfma_top_inst/n3724 (net)                                               2     0.01 
+  fp16_fpfma_top_inst/clock_optgre_d_INV_158_inst_11958/I (INVD4BWP16P90)                        0.02       0.00 *     2.42 r
+  fp16_fpfma_top_inst/clock_optgre_d_INV_158_inst_11958/ZN (INVD4BWP16P90)                       0.01       0.01 *     2.43 f
+  fp16_fpfma_top_inst/clock_optgre_d_INV_158_195 (net)                          1     0.01 
+  fp16_fpfma_top_inst/clock_optgre_d_INV_37_inst_11957/I (INVD4BWP16P90)                         0.02       0.01 *     2.44 f
+  fp16_fpfma_top_inst/clock_optgre_d_INV_37_inst_11957/ZN (INVD4BWP16P90)                        0.01       0.01 *     2.45 r
+  fp16_fpfma_top_inst/clock_optgre_d_INV_37_195 (net)                           2     0.02 
+  fp16_fpfma_top_inst/clock_optctmTdsLR_2_9120/A1 (MOAI22D1BWP16P90)                             0.03       0.02 *     2.47 r
+  fp16_fpfma_top_inst/clock_optctmTdsLR_2_9120/ZN (MOAI22D1BWP16P90)                             0.01       0.01 *     2.48 f
+  fp16_fpfma_top_inst/tmp_net1169 (net)                                         1     0.00 
+  fp16_fpfma_top_inst/clock_optctmTdsLR_1_9119/A1 (OAI22D1BWP16P90)                              0.01       0.00 *     2.48 f
+  fp16_fpfma_top_inst/clock_optctmTdsLR_1_9119/ZN (OAI22D1BWP16P90)                              0.04       0.01 *     2.49 r
+  fp16_fpfma_top_inst/U_ACC_next_mag[85] (net)                                  1     0.00 
+  fp16_fpfma_top_inst/U_ACC_acc_mag_regx85x/D (SDFCNQD2BWP16P90)                                 0.04       0.00 *     2.49 r
+  data arrival time                                                                                                    2.49
+
+  clock CLK (rise edge)                                                                          0.00       1.00       1.00
+  clock network delay (propagated)                                                                          0.09 *     1.09
+  clock reconvergence pessimism                                                                             0.00       1.09
+  fp16_fpfma_top_inst/U_ACC_acc_mag_regx85x/CP (SDFCNQD2BWP16P90)                                                      1.09 r
+  library setup time                                                                                       -0.02 *     1.07
+  data required time                                                                                                   1.07
+  ----------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                   1.07
+  data arrival time                                                                                                   -2.49
+  ----------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                    -1.42
+
+
+1
