@@ -1,0 +1,111 @@
+Warning: Some timing arcs have been disabled for breaking timing loops or because of constant propagation. Use the 'report_disable_timing' command to get the list of these disabled timing arcs. (PTE-003)
+Information: Zero transition time used at to pin of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-054)
+Information: Zero transition time used at to pin of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-054)
+Warning: The hierarchical cell 'u_update/EXP_NEWx2x_u_exp_new' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_update/EXP_OLDx3x_u_exp_old' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_update/EXP_NEWx0x_u_exp_new' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_update/EXP_OLDx1x_u_exp_old' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_update/EXP_NEWx3x_u_exp_new' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_update/EXP_NEWx1x_u_exp_new' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_update/EXP_OLDx2x_u_exp_old' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_update/EXP_OLDx0x_u_exp_old' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx3x_EXP_COLx2x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx1x_EXP_COLx11x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx0x_EXP_COLx4x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx3x_EXP_COLx10x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx2x_EXP_COLx2x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx3x_EXP_COLx4x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx1x_EXP_COLx13x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx1x_EXP_COLx2x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx3x_EXP_COLx12x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx2x_EXP_COLx10x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx2x_EXP_COLx4x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx3x_EXP_COLx6x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx1x_EXP_COLx15x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx1x_EXP_COLx4x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx3x_EXP_COLx14x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx2x_EXP_COLx6x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx3x_EXP_COLx8x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx1x_EXP_COLx6x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx2x_EXP_COLx8x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx0x_EXP_COLx11x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx0x_EXP_COLx6x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx1x_EXP_COLx8x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx0x_EXP_COLx13x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx0x_EXP_COLx8x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx3x_EXP_COLx1x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx2x_EXP_COLx12x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx1x_EXP_COLx10x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx2x_EXP_COLx1x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx0x_EXP_COLx15x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx3x_EXP_COLx3x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx2x_EXP_COLx14x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx1x_EXP_COLx1x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx3x_EXP_COLx11x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx2x_EXP_COLx3x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx0x_EXP_COLx1x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx1x_EXP_COLx3x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx3x_EXP_COLx13x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx2x_EXP_COLx5x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx0x_EXP_COLx3x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx1x_EXP_COLx5x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx3x_EXP_COLx15x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx1x_EXP_COLx12x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx0x_EXP_COLx10x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx0x_EXP_COLx5x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx1x_EXP_COLx7x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx3x_EXP_COLx5x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx1x_EXP_COLx14x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx0x_EXP_COLx12x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx0x_EXP_COLx7x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx2x_EXP_COLx11x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx3x_EXP_COLx7x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx0x_EXP_COLx9x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx2x_EXP_COLx13x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx2x_EXP_COLx7x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx1x_EXP_COLx0x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx3x_EXP_COLx9x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx0x_EXP_COLx0x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx2x_EXP_COLx15x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx2x_EXP_COLx9x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx3x_EXP_COLx0x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx1x_EXP_COLx9x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx0x_EXP_COLx2x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx2x_EXP_COLx0x_u_exp' is an empty cell (PWR-278)
+Warning: The hierarchical cell 'u_softmax/EXP_ROWx0x_EXP_COLx14x_u_exp' is an empty cell (PWR-278)
+Warning: Neither event file or switching activity data present for power estimation. The command will propagate switching activity values for power calculation.  (PWR-246)
+Information: Running switching activity propagation with 4 threads!
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
+****************************************
+Report : Averaged Power
+Design : flash_attention_top
+Version: P-2019.03-SP5
+Date   : Mon May 11 16:44:21 2026
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0101    0.0000    0.0000    0.0101 (66.48%)  i
+register                5.673e-06 3.033e-06 2.972e-04 3.059e-04 ( 2.01%)  
+combinational           4.499e-05 2.234e-04 4.533e-03 4.801e-03 (31.52%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 2.265e-04   ( 1.49%)
+  Cell Internal Power  =    0.0102   (66.81%)
+  Cell Leakage Power   = 4.830e-03   (31.70%)
+                         ---------
+Total Power            =    0.0152  (100.00%)
+
+1

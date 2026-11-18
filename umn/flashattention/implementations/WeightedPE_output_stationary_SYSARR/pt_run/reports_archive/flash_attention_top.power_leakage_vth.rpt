@@ -1,0 +1,40 @@
+****************************************
+Report : Threshold Voltage Group based leakage power
+	-threshold_voltage_group
+Design : flash_attention_top
+Version: P-2019.03-SP5
+Date   : Mon May 11 15:53:16 2026
+****************************************
+
+--------------------------------------------------------------------------------
+Other Vth:     Cells with a threshold_voltage_group attribute value other than 
+               what has been defined as Low Vth with the -lvth option.
+Undefined Vth: Cells which do not have the threshold_voltage_group attribute.
+--------------------------------------------------------------------------------
+Attributes :
+------------
+	 u -> user defined power group
+
+Power Group            DEFAULT_VTH_GROUP   Total
+Name                   leakage (%)         leakage (%)         Attrs
+--------------------------------------------------------------------------------
+memory                0.0000 (  0.00%)    0.0000 (  0.00%)      
+clock_network         0.0000 (  0.00%)    0.0000 (  0.00%)      
+black_box             0.0000 (  0.00%)    0.0000 (  0.00%)      
+io_pad                0.0000 (  0.00%)    0.0000 (  0.00%)      
+combinational      4.533e-03 (100.00%) 4.533e-03 (100.00%)      
+register           2.972e-04 (100.00%) 2.972e-04 (100.00%)      
+sequential            0.0000 (  0.00%)    0.0000 (  0.00%)      
+--------------------------------------------------------------------------------
+Total              4.830e-03 (100.00%) 4.830e-03 (100.00%)
+--------------------------------------------------------------------------------
+SUMMARY : 
+
+	Other Vth leakage (%)     =    0.0000 (  0.00%)
+	Undefined Vth leakage (%) = 4.830e-03 (100.00%)
+	----------------------------------------------
+	Total leakage (%)         = 4.830e-03 (100.00%)
+
+--------------------------------------------------------------------------------
+
+1

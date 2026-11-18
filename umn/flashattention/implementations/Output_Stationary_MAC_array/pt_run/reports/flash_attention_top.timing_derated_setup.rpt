@@ -1,0 +1,650 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-input_pins
+	-nets
+	-max_paths 1
+	-group inputs
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : flash_attention_top
+Version: P-2019.03-SP5
+Date   : Mon May 11 16:45:02 2026
+****************************************
+
+
+  Startpoint: hbm_rd_data[17]
+               (input port clocked by CLK)
+  Endpoint: Qi_regx0xx1xx1x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.05(cell)  1.00(net)
+  Min Clock Paths Derating Factor : 0.90(cell)  1.10(net)
+  Max Clock Paths Derating Factor : 1.05(cell)  1.00(net)
+
+  Point                               Fanout    Cap      Trans       Incr       Path
+  -------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00       0.00
+  clock network delay (ideal)                                        0.00       0.00
+  input external delay                                               0.08       0.08 r
+  hbm_rd_data[17] (in)                                    0.01       0.00 $     0.08 r
+  hbm_rd_data[17] (net)                  1     0.00 
+  U33364/I (BUFFD1BWP16P90LVT)                            0.00       0.00 *     0.08 r
+  U33364/Z (BUFFD1BWP16P90LVT)                            0.00       0.05 *     0.13 r
+  n14560 (net)                          20     0.03 
+  U29046/I (CKND1BWP16P90LVT)                             0.00       0.00 *     0.13 r
+  U29046/ZN (CKND1BWP16P90LVT)                            0.00       0.05 *     0.18 f
+  n36160 (net)                          18     0.02 
+  U30135/B2 (IOA22D1BWP16P90LVT)                          0.00       0.00 *     0.18 f
+  U30135/ZN (IOA22D1BWP16P90LVT)                          0.00       0.01 *     0.20 r
+  n7591 (net)                            1     0.00 
+  Qi_regx0xx1xx1x/D (DFQD2BWP16P90LVT)                    0.00       0.00 *     0.20 r
+  data arrival time                                                             0.20
+
+  clock CLK (rise edge)                                   0.00       2.00       2.00
+  clock network delay (ideal)                                        0.00       2.00
+  clock reconvergence pessimism                                      0.00       2.00
+  Qi_regx0xx1xx1x/CP (DFQD2BWP16P90LVT)                                         2.00 r
+  library setup time                                                -0.01 *     1.99
+  data required time                                                            1.99
+  -------------------------------------------------------------------------------------
+  data required time                                                            1.99
+  data arrival time                                                            -0.20
+  -------------------------------------------------------------------------------------
+  slack (MET)                                                                   1.79
+
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-input_pins
+	-nets
+	-max_paths 1
+	-group output
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : flash_attention_top
+Version: P-2019.03-SP5
+Date   : Mon May 11 16:45:02 2026
+****************************************
+
+
+  Startpoint: state_regx0x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: hbm_rd_addr[0]
+               (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.05(cell)  1.00(net)
+  Min Clock Paths Derating Factor : 0.90(cell)  1.10(net)
+  Max Clock Paths Derating Factor : 1.05(cell)  1.00(net)
+
+  Point                               Fanout    Cap      Trans       Incr       Path
+  -------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00       0.00
+  clock network delay (ideal)                                        0.00       0.00
+  state_regx0x/CP (DFCNQD2BWP16P90LVT)                    0.00       0.00       0.00 r
+  state_regx0x/Q (DFCNQD2BWP16P90LVT)                     0.00       0.03 *     0.03 r
+  state[0] (net)                         1     0.00 
+  U29825/I (BUFFD1BWP16P90LVT)                            0.00       0.00 *     0.03 r
+  U29825/Z (BUFFD1BWP16P90LVT)                            0.00       0.02 *     0.05 r
+  n14825 (net)                          11     0.01 
+  U28856/I (CKND1BWP16P90LVT)                             0.00       0.00 *     0.05 r
+  U28856/ZN (CKND1BWP16P90LVT)                            0.00       0.02 *     0.07 f
+  n36211 (net)                           6     0.01 
+  U29824/A1 (NR2D1BWP16P90LVT)                            0.00       0.00 *     0.07 f
+  U29824/ZN (NR2D1BWP16P90LVT)                            0.00       0.03 *     0.10 r
+  n3443 (net)                            9     0.01 
+  U28862/A2 (NR2D1BWP16P90LVT)                            0.00       0.00 *     0.10 r
+  U28862/ZN (NR2D1BWP16P90LVT)                            0.00       0.01 *     0.11 f
+  n3518 (net)                            2     0.00 
+  U28853/A1 (ND3D1BWP16P90LVT)                            0.00       0.00 *     0.11 f
+  U28853/ZN (ND3D1BWP16P90LVT)                            0.00       0.01 *     0.12 r
+  n2132 (net)                            1     0.00 
+  U28852/I (BUFFD1BWP16P90LVT)                            0.00       0.00 *     0.12 r
+  U28852/Z (BUFFD1BWP16P90LVT)                            0.00       0.04 *     0.15 r
+  n14821 (net)                          23     0.02 
+  U27977/I (CKND1BWP16P90LVT)                             0.00       0.00 *     0.15 r
+  U27977/ZN (CKND1BWP16P90LVT)                            0.00       0.03 *     0.19 f
+  n36192 (net)                          12     0.01 
+  U28744/B1 (AOI22D1BWP16P90LVT)                          0.00       0.00 *     0.19 f
+  U28744/ZN (AOI22D1BWP16P90LVT)                          0.00       0.01 *     0.20 r
+  n3554 (net)                            1     0.00 
+  U28743/B (OAI211D1BWP16P90LVT)                          0.00       0.00 *     0.20 r
+  U28743/ZN (OAI211D1BWP16P90LVT)                         0.00       0.02 *     0.22 f
+  hbm_rd_addr[0] (net)                   1     0.00 
+  hbm_rd_addr[0] (out)                                    0.00       0.00 *     0.22 f
+  data arrival time                                                             0.22
+
+  clock CLK (rise edge)                                   0.00       2.00       2.00
+  clock network delay (ideal)                                        0.00       2.00
+  clock reconvergence pessimism                                      0.00       2.00
+  output external delay                                             -0.12       1.88
+  data required time                                                            1.88
+  -------------------------------------------------------------------------------------
+  data required time                                                            1.88
+  data arrival time                                                            -0.22
+  -------------------------------------------------------------------------------------
+  slack (MET)                                                                   1.66
+
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-input_pins
+	-nets
+	-max_paths 1
+	-group reg2reg
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : flash_attention_top
+Version: P-2019.03-SP5
+Date   : Mon May 11 16:45:02 2026
+****************************************
+
+
+  Startpoint: li_regx3xx0x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: O_norm_regx3xx0xx6x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.05(cell)  1.00(net)
+  Min Clock Paths Derating Factor : 0.90(cell)  1.10(net)
+  Max Clock Paths Derating Factor : 1.05(cell)  1.00(net)
+
+  Point                                                           Fanout    Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                               0.00       0.00       0.00
+  clock network delay (ideal)                                                                    0.00       0.00
+  li_regx3xx0x/CP (DFQD2BWP16P90LVT)                                                  0.00       0.00       0.00 r
+  li_regx3xx0x/Q (DFQD2BWP16P90LVT)                                                   0.00       0.03 *     0.03 r
+  li[0] (net)                                                        1     0.00 
+  U13992/I (INVD4BWP16P90LVT)                                                         0.00       0.00 *     0.03 r
+  U13992/ZN (INVD4BWP16P90LVT)                                                        0.00       0.01 *     0.04 f
+  n16803 (net)                                                       2     0.01 
+  U17028/I (CKND16BWP16P90LVT)                                                        0.00       0.00 *     0.04 f
+  U17028/ZN (CKND16BWP16P90LVT)                                                       0.00       0.01 *     0.05 r
+  n16802 (net)                                                      50     0.05 
+  div_868_I4_u_div_u_add_B5/U392/A2 (ND2D1BWP16P90LVT)                                0.00       0.00 *     0.05 r
+  div_868_I4_u_div_u_add_B5/U392/ZN (ND2D1BWP16P90LVT)                                0.00       0.01 *     0.06 f
+  div_868_I4_u_div_u_add_B5/n322 (net)                               2     0.00 
+  div_868_I4_u_div_u_add_B5/U415/I (CKND2BWP16P90LVT)                                 0.00       0.00 *     0.06 f
+  div_868_I4_u_div_u_add_B5/U415/ZN (CKND2BWP16P90LVT)                                0.00       0.01 *     0.07 r
+  div_868_I4_u_div_u_add_B5/n323 (net)                               1     0.00 
+  div_868_I4_u_div_u_add_B5/U399/CI (FA1D2BWP16P90LVT)                                0.00       0.00 *     0.07 r
+  div_868_I4_u_div_u_add_B5/U399/CO (FA1D2BWP16P90LVT)                                0.00       0.03 *     0.09 r
+  div_868_I4_u_div_u_add_B5/n320 (net)                               3     0.01 
+  div_868_I4_u_div_u_add_B5/U398/A1 (AOI21D4BWP16P90LVT)                              0.00       0.00 *     0.09 r
+  div_868_I4_u_div_u_add_B5/U398/ZN (AOI21D4BWP16P90LVT)                              0.00       0.01 *     0.10 f
+  div_868_I4_u_div_u_add_B5/n312 (net)                               2     0.00 
+  div_868_I4_u_div_u_add_B5/U495/I (INVD1BWP16P90)                                    0.00       0.00 *     0.10 f
+  div_868_I4_u_div_u_add_B5/U495/ZN (INVD1BWP16P90)                                   0.00       0.01 *     0.12 r
+  div_868_I4_u_div_u_add_B5/n311 (net)                               4     0.00 
+  div_868_I4_u_div_u_add_B5/U406/A1 (XNR2D1BWP16P90LVT)                               0.00       0.00 *     0.12 r
+  div_868_I4_u_div_u_add_B5/U406/ZN (XNR2D1BWP16P90LVT)                               0.00       0.02 *     0.13 f
+  div_868_I4_u_div_u_add_B5/SUM[6] (net)                             1     0.00 
+  U13089/A2 (XOR2D1BWP16P90LVT)                                                       0.00       0.00 *     0.13 f
+  U13089/Z (XOR2D1BWP16P90LVT)                                                        0.00       0.06 *     0.19 r
+  div_868_I4_u_div_BInv[5][6] (net)                                 22     0.02 
+  div_868_I4_u_div_u_add_PartRem_11_5/U224/I (INVD1BWP20P90LVT)                       0.00       0.00 *     0.19 r
+  div_868_I4_u_div_u_add_PartRem_11_5/U224/ZN (INVD1BWP20P90LVT)                      0.00       0.01 *     0.20 f
+  div_868_I4_u_div_u_add_PartRem_11_5/n140 (net)                     1     0.00 
+  div_868_I4_u_div_u_add_PartRem_11_5/U226/A2 (NR2D1BWP16P90LVT)                      0.00       0.00 *     0.20 f
+  div_868_I4_u_div_u_add_PartRem_11_5/U226/ZN (NR2D1BWP16P90LVT)                      0.00       0.01 *     0.21 r
+  div_868_I4_u_div_u_add_PartRem_11_5/n139 (net)                     1     0.00 
+  div_868_I4_u_div_u_add_PartRem_11_5/U169/A2 (ND2D1BWP16P90LVT)                      0.00       0.00 *     0.21 r
+  div_868_I4_u_div_u_add_PartRem_11_5/U169/ZN (ND2D1BWP16P90LVT)                      0.00       0.01 *     0.22 f
+  div_868_I4_u_div_u_add_PartRem_11_5/n138 (net)                     1     0.00 
+  div_868_I4_u_div_u_add_PartRem_11_5/U220/A1 (CKNR2D2BWP16P90LVT)                    0.00       0.00 *     0.22 f
+  div_868_I4_u_div_u_add_PartRem_11_5/U220/ZN (CKNR2D2BWP16P90LVT)                    0.00       0.01 *     0.22 r
+  div_868_I4_u_div_u_add_PartRem_11_5/n122 (net)                     1     0.00 
+  div_868_I4_u_div_u_add_PartRem_11_5/U148/A1 (ND2D1BWP16P90LVT)                      0.00       0.00 *     0.22 r
+  div_868_I4_u_div_u_add_PartRem_11_5/U148/ZN (ND2D1BWP16P90LVT)                      0.00       0.01 *     0.23 f
+  div_868_I4_u_div_u_add_PartRem_11_5/n121 (net)                     1     0.00 
+  div_868_I4_u_div_u_add_PartRem_11_5/U253/A2 (OR2D1BWP16P90LVT)                      0.00       0.00 *     0.23 f
+  div_868_I4_u_div_u_add_PartRem_11_5/U253/Z (OR2D1BWP16P90LVT)                       0.00       0.01 *     0.24 f
+  div_868_I4_u_div_u_add_PartRem_11_5/n298 (net)                     1     0.00 
+  div_868_I4_u_div_u_add_PartRem_11_5/U218/A2 (NR2D1BWP16P90LVT)                      0.00       0.00 *     0.24 f
+  div_868_I4_u_div_u_add_PartRem_11_5/U218/ZN (NR2D1BWP16P90LVT)                      0.00       0.01 *     0.25 r
+  div_868_I4_u_div_u_add_PartRem_11_5/CO (net)                       1     0.00 
+  U16381/A1 (OAI22D2BWP16P90LVT)                                                      0.00       0.00 *     0.25 r
+  U16381/ZN (OAI22D2BWP16P90LVT)                                                      0.00       0.01 *     0.26 f
+  n31583 (net)                                                       1     0.00 
+  U21198/I0 (MUX2D8BWP16P90LVT)                                                       0.00       0.00 *     0.26 f
+  U21198/Z (MUX2D8BWP16P90LVT)                                                        0.00       0.02 *     0.28 f
+  n31600 (net)                                                       5     0.01 
+  U18747/I (INVD4BWP16P90LVT)                                                         0.00       0.00 *     0.28 f
+  U18747/ZN (INVD4BWP16P90LVT)                                                        0.00       0.01 *     0.28 r
+  n31585 (net)                                                       3     0.01 
+  U10205/A1 (AN2D4BWP16P90LVT)                                                        0.00       0.00 *     0.28 r
+  U10205/Z (AN2D4BWP16P90LVT)                                                         0.00       0.01 *     0.30 r
+  n12023 (net)                                                       3     0.00 
+  U45845/A3 (AOI33D1BWP16P90LVT)                                                      0.00       0.00 *     0.30 r
+  U45845/ZN (AOI33D1BWP16P90LVT)                                                      0.00       0.01 *     0.31 f
+  n31590 (net)                                                       1     0.00 
+  U14364/B (OAI211D2BWP16P90LVT)                                                      0.00       0.00 *     0.31 f
+  U14364/ZN (OAI211D2BWP16P90LVT)                                                     0.00       0.01 *     0.32 r
+  n34816 (net)                                                       1     0.00 
+  U14363/I (BUFFD4BWP16P90LVT)                                                        0.00       0.00 *     0.32 r
+  U14363/Z (BUFFD4BWP16P90LVT)                                                        0.00       0.02 *     0.33 r
+  n9486 (net)                                                       15     0.01 
+  div_868_I4_u_div_u_add_PartRem_10_2/U177/A1 (NR2D1BWP16P90LVT)                      0.00       0.00 *     0.33 r
+  div_868_I4_u_div_u_add_PartRem_10_2/U177/ZN (NR2D1BWP16P90LVT)                      0.00       0.01 *     0.34 f
+  div_868_I4_u_div_u_add_PartRem_10_2/n118 (net)                     3     0.00 
+  div_868_I4_u_div_u_add_PartRem_10_2/U171/A1 (NR2D1BWP16P90LVT)                      0.00       0.00 *     0.34 f
+  div_868_I4_u_div_u_add_PartRem_10_2/U171/ZN (NR2D1BWP16P90LVT)                      0.00       0.01 *     0.35 r
+  div_868_I4_u_div_u_add_PartRem_10_2/n116 (net)                     1     0.00 
+  div_868_I4_u_div_u_add_PartRem_10_2/U178/A2 (ND2D1BWP16P90LVT)                      0.00       0.00 *     0.35 r
+  div_868_I4_u_div_u_add_PartRem_10_2/U178/ZN (ND2D1BWP16P90LVT)                      0.00       0.01 *     0.36 f
+  div_868_I4_u_div_u_add_PartRem_10_2/n254 (net)                     1     0.00 
+  div_868_I4_u_div_u_add_PartRem_10_2/U174/A1 (ND2D1BWP16P90LVT)                      0.00       0.00 *     0.36 f
+  div_868_I4_u_div_u_add_PartRem_10_2/U174/ZN (ND2D1BWP16P90LVT)                      0.00       0.01 *     0.36 r
+  div_868_I4_u_div_u_add_PartRem_10_2/n257 (net)                     1     0.00 
+  div_868_I4_u_div_u_add_PartRem_10_2/U173/A1 (AN2D1BWP16P90LVT)                      0.00       0.00 *     0.36 r
+  div_868_I4_u_div_u_add_PartRem_10_2/U173/Z (AN2D1BWP16P90LVT)                       0.00       0.01 *     0.38 r
+  div_868_I4_u_div_u_add_PartRem_10_2/CO (net)                       3     0.00 
+  U14007/I (CKND2BWP16P90LVT)                                                         0.00       0.00 *     0.38 r
+  U14007/ZN (CKND2BWP16P90LVT)                                                        0.00       0.01 *     0.39 f
+  n31611 (net)                                                       2     0.00 
+  U45853/B2 (OAI22D1BWP16P90LVT)                                                      0.00       0.00 *     0.39 f
+  U45853/ZN (OAI22D1BWP16P90LVT)                                                      0.00       0.01 *     0.39 r
+  n31614 (net)                                                       1     0.00 
+  U12291/A2 (OA21D2BWP16P90LVT)                                                       0.00       0.00 *     0.39 r
+  U12291/Z (OA21D2BWP16P90LVT)                                                        0.00       0.03 *     0.42 r
+  n12322 (net)                                                       7     0.02 
+  U10389/S (CKMUX2D4BWP16P90LVT)                                                      0.00       0.00 *     0.42 r
+  U10389/Z (CKMUX2D4BWP16P90LVT)                                                      0.00       0.03 *     0.45 f
+  n34888 (net)                                                      15     0.01 
+  div_868_I4_u_div_u_add_PartRem_9_4/U203/A1 (ND2D1BWP16P90LVT)                       0.00       0.00 *     0.45 f
+  div_868_I4_u_div_u_add_PartRem_9_4/U203/ZN (ND2D1BWP16P90LVT)                       0.00       0.01 *     0.46 r
+  div_868_I4_u_div_u_add_PartRem_9_4/n141 (net)                      3     0.00 
+  div_868_I4_u_div_u_add_PartRem_9_4/U210/A2 (OAI21D2BWP16P90LVT)                     0.00       0.00 *     0.46 r
+  div_868_I4_u_div_u_add_PartRem_9_4/U210/ZN (OAI21D2BWP16P90LVT)                     0.00       0.01 *     0.47 f
+  div_868_I4_u_div_u_add_PartRem_9_4/n134 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_9_4/U6/A2 (AOI21D1BWP16P90LVT)                       0.00       0.00 *     0.47 f
+  div_868_I4_u_div_u_add_PartRem_9_4/U6/ZN (AOI21D1BWP16P90LVT)                       0.00       0.02 *     0.49 r
+  div_868_I4_u_div_u_add_PartRem_9_4/n11 (net)                       1     0.00 
+  div_868_I4_u_div_u_add_PartRem_9_4/U212/B (OAI21D4BWP16P90LVT)                      0.00       0.00 *     0.49 r
+  div_868_I4_u_div_u_add_PartRem_9_4/U212/ZN (OAI21D4BWP16P90LVT)                     0.00       0.01 *     0.50 f
+  div_868_I4_u_div_u_add_PartRem_9_4/CO (net)                        7     0.01 
+  U12250/A1 (ND2D1BWP16P90LVT)                                                        0.00       0.00 *     0.50 f
+  U12250/ZN (ND2D1BWP16P90LVT)                                                        0.00       0.01 *     0.51 r
+  n31655 (net)                                                       1     0.00 
+  U16535/A1 (OAI221D1BWP16P90LVT)                                                     0.00       0.00 *     0.51 r
+  U16535/ZN (OAI221D1BWP16P90LVT)                                                     0.00       0.01 *     0.52 f
+  n31656 (net)                                                       1     0.00 
+  U19666/B (OAI21D2BWP16P90LVT)                                                       0.00       0.00 *     0.52 f
+  U19666/ZN (OAI21D2BWP16P90LVT)                                                      0.00       0.01 *     0.53 r
+  n31681 (net)                                                       3     0.01 
+  U14174/I (INVD4BWP16P90LVT)                                                         0.00       0.00 *     0.53 r
+  U14174/ZN (INVD4BWP16P90LVT)                                                        0.00       0.02 *     0.55 f
+  n31708 (net)                                                      10     0.02 
+  U18955/S (MUX2D4BWP16P90LVT)                                                        0.00       0.00 *     0.55 f
+  U18955/Z (MUX2D4BWP16P90LVT)                                                        0.00       0.03 *     0.57 r
+  n34878 (net)                                                      15     0.02 
+  div_868_I4_u_div_u_add_PartRem_8_4/U231/A1 (NR2D2BWP16P90)                          0.00       0.00 *     0.57 r
+  div_868_I4_u_div_u_add_PartRem_8_4/U231/ZN (NR2D2BWP16P90)                          0.00       0.01 *     0.58 f
+  div_868_I4_u_div_u_add_PartRem_8_4/n171 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_8_4/U237/A1 (OAI21D2BWP16P90LVT)                     0.00       0.00 *     0.58 f
+  div_868_I4_u_div_u_add_PartRem_8_4/U237/ZN (OAI21D2BWP16P90LVT)                     0.00       0.01 *     0.59 r
+  div_868_I4_u_div_u_add_PartRem_8_4/n170 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_8_4/U236/A2 (AOI21D2BWP16P90LVT)                     0.00       0.00 *     0.59 r
+  div_868_I4_u_div_u_add_PartRem_8_4/U236/ZN (AOI21D2BWP16P90LVT)                     0.00       0.01 *     0.60 f
+  div_868_I4_u_div_u_add_PartRem_8_4/n161 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_8_4/U233/A2 (OAI21D2BWP16P90LVT)                     0.00       0.00 *     0.60 f
+  div_868_I4_u_div_u_add_PartRem_8_4/U233/ZN (OAI21D2BWP16P90LVT)                     0.00       0.01 *     0.62 r
+  div_868_I4_u_div_u_add_PartRem_8_4/n132 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_8_4/U248/A2 (IOAI21D4BWP16P90LVT)                    0.00       0.00 *     0.62 r
+  div_868_I4_u_div_u_add_PartRem_8_4/U248/ZN (IOAI21D4BWP16P90LVT)                    0.00       0.02 *     0.64 r
+  div_868_I4_u_div_u_add_PartRem_8_4/CO (net)                        7     0.01 
+  U19789/I (INVD4BWP16P90LVT)                                                         0.00       0.00 *     0.64 r
+  U19789/ZN (INVD4BWP16P90LVT)                                                        0.00       0.01 *     0.64 f
+  n31714 (net)                                                       6     0.01 
+  U16722/A2 (ND2D1BWP16P90LVT)                                                        0.00       0.00 *     0.64 f
+  U16722/ZN (ND2D1BWP16P90LVT)                                                        0.00       0.01 *     0.66 r
+  n31720 (net)                                                       2     0.00 
+  U17139/A4 (ND4D4BWP16P90LVT)                                                        0.00       0.00 *     0.66 r
+  U17139/ZN (ND4D4BWP16P90LVT)                                                        0.00       0.02 *     0.67 f
+  n31719 (net)                                                       3     0.00 
+  U19862/A2 (AN2D4BWP16P90LVT)                                                        0.00       0.00 *     0.67 f
+  U19862/Z (AN2D4BWP16P90LVT)                                                         0.00       0.02 *     0.69 f
+  n11517 (net)                                                      12     0.01 
+  U45944/B2 (AOI22D1BWP16P90LVT)                                                      0.00       0.00 *     0.69 f
+  U45944/ZN (AOI22D1BWP16P90LVT)                                                      0.00       0.02 *     0.71 r
+  n31747 (net)                                                       1     0.00 
+  U22214/A4 (ND4D4BWP16P90LVT)                                                        0.00       0.00 *     0.71 r
+  U22214/ZN (ND4D4BWP16P90LVT)                                                        0.00       0.03 *     0.73 f
+  div_868_I4_u_div_PartRem[8][9] (net)                              15     0.01 
+  div_868_I4_u_div_u_add_PartRem_7_5/U283/A1 (NR2D1BWP16P90)                          0.00       0.00 *     0.73 f
+  div_868_I4_u_div_u_add_PartRem_7_5/U283/ZN (NR2D1BWP16P90)                          0.00       0.02 *     0.75 r
+  div_868_I4_u_div_u_add_PartRem_7_5/n159 (net)                      3     0.00 
+  div_868_I4_u_div_u_add_PartRem_7_5/U314/A2 (NR2D1BWP16P90LVT)                       0.00       0.00 *     0.75 r
+  div_868_I4_u_div_u_add_PartRem_7_5/U314/ZN (NR2D1BWP16P90LVT)                       0.00       0.01 *     0.76 f
+  div_868_I4_u_div_u_add_PartRem_7_5/n157 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_7_5/U183/A2 (ND2D1BWP16P90LVT)                       0.00       0.00 *     0.76 f
+  div_868_I4_u_div_u_add_PartRem_7_5/U183/ZN (ND2D1BWP16P90LVT)                       0.00       0.01 *     0.77 r
+  div_868_I4_u_div_u_add_PartRem_7_5/n155 (net)                      1     0.00 
+  div_868_I4_u_div_u_add_PartRem_7_5/U282/A1 (OAI21D2BWP16P90LVT)                     0.00       0.00 *     0.77 r
+  div_868_I4_u_div_u_add_PartRem_7_5/U282/ZN (OAI21D2BWP16P90LVT)                     0.00       0.01 *     0.79 f
+  div_868_I4_u_div_u_add_PartRem_7_5/n1 (net)                        6     0.01 
+  div_868_I4_u_div_u_add_PartRem_7_5/U257/A1 (AO21D1BWP16P90LVT)                      0.00       0.00 *     0.79 f
+  div_868_I4_u_div_u_add_PartRem_7_5/U257/Z (AO21D1BWP16P90LVT)                       0.00       0.01 *     0.80 f
+  div_868_I4_u_div_u_add_PartRem_7_5/CO (net)                        1     0.00 
+  U21263/A1 (AN2D2BWP16P90LVT)                                                        0.00       0.00 *     0.80 f
+  U21263/Z (AN2D2BWP16P90LVT)                                                         0.00       0.01 *     0.81 f
+  n12194 (net)                                                       2     0.00 
+  U20016/A2 (OAI21D2BWP16P90LVT)                                                      0.00       0.00 *     0.81 f
+  U20016/ZN (OAI21D2BWP16P90LVT)                                                      0.00       0.01 *     0.82 r
+  n31783 (net)                                                       1     0.00 
+  U18965/B (OAI21D4BWP16P90LVT)                                                       0.00       0.00 *     0.82 r
+  U18965/ZN (OAI21D4BWP16P90LVT)                                                      0.00       0.02 *     0.84 f
+  n31859 (net)                                                      10     0.02 
+  U19619/A2 (AN2D8BWP16P90LVT)                                                        0.00       0.00 *     0.84 f
+  U19619/Z (AN2D8BWP16P90LVT)                                                         0.00       0.02 *     0.85 f
+  n11573 (net)                                                      13     0.01 
+  U16983/B2 (AOI22D2BWP16P90LVT)                                                      0.00       0.00 *     0.85 f
+  U16983/ZN (AOI22D2BWP16P90LVT)                                                      0.00       0.01 *     0.87 r
+  n31843 (net)                                                       1     0.00 
+  U22445/A2 (ND4D4BWP16P90LVT)                                                        0.00       0.00 *     0.87 r
+  U22445/ZN (ND4D4BWP16P90LVT)                                                        0.00       0.03 *     0.89 f
+  div_868_I4_u_div_PartRem[7][7] (net)                              15     0.01 
+  div_868_I4_u_div_u_add_PartRem_6_6/U265/A1 (NR2D1BWP16P90LVT)                       0.00       0.00 *     0.89 f
+  div_868_I4_u_div_u_add_PartRem_6_6/U265/ZN (NR2D1BWP16P90LVT)                       0.00       0.02 *     0.91 r
+  div_868_I4_u_div_u_add_PartRem_6_6/n158 (net)                      3     0.00 
+  div_868_I4_u_div_u_add_PartRem_6_6/U194/A1 (OAI21D1BWP16P90LVT)                     0.00       0.00 *     0.91 r
+  div_868_I4_u_div_u_add_PartRem_6_6/U194/ZN (OAI21D1BWP16P90LVT)                     0.00       0.01 *     0.92 f
+  div_868_I4_u_div_u_add_PartRem_6_6/n157 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_6_6/U178/A2 (AOI21D1BWP16P90LVT)                     0.00       0.00 *     0.92 f
+  div_868_I4_u_div_u_add_PartRem_6_6/U178/ZN (AOI21D1BWP16P90LVT)                     0.00       0.01 *     0.93 r
+  div_868_I4_u_div_u_add_PartRem_6_6/n147 (net)                      1     0.00 
+  div_868_I4_u_div_u_add_PartRem_6_6/U257/B (OAI21D2BWP16P90LVT)                      0.00       0.00 *     0.93 r
+  div_868_I4_u_div_u_add_PartRem_6_6/U257/ZN (OAI21D2BWP16P90LVT)                     0.00       0.01 *     0.94 f
+  div_868_I4_u_div_u_add_PartRem_6_6/n145 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_6_6/U255/A2 (ND2D1BWP16P90LVT)                       0.00       0.00 *     0.94 f
+  div_868_I4_u_div_u_add_PartRem_6_6/U255/ZN (ND2D1BWP16P90LVT)                       0.00       0.01 *     0.95 r
+  div_868_I4_u_div_u_add_PartRem_6_6/n319 (net)                      1     0.00 
+  div_868_I4_u_div_u_add_PartRem_6_6/U256/A1 (ND2D1BWP16P90LVT)                       0.00       0.00 *     0.95 r
+  div_868_I4_u_div_u_add_PartRem_6_6/U256/ZN (ND2D1BWP16P90LVT)                       0.00       0.01 *     0.95 f
+  div_868_I4_u_div_u_add_PartRem_6_6/n320 (net)                      1     0.00 
+  div_868_I4_u_div_u_add_PartRem_6_6/U272/A1 (AN2D2BWP16P90LVT)                       0.00       0.00 *     0.95 f
+  div_868_I4_u_div_u_add_PartRem_6_6/U272/Z (AN2D2BWP16P90LVT)                        0.00       0.01 *     0.96 f
+  div_868_I4_u_div_u_add_PartRem_6_6/CO (net)                        3     0.00 
+  U16046/I (INVD1BWP16P90)                                                            0.00       0.00 *     0.96 f
+  U16046/ZN (INVD1BWP16P90)                                                           0.00       0.01 *     0.97 r
+  n31866 (net)                                                       1     0.00 
+  U12264/A2 (ND2D1BWP16P90LVT)                                                        0.00       0.00 *     0.97 r
+  U12264/ZN (ND2D1BWP16P90LVT)                                                        0.00       0.01 *     0.98 f
+  n31869 (net)                                                       2     0.00 
+  U16257/B (OAI21D1BWP16P90LVT)                                                       0.00       0.00 *     0.98 f
+  U16257/ZN (OAI21D1BWP16P90LVT)                                                      0.00       0.01 *     0.99 r
+  n31870 (net)                                                       2     0.00 
+  U23634/I (CKND2BWP16P90LVT)                                                         0.00       0.00 *     0.99 r
+  U23634/ZN (CKND2BWP16P90LVT)                                                        0.00       0.01 *     1.00 f
+  n31872 (net)                                                       3     0.00 
+  U22447/A1 (AN2D2BWP16P90LVT)                                                        0.00       0.00 *     1.00 f
+  U22447/Z (AN2D2BWP16P90LVT)                                                         0.00       0.01 *     1.01 f
+  n11490 (net)                                                       3     0.01 
+  U20777/A1 (AN2D8BWP16P90LVT)                                                        0.00       0.00 *     1.01 f
+  U20777/Z (AN2D8BWP16P90LVT)                                                         0.00       0.01 *     1.03 f
+  n11486 (net)                                                      17     0.02 
+  U46048/B2 (AOI22D1BWP16P90LVT)                                                      0.00       0.00 *     1.03 f
+  U46048/ZN (AOI22D1BWP16P90LVT)                                                      0.00       0.02 *     1.04 r
+  n31931 (net)                                                       3     0.00 
+  U14441/A2 (ND4D2BWP16P90LVT)                                                        0.00       0.00 *     1.04 r
+  U14441/ZN (ND4D2BWP16P90LVT)                                                        0.00       0.03 *     1.07 f
+  n9511 (net)                                                        7     0.01 
+  div_868_I4_u_div_u_add_PartRem_5_6/U280/A1 (NR2D1BWP16P90LVT)                       0.00       0.00 *     1.07 f
+  div_868_I4_u_div_u_add_PartRem_5_6/U280/ZN (NR2D1BWP16P90LVT)                       0.00       0.02 *     1.08 r
+  div_868_I4_u_div_u_add_PartRem_5_6/n178 (net)                      3     0.00 
+  div_868_I4_u_div_u_add_PartRem_5_6/U217/A1 (OAI21D1BWP16P90LVT)                     0.00       0.00 *     1.08 r
+  div_868_I4_u_div_u_add_PartRem_5_6/U217/ZN (OAI21D1BWP16P90LVT)                     0.00       0.01 *     1.10 f
+  div_868_I4_u_div_u_add_PartRem_5_6/n177 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_5_6/U201/A2 (AOI21D1BWP16P90LVT)                     0.00       0.00 *     1.10 f
+  div_868_I4_u_div_u_add_PartRem_5_6/U201/ZN (AOI21D1BWP16P90LVT)                     0.00       0.01 *     1.11 r
+  div_868_I4_u_div_u_add_PartRem_5_6/n167 (net)                      1     0.00 
+  div_868_I4_u_div_u_add_PartRem_5_6/U274/B (OAI21D2BWP16P90LVT)                      0.00       0.00 *     1.11 r
+  div_868_I4_u_div_u_add_PartRem_5_6/U274/ZN (OAI21D2BWP16P90LVT)                     0.00       0.01 *     1.12 f
+  div_868_I4_u_div_u_add_PartRem_5_6/n165 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_5_6/U277/A2 (AOI21D2BWP16P90LVT)                     0.00       0.00 *     1.12 f
+  div_868_I4_u_div_u_add_PartRem_5_6/U277/ZN (AOI21D2BWP16P90LVT)                     0.00       0.01 *     1.12 r
+  div_868_I4_u_div_u_add_PartRem_5_6/n115 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_5_6/U276/A1 (OAI21D2BWP16P90LVT)                     0.00       0.00 *     1.12 r
+  div_868_I4_u_div_u_add_PartRem_5_6/U276/ZN (OAI21D2BWP16P90LVT)                     0.00       0.01 *     1.13 f
+  div_868_I4_u_div_u_add_PartRem_5_6/CO (net)                        2     0.00 
+  U18169/I (INVD2BWP16P90LVT)                                                         0.00       0.00 *     1.13 f
+  U18169/ZN (INVD2BWP16P90LVT)                                                        0.00       0.01 *     1.14 r
+  n31950 (net)                                                       2     0.00 
+  U46062/A2 (OAI21D1BWP16P90LVT)                                                      0.00       0.00 *     1.14 r
+  U46062/ZN (OAI21D1BWP16P90LVT)                                                      0.00       0.01 *     1.15 f
+  n31951 (net)                                                       1     0.00 
+  U20527/B2 (AO22D4BWP16P90LVT)                                                       0.00       0.00 *     1.15 f
+  U20527/Z (AO22D4BWP16P90LVT)                                                        0.00       0.03 *     1.18 f
+  n31993 (net)                                                       7     0.01 
+  U20285/I (INVD4BWP16P90LVT)                                                         0.00       0.00 *     1.18 f
+  U20285/ZN (INVD4BWP16P90LVT)                                                        0.00       0.01 *     1.19 r
+  n31958 (net)                                                       4     0.01 
+  U20299/A2 (AN2D8BWP16P90LVT)                                                        0.00       0.00 *     1.19 r
+  U20299/Z (AN2D8BWP16P90LVT)                                                         0.00       0.02 *     1.20 r
+  n11964 (net)                                                      21     0.02 
+  U20218/C2 (AOI222D1BWP16P90LVT)                                                     0.00       0.00 *     1.20 r
+  U20218/ZN (AOI222D1BWP16P90LVT)                                                     0.00       0.02 *     1.22 f
+  n31996 (net)                                                       1     0.00 
+  U20464/A1 (CKND2D4BWP16P90LVT)                                                      0.00       0.00 *     1.22 f
+  U20464/ZN (CKND2D4BWP16P90LVT)                                                      0.00       0.02 *     1.24 r
+  div_868_I4_u_div_PartRem[5][15] (net)                             15     0.01 
+  div_868_I4_u_div_u_add_PartRem_4_7/U407/A1 (NR2D1BWP16P90LVT)                       0.00       0.00 *     1.24 r
+  div_868_I4_u_div_u_add_PartRem_4_7/U407/ZN (NR2D1BWP16P90LVT)                       0.00       0.01 *     1.25 f
+  div_868_I4_u_div_u_add_PartRem_4_7/n153 (net)                      3     0.00 
+  div_868_I4_u_div_u_add_PartRem_4_7/U312/A2 (NR2D1BWP16P90LVT)                       0.00       0.00 *     1.25 f
+  div_868_I4_u_div_u_add_PartRem_4_7/U312/ZN (NR2D1BWP16P90LVT)                       0.00       0.02 *     1.27 r
+  div_868_I4_u_div_u_add_PartRem_4_7/n147 (net)                      4     0.00 
+  div_868_I4_u_div_u_add_PartRem_4_7/U331/A2 (CKND2D2BWP16P90LVT)                     0.00       0.00 *     1.27 r
+  div_868_I4_u_div_u_add_PartRem_4_7/U331/ZN (CKND2D2BWP16P90LVT)                     0.00       0.01 *     1.28 f
+  div_868_I4_u_div_u_add_PartRem_4_7/n129 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_4_7/U326/A1 (OAI21D2BWP16P90LVT)                     0.00       0.00 *     1.28 f
+  div_868_I4_u_div_u_add_PartRem_4_7/U326/ZN (OAI21D2BWP16P90LVT)                     0.00       0.01 *     1.29 r
+  div_868_I4_u_div_u_add_PartRem_4_7/n128 (net)                      1     0.00 
+  div_868_I4_u_div_u_add_PartRem_4_7/U325/B (AOI21D4BWP16P90LVT)                      0.00       0.00 *     1.29 r
+  div_868_I4_u_div_u_add_PartRem_4_7/U325/ZN (AOI21D4BWP16P90LVT)                     0.00       0.01 *     1.30 f
+  div_868_I4_u_div_u_add_PartRem_4_7/n1 (net)                        7     0.01 
+  div_868_I4_u_div_u_add_PartRem_4_7/U314/A1 (OAI21D2BWP16P90LVT)                     0.00       0.00 *     1.30 f
+  div_868_I4_u_div_u_add_PartRem_4_7/U314/ZN (OAI21D2BWP16P90LVT)                     0.00       0.01 *     1.31 r
+  div_868_I4_u_div_u_add_PartRem_4_7/CO (net)                        1     0.00 
+  U22327/B3 (AOI33D2BWP16P90LVT)                                                      0.00       0.00 *     1.31 r
+  U22327/ZN (AOI33D2BWP16P90LVT)                                                      0.00       0.02 *     1.33 f
+  n32047 (net)                                                       1     0.00 
+  U18572/A1 (ND3D4BWP16P90LVT)                                                        0.00       0.00 *     1.33 f
+  U18572/ZN (ND3D4BWP16P90LVT)                                                        0.00       0.01 *     1.34 r
+  n32053 (net)                                                       5     0.01 
+  U20584/I (INVD4BWP16P90LVT)                                                         0.00       0.00 *     1.34 r
+  U20584/ZN (INVD4BWP16P90LVT)                                                        0.00       0.01 *     1.34 f
+  n32101 (net)                                                       5     0.01 
+  U19192/A1 (AN2D2BWP16P90LVT)                                                        0.00       0.00 *     1.34 f
+  U19192/Z (AN2D2BWP16P90LVT)                                                         0.00       0.02 *     1.37 f
+  n10928 (net)                                                      23     0.02 
+  U46173/A2 (AOI22D1BWP16P90LVT)                                                      0.00       0.00 *     1.37 f
+  U46173/ZN (AOI22D1BWP16P90LVT)                                                      0.00       0.02 *     1.39 r
+  n32119 (net)                                                       1     0.00 
+  U23867/A1 (ND4D4BWP16P90LVT)                                                        0.00       0.00 *     1.39 r
+  U23867/ZN (ND4D4BWP16P90LVT)                                                        0.00       0.03 *     1.41 f
+  div_868_I4_u_div_PartRem[4][11] (net)                             15     0.01 
+  div_868_I4_u_div_u_add_PartRem_3_4/U342/A1 (CKNR2D2BWP16P90LVT)                     0.00       0.00 *     1.41 f
+  div_868_I4_u_div_u_add_PartRem_3_4/U342/ZN (CKNR2D2BWP16P90LVT)                     0.00       0.01 *     1.43 r
+  div_868_I4_u_div_u_add_PartRem_3_4/n205 (net)                      3     0.00 
+  div_868_I4_u_div_u_add_PartRem_3_4/U355/A1 (OAI21D2BWP16P90LVT)                     0.00       0.00 *     1.43 r
+  div_868_I4_u_div_u_add_PartRem_3_4/U355/ZN (OAI21D2BWP16P90LVT)                     0.00       0.01 *     1.44 f
+  div_868_I4_u_div_u_add_PartRem_3_4/n200 (net)                      3     0.00 
+  div_868_I4_u_div_u_add_PartRem_3_4/U354/A2 (AOI21D2BWP16P90LVT)                     0.00       0.00 *     1.44 f
+  div_868_I4_u_div_u_add_PartRem_3_4/U354/ZN (AOI21D2BWP16P90LVT)                     0.00       0.01 *     1.45 r
+  div_868_I4_u_div_u_add_PartRem_3_4/n180 (net)                      3     0.01 
+  div_868_I4_u_div_u_add_PartRem_3_4/U338/A2 (OAI21D4BWP16P90LVT)                     0.00       0.00 *     1.45 r
+  div_868_I4_u_div_u_add_PartRem_3_4/U338/ZN (OAI21D4BWP16P90LVT)                     0.00       0.01 *     1.46 f
+  div_868_I4_u_div_u_add_PartRem_3_4/n144 (net)                      1     0.00 
+  div_868_I4_u_div_u_add_PartRem_3_4/U350/B (AOI21D4BWP16P90LVT)                      0.00       0.00 *     1.46 f
+  div_868_I4_u_div_u_add_PartRem_3_4/U350/ZN (AOI21D4BWP16P90LVT)                     0.00       0.01 *     1.48 r
+  div_868_I4_u_div_u_add_PartRem_3_4/n1 (net)                        8     0.01 
+  div_868_I4_u_div_u_add_PartRem_3_4/U356/A1 (OAI21D4BWP16P90LVT)                     0.00       0.00 *     1.48 r
+  div_868_I4_u_div_u_add_PartRem_3_4/U356/ZN (OAI21D4BWP16P90LVT)                     0.00       0.01 *     1.49 f
+  div_868_I4_u_div_u_add_PartRem_3_4/CO (net)                        7     0.01 
+  U19236/B2 (AOI33D2BWP16P90LVT)                                                      0.00       0.00 *     1.49 f
+  U19236/ZN (AOI33D2BWP16P90LVT)                                                      0.00       0.01 *     1.50 r
+  n32154 (net)                                                       1     0.00 
+  U18686/A3 (ND3D4BWP16P90LVT)                                                        0.00       0.00 *     1.50 r
+  U18686/ZN (ND3D4BWP16P90LVT)                                                        0.00       0.02 *     1.53 f
+  n32161 (net)                                                       5     0.02 
+  U18685/A2 (AN2D8BWP16P90LVT)                                                        0.00       0.00 *     1.53 f
+  U18685/Z (AN2D8BWP16P90LVT)                                                         0.00       0.02 *     1.55 f
+  n12000 (net)                                                      27     0.02 
+  U23777/B2 (AOI22D1BWP16P90)                                                         0.00       0.00 *     1.55 f
+  U23777/ZN (AOI22D1BWP16P90)                                                         0.00       0.02 *     1.57 r
+  n32215 (net)                                                       1     0.00 
+  U23776/A3 (ND4D4BWP16P90LVT)                                                        0.00       0.00 *     1.57 r
+  U23776/ZN (ND4D4BWP16P90LVT)                                                        0.00       0.03 *     1.60 f
+  div_868_I4_u_div_PartRem[3][16] (net)                             15     0.01 
+  div_868_I4_u_div_u_add_PartRem_2_4/U347/A1 (CKNR2D2BWP16P90LVT)                     0.00       0.00 *     1.60 f
+  div_868_I4_u_div_u_add_PartRem_2_4/U347/ZN (CKNR2D2BWP16P90LVT)                     0.00       0.02 *     1.61 r
+  div_868_I4_u_div_u_add_PartRem_2_4/n167 (net)                      4     0.00 
+  div_868_I4_u_div_u_add_PartRem_2_4/U334/A1 (NR2D2BWP16P90LVT)                       0.00       0.00 *     1.61 r
+  div_868_I4_u_div_u_add_PartRem_2_4/U334/ZN (NR2D2BWP16P90LVT)                       0.00       0.01 *     1.62 f
+  div_868_I4_u_div_u_add_PartRem_2_4/n158 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_2_4/U173/A2 (ND2D1BWP16P90LVT)                       0.00       0.00 *     1.62 f
+  div_868_I4_u_div_u_add_PartRem_2_4/U173/ZN (ND2D1BWP16P90LVT)                       0.00       0.01 *     1.63 r
+  div_868_I4_u_div_u_add_PartRem_2_4/n156 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_2_4/U374/A2 (CKNR2D2BWP16P90LVT)                     0.00       0.00 *     1.63 r
+  div_868_I4_u_div_u_add_PartRem_2_4/U374/ZN (CKNR2D2BWP16P90LVT)                     0.00       0.01 *     1.64 f
+  div_868_I4_u_div_u_add_PartRem_2_4/n154 (net)                      1     0.00 
+  div_868_I4_u_div_u_add_PartRem_2_4/U376/A1 (AOI21D4BWP16P90LVT)                     0.00       0.00 *     1.64 f
+  div_868_I4_u_div_u_add_PartRem_2_4/U376/ZN (AOI21D4BWP16P90LVT)                     0.00       0.01 *     1.66 r
+  div_868_I4_u_div_u_add_PartRem_2_4/n1 (net)                       10     0.01 
+  div_868_I4_u_div_u_add_PartRem_2_4/U349/A1 (OAI21D4BWP16P90LVT)                     0.00       0.00 *     1.66 r
+  div_868_I4_u_div_u_add_PartRem_2_4/U349/ZN (OAI21D4BWP16P90LVT)                     0.00       0.01 *     1.67 f
+  div_868_I4_u_div_u_add_PartRem_2_4/CO (net)                        6     0.01 
+  U21352/I (INVD4BWP16P90LVT)                                                         0.00       0.00 *     1.67 f
+  U21352/ZN (INVD4BWP16P90LVT)                                                        0.00       0.01 *     1.68 r
+  n32277 (net)                                                       6     0.01 
+  U19514/A2 (OAI22D2BWP16P90LVT)                                                      0.00       0.00 *     1.68 r
+  U19514/ZN (OAI22D2BWP16P90LVT)                                                      0.00       0.01 *     1.69 f
+  n32273 (net)                                                       3     0.00 
+  U17590/I (CKND2BWP16P90LVT)                                                         0.00       0.00 *     1.69 f
+  U17590/ZN (CKND2BWP16P90LVT)                                                        0.00       0.01 *     1.70 r
+  n32274 (net)                                                       3     0.00 
+  U17142/A1 (AN2D2BWP16P90LVT)                                                        0.00       0.00 *     1.70 r
+  U17142/Z (AN2D2BWP16P90LVT)                                                         0.00       0.02 *     1.72 r
+  n11559 (net)                                                       2     0.01 
+  U18077/A1 (AN2D16BWP16P90LVT)                                                       0.00       0.00 *     1.72 r
+  U18077/Z (AN2D16BWP16P90LVT)                                                        0.00       0.02 *     1.74 r
+  n10892 (net)                                                      28     0.03 
+  U46331/B2 (AOI22D1BWP16P90LVT)                                                      0.00       0.00 *     1.74 r
+  U46331/ZN (AOI22D1BWP16P90LVT)                                                      0.00       0.01 *     1.75 f
+  n32318 (net)                                                       1     0.00 
+  U19810/A2 (ND4D4BWP16P90LVT)                                                        0.00       0.00 *     1.75 f
+  U19810/ZN (ND4D4BWP16P90LVT)                                                        0.00       0.01 *     1.76 r
+  div_868_I4_u_div_PartRem[2][23] (net)                             15     0.01 
+  div_868_I4_u_div_u_add_PartRem_1_1/U567/A1 (NR2D1BWP16P90LVT)                       0.00       0.00 *     1.76 r
+  div_868_I4_u_div_u_add_PartRem_1_1/U567/ZN (NR2D1BWP16P90LVT)                       0.00       0.01 *     1.77 f
+  div_868_I4_u_div_u_add_PartRem_1_1/n143 (net)                      3     0.00 
+  div_868_I4_u_div_u_add_PartRem_1_1/U452/A2 (NR2D1BWP16P90LVT)                       0.00       0.00 *     1.77 f
+  div_868_I4_u_div_u_add_PartRem_1_1/U452/ZN (NR2D1BWP16P90LVT)                       0.00       0.02 *     1.79 r
+  div_868_I4_u_div_u_add_PartRem_1_1/n137 (net)                      4     0.00 
+  div_868_I4_u_div_u_add_PartRem_1_1/U113/A1 (ND2D1BWP16P90LVT)                       0.00       0.00 *     1.79 r
+  div_868_I4_u_div_u_add_PartRem_1_1/U113/ZN (ND2D1BWP16P90LVT)                       0.00       0.01 *     1.80 f
+  div_868_I4_u_div_u_add_PartRem_1_1/n119 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_1_1/U444/A1 (OAI21D2BWP16P90LVT)                     0.00       0.00 *     1.80 f
+  div_868_I4_u_div_u_add_PartRem_1_1/U444/ZN (OAI21D2BWP16P90LVT)                     0.00       0.02 *     1.82 r
+  div_868_I4_u_div_u_add_PartRem_1_1/n3 (net)                        8     0.01 
+  div_868_I4_u_div_u_add_PartRem_1_1/U10/A2 (AOI21D1BWP16P90LVT)                      0.00       0.00 *     1.82 r
+  div_868_I4_u_div_u_add_PartRem_1_1/U10/ZN (AOI21D1BWP16P90LVT)                      0.00       0.01 *     1.84 f
+  div_868_I4_u_div_u_add_PartRem_1_1/n39 (net)                       1     0.00 
+  div_868_I4_u_div_u_add_PartRem_1_1/U432/B (OAI21D2BWP16P90LVT)                      0.00       0.00 *     1.84 f
+  div_868_I4_u_div_u_add_PartRem_1_1/U432/ZN (OAI21D2BWP16P90LVT)                     0.00       0.01 *     1.84 r
+  div_868_I4_u_div_u_add_PartRem_1_1/CO (net)                        2     0.00 
+  U46388/B1 (OAI221D1BWP16P90LVT)                                                     0.00       0.00 *     1.84 r
+  U46388/ZN (OAI221D1BWP16P90LVT)                                                     0.00       0.02 *     1.86 f
+  n32400 (net)                                                       1     0.00 
+  U17711/A2 (ND2D2BWP16P90LVT)                                                        0.00       0.00 *     1.86 f
+  U17711/ZN (ND2D2BWP16P90LVT)                                                        0.00       0.01 *     1.87 r
+  n32404 (net)                                                       3     0.01 
+  U18391/I (INVD4BWP16P90LVT)                                                         0.00       0.00 *     1.87 r
+  U18391/ZN (INVD4BWP16P90LVT)                                                        0.00       0.01 *     1.88 f
+  n32522 (net)                                                       6     0.01 
+  U21560/A2 (AN2D8BWP16P90LVT)                                                        0.00       0.00 *     1.88 f
+  U21560/Z (AN2D8BWP16P90LVT)                                                         0.00       0.02 *     1.90 f
+  n10924 (net)                                                      30     0.03 
+  U17817/B2 (AOI22D1BWP16P90LVT)                                                      0.00       0.00 *     1.90 f
+  U17817/ZN (AOI22D1BWP16P90LVT)                                                      0.00       0.02 *     1.92 r
+  n32450 (net)                                                       1     0.00 
+  U22868/A1 (ND4D4BWP16P90LVT)                                                        0.00       0.00 *     1.92 r
+  U22868/ZN (ND4D4BWP16P90LVT)                                                        0.00       0.02 *     1.94 f
+  div_868_I4_u_div_PartRem[1][25] (net)                             14     0.01 
+  div_868_I4_u_div_u_add_PartRem_0_6/U357/A1 (NR2D1BWP16P90LVT)                       0.00       0.00 *     1.94 f
+  div_868_I4_u_div_u_add_PartRem_0_6/U357/ZN (NR2D1BWP16P90LVT)                       0.00       0.01 *     1.96 r
+  div_868_I4_u_div_u_add_PartRem_0_6/n116 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_0_6/U360/A2 (NR2D1BWP16P90LVT)                       0.00       0.00 *     1.96 r
+  div_868_I4_u_div_u_add_PartRem_0_6/U360/ZN (NR2D1BWP16P90LVT)                       0.00       0.01 *     1.97 f
+  div_868_I4_u_div_u_add_PartRem_0_6/n114 (net)                      2     0.00 
+  div_868_I4_u_div_u_add_PartRem_0_6/U113/A1 (AOI21D1BWP16P90LVT)                     0.00       0.00 *     1.97 f
+  div_868_I4_u_div_u_add_PartRem_0_6/U113/ZN (AOI21D1BWP16P90LVT)                     0.00       0.01 *     1.98 r
+  div_868_I4_u_div_u_add_PartRem_0_6/n113 (net)                      1     0.00 
+  div_868_I4_u_div_u_add_PartRem_0_6/U329/B (OAI21D1BWP16P90LVT)                      0.00       0.00 *     1.98 r
+  div_868_I4_u_div_u_add_PartRem_0_6/U329/ZN (OAI21D1BWP16P90LVT)                     0.00       0.01 *     1.98 f
+  div_868_I4_u_div_u_add_PartRem_0_6/n111 (net)                      1     0.00 
+  div_868_I4_u_div_u_add_PartRem_0_6/U342/A2 (AOI21D2BWP16P90LVT)                     0.00       0.00 *     1.98 f
+  div_868_I4_u_div_u_add_PartRem_0_6/U342/ZN (AOI21D2BWP16P90LVT)                     0.00       0.01 *     1.99 r
+  div_868_I4_u_div_u_add_PartRem_0_6/n67 (net)                       1     0.00 
+  div_868_I4_u_div_u_add_PartRem_0_6/U336/B (OAI21D2BWP16P90LVT)                      0.00       0.00 *     1.99 r
+  div_868_I4_u_div_u_add_PartRem_0_6/U336/ZN (OAI21D2BWP16P90LVT)                     0.00       0.01 *     2.00 f
+  div_868_I4_u_div_u_add_PartRem_0_6/n65 (net)                       1     0.00 
+  div_868_I4_u_div_u_add_PartRem_0_6/U334/A2 (IOAI21D4BWP16P90LVT)                    0.00       0.00 *     2.00 f
+  div_868_I4_u_div_u_add_PartRem_0_6/U334/ZN (IOAI21D4BWP16P90LVT)                    0.00       0.01 *     2.01 f
+  div_868_I4_u_div_u_add_PartRem_0_6/CO (net)                        2     0.00 
+  U15990/I (CKND2BWP16P90LVT)                                                         0.00       0.00 *     2.01 f
+  U15990/ZN (CKND2BWP16P90LVT)                                                        0.00       0.01 *     2.02 r
+  n32539 (net)                                                       2     0.00 
+  U46472/B2 (OAI221D1BWP16P90LVT)                                                     0.00       0.00 *     2.02 r
+  U46472/ZN (OAI221D1BWP16P90LVT)                                                     0.00       0.01 *     2.03 f
+  n32540 (net)                                                       1     0.00 
+  U21770/B (OAI21D1BWP16P90LVT)                                                       0.00       0.00 *     2.03 f
+  U21770/ZN (OAI21D1BWP16P90LVT)                                                      0.00       0.01 *     2.04 r
+  n34797 (net)                                                       1     0.00 
+  U22866/A2 (XNR2D4BWP16P90LVT)                                                       0.00       0.00 *     2.04 r
+  U22866/ZN (XNR2D4BWP16P90LVT)                                                       0.00       0.02 *     2.06 r
+  n35244 (net)                                                       2     0.01 
+  div_868_I4_u_div_u_inc_QInc/U129/A1 (ND2D8BWP16P90LVT)                              0.00       0.00 *     2.06 r
+  div_868_I4_u_div_u_inc_QInc/U129/ZN (ND2D8BWP16P90LVT)                              0.00       0.01 *     2.07 f
+  div_868_I4_u_div_u_inc_QInc/n2 (net)                              16     0.02 
+  div_868_I4_u_div_u_inc_QInc/U114/A2 (CKNR2D1BWP16P90LVT)                            0.00       0.00 *     2.07 f
+  div_868_I4_u_div_u_inc_QInc/U114/ZN (CKNR2D1BWP16P90LVT)                            0.00       0.01 *     2.08 r
+  div_868_I4_u_div_u_inc_QInc/n63 (net)                              1     0.00 
+  div_868_I4_u_div_u_inc_QInc/U161/A1 (XNR2D1BWP16P90LVT)                             0.00       0.00 *     2.08 r
+  div_868_I4_u_div_u_inc_QInc/U161/ZN (XNR2D1BWP16P90LVT)                             0.00       0.01 *     2.09 r
+  div_868_I4_u_div_u_inc_QInc/sum[6] (net)                           1     0.00 
+  U46481/B1 (MOAI22D1BWP16P90LVT)                                                     0.00       0.00 *     2.09 r
+  U46481/ZN (MOAI22D1BWP16P90LVT)                                                     0.00       0.01 *     2.11 r
+  n4168 (net)                                                        1     0.00 
+  O_norm_regx3xx0xx6x/D (DFQD2BWP16P90LVT)                                            0.00       0.00 *     2.11 r
+  data arrival time                                                                                         2.11
+
+  clock CLK (rise edge)                                                               0.00       2.00       2.00
+  clock network delay (ideal)                                                                    0.00       2.00
+  clock reconvergence pessimism                                                                  0.00       2.00
+  O_norm_regx3xx0xx6x/CP (DFQD2BWP16P90LVT)                                                                 2.00 r
+  library setup time                                                                            -0.01 *     1.99
+  data required time                                                                                        1.99
+  -----------------------------------------------------------------------------------------------------------------
+  data required time                                                                                        1.99
+  data arrival time                                                                                        -2.11
+  -----------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                         -0.12
+
+
+1

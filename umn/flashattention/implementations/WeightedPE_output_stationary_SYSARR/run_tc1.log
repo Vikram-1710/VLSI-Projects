@@ -1,0 +1,292 @@
+Chronologic VCS simulator copyright 1991-2021
+Contains Synopsys proprietary information.
+Compiler version S-2021.09-SP2-7_Full64; Runtime version S-2021.09-SP2-7_Full64;  May 11 09:39 2026
+==============================================
+ FlashAttention tc1 Verification
+ N=64  D=4  Br=4  Bc=8  Tc=8  Tr=16
+ HBM_DW=64  RPT_QKV=1  Q_BASE=0  K_BASE=64  V_BASE=128  O_BASE=192
+==============================================
+[       0 ns] Q/K/V loaded into HBM (RPT_QKV=1 rows/word).
+[      55 ns] Asserting start.
+[   10035 ns] cycle=1000  hbm_rd=0@0  hbm_wr=0@426
+[   20035 ns] cycle=2000  hbm_rd=0@0  hbm_wr=0@425
+[   30035 ns] cycle=3000  hbm_rd=0@0  hbm_wr=0@423
+[   40035 ns] cycle=4000  hbm_rd=1@399  hbm_wr=0@422
+[   50035 ns] cycle=5000  hbm_rd=0@0  hbm_wr=0@420
+[   60035 ns] cycle=6000  hbm_rd=1@291  hbm_wr=0@419
+[   70035 ns] cycle=7000  hbm_rd=0@0  hbm_wr=0@417
+[   80035 ns] cycle=8000  hbm_rd=1@5  hbm_wr=0@416
+[   90035 ns] cycle=9000  hbm_rd=0@0  hbm_wr=0@430
+[   92805 ns] Done received. HBM transfer cycles = 3855
+  [row= 0][col=0]  got=0011 (  0.066)  exp=0013 (  0.074)  err=2 LSB          
+  [row= 0][col=1]  got=0010 (  0.062)  exp=0011 (  0.066)  err=1 LSB          
+  [row= 0][col=2]  got=ffe6 ( -0.102)  exp=ffe6 ( -0.102)  err=0 LSB          
+  [row= 0][col=3]  got=ffe2 ( -0.117)  exp=ffe2 ( -0.117)  err=0 LSB          
+  [row= 1][col=0]  got=000c (  0.047)  exp=000d (  0.051)  err=1 LSB          
+  [row= 1][col=1]  got=0010 (  0.062)  exp=0012 (  0.070)  err=2 LSB          
+  [row= 1][col=2]  got=ffe8 ( -0.094)  exp=ffe9 ( -0.090)  err=1 LSB          
+  [row= 1][col=3]  got=001b (  0.105)  exp=001b (  0.105)  err=0 LSB          
+  [row= 2][col=0]  got=fffe ( -0.008)  exp=fffe ( -0.008)  err=0 LSB          
+  [row= 2][col=1]  got=fff7 ( -0.035)  exp=fff8 ( -0.031)  err=1 LSB          
+  [row= 2][col=2]  got=ffe8 ( -0.094)  exp=ffe8 ( -0.094)  err=0 LSB          
+  [row= 2][col=3]  got=fff9 ( -0.027)  exp=fffa ( -0.023)  err=1 LSB          
+  [row= 3][col=0]  got=0012 (  0.070)  exp=0013 (  0.074)  err=1 LSB          
+  [row= 3][col=1]  got=0007 (  0.027)  exp=0007 (  0.027)  err=0 LSB          
+  [row= 3][col=2]  got=ffe7 ( -0.098)  exp=ffe8 ( -0.094)  err=1 LSB          
+  [row= 3][col=3]  got=0001 (  0.004)  exp=0001 (  0.004)  err=0 LSB          
+  [row= 4][col=0]  got=0014 (  0.078)  exp=0015 (  0.082)  err=1 LSB          
+  [row= 4][col=1]  got=fff9 ( -0.027)  exp=fff9 ( -0.027)  err=0 LSB          
+  [row= 4][col=2]  got=fff6 ( -0.039)  exp=fff6 ( -0.039)  err=0 LSB          
+  [row= 4][col=3]  got=ffdb ( -0.145)  exp=ffdc ( -0.141)  err=1 LSB          
+  [row= 5][col=0]  got=0014 (  0.078)  exp=0015 (  0.082)  err=1 LSB          
+  [row= 5][col=1]  got=0011 (  0.066)  exp=0012 (  0.070)  err=1 LSB          
+  [row= 5][col=2]  got=ffe1 ( -0.121)  exp=ffe1 ( -0.121)  err=0 LSB          
+  [row= 5][col=3]  got=ffdb ( -0.145)  exp=ffdc ( -0.141)  err=1 LSB          
+  [row= 6][col=0]  got=0026 (  0.148)  exp=0027 (  0.152)  err=1 LSB          
+  [row= 6][col=1]  got=fff5 ( -0.043)  exp=fff5 ( -0.043)  err=0 LSB          
+  [row= 6][col=2]  got=fff2 ( -0.055)  exp=fff3 ( -0.051)  err=1 LSB          
+  [row= 6][col=3]  got=ffdf ( -0.129)  exp=ffe0 ( -0.125)  err=1 LSB          
+  [row= 7][col=0]  got=0007 (  0.027)  exp=0008 (  0.031)  err=1 LSB          
+  [row= 7][col=1]  got=0008 (  0.031)  exp=000a (  0.039)  err=2 LSB          
+  [row= 7][col=2]  got=ffe0 ( -0.125)  exp=ffe2 ( -0.117)  err=2 LSB          
+  [row= 7][col=3]  got=000b (  0.043)  exp=000b (  0.043)  err=0 LSB          
+  [row= 8][col=0]  got=0009 (  0.035)  exp=000a (  0.039)  err=1 LSB          
+  [row= 8][col=1]  got=fff3 ( -0.051)  exp=fff2 ( -0.055)  err=1 LSB          
+  [row= 8][col=2]  got=fff8 ( -0.031)  exp=fff7 ( -0.035)  err=1 LSB          
+  [row= 8][col=3]  got=fffb ( -0.020)  exp=fffb ( -0.020)  err=0 LSB          
+  [row= 9][col=0]  got=fffa ( -0.023)  exp=fffb ( -0.020)  err=1 LSB          
+  [row= 9][col=1]  got=fff0 ( -0.062)  exp=fff0 ( -0.062)  err=0 LSB          
+  [row= 9][col=2]  got=ffee ( -0.070)  exp=ffee ( -0.070)  err=0 LSB          
+  [row= 9][col=3]  got=0001 (  0.004)  exp=0001 (  0.004)  err=0 LSB          
+  [row=10][col=0]  got=0011 (  0.066)  exp=0011 (  0.066)  err=0 LSB          
+  [row=10][col=1]  got=000d (  0.051)  exp=000d (  0.051)  err=0 LSB          
+  [row=10][col=2]  got=ffec ( -0.078)  exp=ffec ( -0.078)  err=0 LSB          
+  [row=10][col=3]  got=0006 (  0.023)  exp=0007 (  0.027)  err=1 LSB          
+  [row=11][col=0]  got=0012 (  0.070)  exp=0013 (  0.074)  err=1 LSB          
+  [row=11][col=1]  got=0008 (  0.031)  exp=0009 (  0.035)  err=1 LSB          
+  [row=11][col=2]  got=ffe4 ( -0.109)  exp=ffe4 ( -0.109)  err=0 LSB          
+  [row=11][col=3]  got=fff8 ( -0.031)  exp=fff8 ( -0.031)  err=0 LSB          
+  [row=12][col=0]  got=0028 (  0.156)  exp=0027 (  0.152)  err=1 LSB          
+  [row=12][col=1]  got=ffea ( -0.086)  exp=ffea ( -0.086)  err=0 LSB          
+  [row=12][col=2]  got=ffef ( -0.066)  exp=fff0 ( -0.062)  err=1 LSB          
+  [row=12][col=3]  got=ffea ( -0.086)  exp=ffea ( -0.086)  err=0 LSB          
+  [row=13][col=0]  got=0009 (  0.035)  exp=000b (  0.043)  err=2 LSB          
+  [row=13][col=1]  got=0017 (  0.090)  exp=0017 (  0.090)  err=0 LSB          
+  [row=13][col=2]  got=ffda ( -0.148)  exp=ffdb ( -0.145)  err=1 LSB          
+  [row=13][col=3]  got=ffe8 ( -0.094)  exp=ffe8 ( -0.094)  err=0 LSB          
+  [row=14][col=0]  got=000e (  0.055)  exp=000f (  0.059)  err=1 LSB          
+  [row=14][col=1]  got=fff0 ( -0.062)  exp=fff0 ( -0.062)  err=0 LSB          
+  [row=14][col=2]  got=ffec ( -0.078)  exp=ffec ( -0.078)  err=0 LSB          
+  [row=14][col=3]  got=0009 (  0.035)  exp=0009 (  0.035)  err=0 LSB          
+  [row=15][col=0]  got=000b (  0.043)  exp=000b (  0.043)  err=0 LSB          
+  [row=15][col=1]  got=0003 (  0.012)  exp=0004 (  0.016)  err=1 LSB          
+  [row=15][col=2]  got=ffe4 ( -0.109)  exp=ffe4 ( -0.109)  err=0 LSB          
+  [row=15][col=3]  got=ffe5 ( -0.105)  exp=ffe6 ( -0.102)  err=1 LSB          
+  [row=16][col=0]  got=0014 (  0.078)  exp=0014 (  0.078)  err=0 LSB          
+  [row=16][col=1]  got=0002 (  0.008)  exp=0003 (  0.012)  err=1 LSB          
+  [row=16][col=2]  got=ffef ( -0.066)  exp=ffef ( -0.066)  err=0 LSB          
+  [row=16][col=3]  got=fff3 ( -0.051)  exp=fff3 ( -0.051)  err=0 LSB          
+  [row=17][col=0]  got=fff5 ( -0.043)  exp=fff6 ( -0.039)  err=1 LSB          
+  [row=17][col=1]  got=ffeb ( -0.082)  exp=ffeb ( -0.082)  err=0 LSB          
+  [row=17][col=2]  got=fff4 ( -0.047)  exp=fff3 ( -0.051)  err=1 LSB          
+  [row=17][col=3]  got=000b (  0.043)  exp=000b (  0.043)  err=0 LSB          
+  [row=18][col=0]  got=0023 (  0.137)  exp=0023 (  0.137)  err=0 LSB          
+  [row=18][col=1]  got=ffe6 ( -0.102)  exp=ffe6 ( -0.102)  err=0 LSB          
+  [row=18][col=2]  got=ffe8 ( -0.094)  exp=ffea ( -0.086)  err=2 LSB          
+  [row=18][col=3]  got=ffe4 ( -0.109)  exp=ffe5 ( -0.105)  err=1 LSB          
+  [row=19][col=0]  got=0005 (  0.020)  exp=0005 (  0.020)  err=0 LSB          
+  [row=19][col=1]  got=0004 (  0.016)  exp=0004 (  0.016)  err=0 LSB          
+  [row=19][col=2]  got=ffe5 ( -0.105)  exp=ffe5 ( -0.105)  err=0 LSB          
+  [row=19][col=3]  got=0000 (  0.000)  exp=0001 (  0.004)  err=1 LSB          
+  [row=20][col=0]  got=0019 (  0.098)  exp=001a (  0.102)  err=1 LSB          
+  [row=20][col=1]  got=0005 (  0.020)  exp=0006 (  0.023)  err=1 LSB          
+  [row=20][col=2]  got=fff6 ( -0.039)  exp=fff6 ( -0.039)  err=0 LSB          
+  [row=20][col=3]  got=ffe9 ( -0.090)  exp=ffea ( -0.086)  err=1 LSB          
+  [row=21][col=0]  got=fffb ( -0.020)  exp=fffc ( -0.016)  err=1 LSB          
+  [row=21][col=1]  got=ffe9 ( -0.090)  exp=ffe9 ( -0.090)  err=0 LSB          
+  [row=21][col=2]  got=ffff ( -0.004)  exp=ffff ( -0.004)  err=0 LSB          
+  [row=21][col=3]  got=fff5 ( -0.043)  exp=fff5 ( -0.043)  err=0 LSB          
+  [row=22][col=0]  got=fffa ( -0.023)  exp=fffb ( -0.020)  err=1 LSB          
+  [row=22][col=1]  got=fff0 ( -0.062)  exp=fff0 ( -0.062)  err=0 LSB          
+  [row=22][col=2]  got=ffeb ( -0.082)  exp=ffeb ( -0.082)  err=0 LSB          
+  [row=22][col=3]  got=0000 (  0.000)  exp=0001 (  0.004)  err=1 LSB          
+  [row=23][col=0]  got=0006 (  0.023)  exp=0007 (  0.027)  err=1 LSB          
+  [row=23][col=1]  got=fff0 ( -0.062)  exp=fff0 ( -0.062)  err=0 LSB          
+  [row=23][col=2]  got=ffed ( -0.074)  exp=ffed ( -0.074)  err=0 LSB          
+  [row=23][col=3]  got=fff0 ( -0.062)  exp=fff1 ( -0.059)  err=1 LSB          
+  [row=24][col=0]  got=0004 (  0.016)  exp=0005 (  0.020)  err=1 LSB          
+  [row=24][col=1]  got=ffdd ( -0.137)  exp=ffde ( -0.133)  err=1 LSB          
+  [row=24][col=2]  got=ffe9 ( -0.090)  exp=ffea ( -0.086)  err=1 LSB          
+  [row=24][col=3]  got=ffde ( -0.133)  exp=ffdf ( -0.129)  err=1 LSB          
+  [row=25][col=0]  got=fffc ( -0.016)  exp=fffc ( -0.016)  err=0 LSB          
+  [row=25][col=1]  got=0006 (  0.023)  exp=0007 (  0.027)  err=1 LSB          
+  [row=25][col=2]  got=ffce ( -0.195)  exp=ffd0 ( -0.188)  err=2 LSB          
+  [row=25][col=3]  got=ffd8 ( -0.156)  exp=ffd9 ( -0.152)  err=1 LSB          
+  [row=26][col=0]  got=0014 (  0.078)  exp=0015 (  0.082)  err=1 LSB          
+  [row=26][col=1]  got=0007 (  0.027)  exp=0007 (  0.027)  err=0 LSB          
+  [row=26][col=2]  got=ffe8 ( -0.094)  exp=ffe8 ( -0.094)  err=0 LSB          
+  [row=26][col=3]  got=fff6 ( -0.039)  exp=fff6 ( -0.039)  err=0 LSB          
+  [row=27][col=0]  got=0005 (  0.020)  exp=0006 (  0.023)  err=1 LSB          
+  [row=27][col=1]  got=0000 (  0.000)  exp=0001 (  0.004)  err=1 LSB          
+  [row=27][col=2]  got=ffe7 ( -0.098)  exp=ffe7 ( -0.098)  err=0 LSB          
+  [row=27][col=3]  got=0015 (  0.082)  exp=0016 (  0.086)  err=1 LSB          
+  [row=28][col=0]  got=fffe ( -0.008)  exp=fffe ( -0.008)  err=0 LSB          
+  [row=28][col=1]  got=fff7 ( -0.035)  exp=fff6 ( -0.039)  err=1 LSB          
+  [row=28][col=2]  got=ffe3 ( -0.113)  exp=ffe3 ( -0.113)  err=0 LSB          
+  [row=28][col=3]  got=fff8 ( -0.031)  exp=fff8 ( -0.031)  err=0 LSB          
+  [row=29][col=0]  got=0008 (  0.031)  exp=0009 (  0.035)  err=1 LSB          
+  [row=29][col=1]  got=0009 (  0.035)  exp=0009 (  0.035)  err=0 LSB          
+  [row=29][col=2]  got=ffdf ( -0.129)  exp=ffdf ( -0.129)  err=0 LSB          
+  [row=29][col=3]  got=ffed ( -0.074)  exp=ffee ( -0.070)  err=1 LSB          
+  [row=30][col=0]  got=000a (  0.039)  exp=000b (  0.043)  err=1 LSB          
+  [row=30][col=1]  got=fff1 ( -0.059)  exp=fff1 ( -0.059)  err=0 LSB          
+  [row=30][col=2]  got=ffe7 ( -0.098)  exp=ffe7 ( -0.098)  err=0 LSB          
+  [row=30][col=3]  got=0000 (  0.000)  exp=0000 (  0.000)  err=0 LSB          
+  [row=31][col=0]  got=fff9 ( -0.027)  exp=fff9 ( -0.027)  err=0 LSB          
+  [row=31][col=1]  got=ffee ( -0.070)  exp=ffee ( -0.070)  err=0 LSB          
+  [row=31][col=2]  got=fff3 ( -0.051)  exp=fff3 ( -0.051)  err=0 LSB          
+  [row=31][col=3]  got=000d (  0.051)  exp=000d (  0.051)  err=0 LSB          
+  [row=32][col=0]  got=fffb ( -0.020)  exp=fffa ( -0.023)  err=1 LSB          
+  [row=32][col=1]  got=fff9 ( -0.027)  exp=fff9 ( -0.027)  err=0 LSB          
+  [row=32][col=2]  got=ffe4 ( -0.109)  exp=ffe5 ( -0.105)  err=1 LSB          
+  [row=32][col=3]  got=fffd ( -0.012)  exp=fffe ( -0.008)  err=1 LSB          
+  [row=33][col=0]  got=001a (  0.102)  exp=001a (  0.102)  err=0 LSB          
+  [row=33][col=1]  got=fffa ( -0.023)  exp=fffa ( -0.023)  err=0 LSB          
+  [row=33][col=2]  got=fff7 ( -0.035)  exp=fff7 ( -0.035)  err=0 LSB          
+  [row=33][col=3]  got=ffed ( -0.074)  exp=ffec ( -0.078)  err=1 LSB          
+  [row=34][col=0]  got=0023 (  0.137)  exp=0023 (  0.137)  err=0 LSB          
+  [row=34][col=1]  got=000f (  0.059)  exp=0010 (  0.062)  err=1 LSB          
+  [row=34][col=2]  got=fff4 ( -0.047)  exp=fff3 ( -0.051)  err=1 LSB          
+  [row=34][col=3]  got=ffe2 ( -0.117)  exp=ffe2 ( -0.117)  err=0 LSB          
+  [row=35][col=0]  got=000f (  0.059)  exp=0010 (  0.062)  err=1 LSB          
+  [row=35][col=1]  got=0009 (  0.035)  exp=000a (  0.039)  err=1 LSB          
+  [row=35][col=2]  got=ffed ( -0.074)  exp=ffec ( -0.078)  err=1 LSB          
+  [row=35][col=3]  got=fff8 ( -0.031)  exp=fff7 ( -0.035)  err=1 LSB          
+  [row=36][col=0]  got=000b (  0.043)  exp=000b (  0.043)  err=0 LSB          
+  [row=36][col=1]  got=ffed ( -0.074)  exp=ffed ( -0.074)  err=0 LSB          
+  [row=36][col=2]  got=fff3 ( -0.051)  exp=fff3 ( -0.051)  err=0 LSB          
+  [row=36][col=3]  got=ffee ( -0.070)  exp=ffee ( -0.070)  err=0 LSB          
+  [row=37][col=0]  got=0012 (  0.070)  exp=0012 (  0.070)  err=0 LSB          
+  [row=37][col=1]  got=fff6 ( -0.039)  exp=fff6 ( -0.039)  err=0 LSB          
+  [row=37][col=2]  got=ffef ( -0.066)  exp=ffee ( -0.070)  err=1 LSB          
+  [row=37][col=3]  got=ffda ( -0.148)  exp=ffdb ( -0.145)  err=1 LSB          
+  [row=38][col=0]  got=fff9 ( -0.027)  exp=fff9 ( -0.027)  err=0 LSB          
+  [row=38][col=1]  got=fff1 ( -0.059)  exp=fff1 ( -0.059)  err=0 LSB          
+  [row=38][col=2]  got=ffea ( -0.086)  exp=ffea ( -0.086)  err=0 LSB          
+  [row=38][col=3]  got=0003 (  0.012)  exp=0004 (  0.016)  err=1 LSB          
+  [row=39][col=0]  got=0008 (  0.031)  exp=0009 (  0.035)  err=1 LSB          
+  [row=39][col=1]  got=0007 (  0.027)  exp=0008 (  0.031)  err=1 LSB          
+  [row=39][col=2]  got=ffe5 ( -0.105)  exp=ffe6 ( -0.102)  err=1 LSB          
+  [row=39][col=3]  got=0006 (  0.023)  exp=0005 (  0.020)  err=1 LSB          
+  [row=40][col=0]  got=ffff ( -0.004)  exp=ffff ( -0.004)  err=0 LSB          
+  [row=40][col=1]  got=fffc ( -0.016)  exp=fffc ( -0.016)  err=0 LSB          
+  [row=40][col=2]  got=ffdb ( -0.145)  exp=ffdc ( -0.141)  err=1 LSB          
+  [row=40][col=3]  got=001c (  0.109)  exp=001c (  0.109)  err=0 LSB          
+  [row=41][col=0]  got=000f (  0.059)  exp=000f (  0.059)  err=0 LSB          
+  [row=41][col=1]  got=0006 (  0.023)  exp=0007 (  0.027)  err=1 LSB          
+  [row=41][col=2]  got=ffe6 ( -0.102)  exp=ffe6 ( -0.102)  err=0 LSB          
+  [row=41][col=3]  got=ffe9 ( -0.090)  exp=ffe9 ( -0.090)  err=0 LSB          
+  [row=42][col=0]  got=0003 (  0.012)  exp=0004 (  0.016)  err=1 LSB          
+  [row=42][col=1]  got=0001 (  0.004)  exp=0003 (  0.012)  err=2 LSB          
+  [row=42][col=2]  got=ffe1 ( -0.121)  exp=ffe1 ( -0.121)  err=0 LSB          
+  [row=42][col=3]  got=000c (  0.047)  exp=000d (  0.051)  err=1 LSB          
+  [row=43][col=0]  got=0003 (  0.012)  exp=0004 (  0.016)  err=1 LSB          
+  [row=43][col=1]  got=fffb ( -0.020)  exp=fffb ( -0.020)  err=0 LSB          
+  [row=43][col=2]  got=ffda ( -0.148)  exp=ffdb ( -0.145)  err=1 LSB          
+  [row=43][col=3]  got=001c (  0.109)  exp=001c (  0.109)  err=0 LSB          
+  [row=44][col=0]  got=000f (  0.059)  exp=000f (  0.059)  err=0 LSB          
+  [row=44][col=1]  got=001e (  0.117)  exp=001e (  0.117)  err=0 LSB          
+  [row=44][col=2]  got=ffdf ( -0.129)  exp=ffde ( -0.133)  err=1 LSB          
+  [row=44][col=3]  got=000d (  0.051)  exp=000d (  0.051)  err=0 LSB          
+  [row=45][col=0]  got=0011 (  0.066)  exp=0011 (  0.066)  err=0 LSB          
+  [row=45][col=1]  got=0016 (  0.086)  exp=0016 (  0.086)  err=0 LSB          
+  [row=45][col=2]  got=ffe2 ( -0.117)  exp=ffe2 ( -0.117)  err=0 LSB          
+  [row=45][col=3]  got=fff6 ( -0.039)  exp=fff6 ( -0.039)  err=0 LSB          
+  [row=46][col=0]  got=001c (  0.109)  exp=001c (  0.109)  err=0 LSB          
+  [row=46][col=1]  got=0000 (  0.000)  exp=0000 (  0.000)  err=0 LSB          
+  [row=46][col=2]  got=ffea ( -0.086)  exp=ffea ( -0.086)  err=0 LSB          
+  [row=46][col=3]  got=fffa ( -0.023)  exp=fff9 ( -0.027)  err=1 LSB          
+  [row=47][col=0]  got=001c (  0.109)  exp=001d (  0.113)  err=1 LSB          
+  [row=47][col=1]  got=0005 (  0.020)  exp=0007 (  0.027)  err=2 LSB          
+  [row=47][col=2]  got=fff9 ( -0.027)  exp=fff9 ( -0.027)  err=0 LSB          
+  [row=47][col=3]  got=ffdf ( -0.129)  exp=ffe0 ( -0.125)  err=1 LSB          
+  [row=48][col=0]  got=fffb ( -0.020)  exp=fffc ( -0.016)  err=1 LSB          
+  [row=48][col=1]  got=fff7 ( -0.035)  exp=fff7 ( -0.035)  err=0 LSB          
+  [row=48][col=2]  got=ffdf ( -0.129)  exp=ffe0 ( -0.125)  err=1 LSB          
+  [row=48][col=3]  got=001a (  0.102)  exp=001a (  0.102)  err=0 LSB          
+  [row=49][col=0]  got=000c (  0.047)  exp=000c (  0.047)  err=0 LSB          
+  [row=49][col=1]  got=fffd ( -0.012)  exp=fffd ( -0.012)  err=0 LSB          
+  [row=49][col=2]  got=ffe1 ( -0.121)  exp=ffe2 ( -0.117)  err=1 LSB          
+  [row=49][col=3]  got=0008 (  0.031)  exp=0008 (  0.031)  err=0 LSB          
+  [row=50][col=0]  got=0015 (  0.082)  exp=0017 (  0.090)  err=2 LSB          
+  [row=50][col=1]  got=0013 (  0.074)  exp=0013 (  0.074)  err=0 LSB          
+  [row=50][col=2]  got=ffe5 ( -0.105)  exp=ffe5 ( -0.105)  err=0 LSB          
+  [row=50][col=3]  got=0001 (  0.004)  exp=0002 (  0.008)  err=1 LSB          
+  [row=51][col=0]  got=fff4 ( -0.047)  exp=fff4 ( -0.047)  err=0 LSB          
+  [row=51][col=1]  got=ffe4 ( -0.109)  exp=ffe4 ( -0.109)  err=0 LSB          
+  [row=51][col=2]  got=fff6 ( -0.039)  exp=fff6 ( -0.039)  err=0 LSB          
+  [row=51][col=3]  got=0000 (  0.000)  exp=0000 (  0.000)  err=0 LSB          
+  [row=52][col=0]  got=0002 (  0.008)  exp=0004 (  0.016)  err=2 LSB          
+  [row=52][col=1]  got=fffa ( -0.023)  exp=fffb ( -0.020)  err=1 LSB          
+  [row=52][col=2]  got=fff2 ( -0.055)  exp=fff1 ( -0.059)  err=1 LSB          
+  [row=52][col=3]  got=0005 (  0.020)  exp=0005 (  0.020)  err=0 LSB          
+  [row=53][col=0]  got=0008 (  0.031)  exp=000a (  0.039)  err=2 LSB          
+  [row=53][col=1]  got=000b (  0.043)  exp=000b (  0.043)  err=0 LSB          
+  [row=53][col=2]  got=ffe7 ( -0.098)  exp=ffe7 ( -0.098)  err=0 LSB          
+  [row=53][col=3]  got=000f (  0.059)  exp=000f (  0.059)  err=0 LSB          
+  [row=54][col=0]  got=0003 (  0.012)  exp=0004 (  0.016)  err=1 LSB          
+  [row=54][col=1]  got=fff0 ( -0.062)  exp=ffef ( -0.066)  err=1 LSB          
+  [row=54][col=2]  got=ffff ( -0.004)  exp=fffd ( -0.012)  err=2 LSB          
+  [row=54][col=3]  got=fff2 ( -0.055)  exp=fff2 ( -0.055)  err=0 LSB          
+  [row=55][col=0]  got=0006 (  0.023)  exp=0007 (  0.027)  err=1 LSB          
+  [row=55][col=1]  got=0001 (  0.004)  exp=0003 (  0.012)  err=2 LSB          
+  [row=55][col=2]  got=ffe1 ( -0.121)  exp=ffe2 ( -0.117)  err=1 LSB          
+  [row=55][col=3]  got=fff9 ( -0.027)  exp=fff8 ( -0.031)  err=1 LSB          
+  [row=56][col=0]  got=fffc ( -0.016)  exp=fffc ( -0.016)  err=0 LSB          
+  [row=56][col=1]  got=fff9 ( -0.027)  exp=fff9 ( -0.027)  err=0 LSB          
+  [row=56][col=2]  got=ffdc ( -0.141)  exp=ffdd ( -0.137)  err=1 LSB          
+  [row=56][col=3]  got=000d (  0.051)  exp=000e (  0.055)  err=1 LSB          
+  [row=57][col=0]  got=0018 (  0.094)  exp=0017 (  0.090)  err=1 LSB          
+  [row=57][col=1]  got=ffe3 ( -0.113)  exp=ffe4 ( -0.109)  err=1 LSB          
+  [row=57][col=2]  got=fff0 ( -0.062)  exp=fff2 ( -0.055)  err=2 LSB          
+  [row=57][col=3]  got=ffe4 ( -0.109)  exp=ffe6 ( -0.102)  err=2 LSB          
+  [row=58][col=0]  got=000e (  0.055)  exp=000f (  0.059)  err=1 LSB          
+  [row=58][col=1]  got=0024 (  0.141)  exp=0024 (  0.141)  err=0 LSB          
+  [row=58][col=2]  got=ffd9 ( -0.152)  exp=ffd9 ( -0.152)  err=0 LSB          
+  [row=58][col=3]  got=ffdb ( -0.145)  exp=ffdc ( -0.141)  err=1 LSB          
+  [row=59][col=0]  got=000b (  0.043)  exp=000c (  0.047)  err=1 LSB          
+  [row=59][col=1]  got=fff2 ( -0.055)  exp=fff2 ( -0.055)  err=0 LSB          
+  [row=59][col=2]  got=ffe1 ( -0.121)  exp=ffe2 ( -0.117)  err=1 LSB          
+  [row=59][col=3]  got=0016 (  0.086)  exp=0016 (  0.086)  err=0 LSB          
+  [row=60][col=0]  got=0007 (  0.027)  exp=0009 (  0.035)  err=2 LSB          
+  [row=60][col=1]  got=0001 (  0.004)  exp=0002 (  0.008)  err=1 LSB          
+  [row=60][col=2]  got=ffde ( -0.133)  exp=ffde ( -0.133)  err=0 LSB          
+  [row=60][col=3]  got=fff2 ( -0.055)  exp=fff2 ( -0.055)  err=0 LSB          
+  [row=61][col=0]  got=000e (  0.055)  exp=000f (  0.059)  err=1 LSB          
+  [row=61][col=1]  got=0011 (  0.066)  exp=0011 (  0.066)  err=0 LSB          
+  [row=61][col=2]  got=ffe6 ( -0.102)  exp=ffe6 ( -0.102)  err=0 LSB          
+  [row=61][col=3]  got=0000 (  0.000)  exp=0000 (  0.000)  err=0 LSB          
+  [row=62][col=0]  got=0007 (  0.027)  exp=0008 (  0.031)  err=1 LSB          
+  [row=62][col=1]  got=0000 (  0.000)  exp=0000 (  0.000)  err=0 LSB          
+  [row=62][col=2]  got=ffe5 ( -0.105)  exp=ffe6 ( -0.102)  err=1 LSB          
+  [row=62][col=3]  got=fff2 ( -0.055)  exp=fff2 ( -0.055)  err=0 LSB          
+  [row=63][col=0]  got=0006 (  0.023)  exp=0007 (  0.027)  err=1 LSB          
+  [row=63][col=1]  got=ffe9 ( -0.090)  exp=ffe9 ( -0.090)  err=0 LSB          
+  [row=63][col=2]  got=ffec ( -0.078)  exp=ffed ( -0.074)  err=1 LSB          
+  [row=63][col=3]  got=ffe8 ( -0.094)  exp=ffe8 ( -0.094)  err=0 LSB          
+----------------------------------------------
+PASS  –  all 256 elements within 3 LSB of fa_tc1_O_flash.txt
+----------------------------------------------
+Cycle breakdown:
+  HBM transfers      : 3855
+  QK matmul          : 2304
+  PV matmul          : 2304
+  Vector ops         : 400
+  Total (start->done): 9273
+==============================================
+$finish called from file "tb_flash_attention_top.v", line 283.
+$finish at simulation time                92805
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 92805
+CPU Time:      0.610 seconds;       Data structure size:   0.2Mb
+Mon May 11 09:39:41 2026

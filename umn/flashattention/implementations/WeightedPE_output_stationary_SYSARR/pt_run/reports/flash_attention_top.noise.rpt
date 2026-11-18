@@ -1,0 +1,58 @@
+Information: Starting crosstalk aware static noise analysis. (NOISE-014)
+Information: Activating steady state resistance estimation mode for library N16ADFP_StdCelltt0p8v25c_ccs. (NOISE-001)
+****************************************
+Report : noise
+Design : flash_attention_top
+Version: P-2019.03-SP5
+Date   : Tue May 12 10:00:39 2026
+****************************************
+
+ analysis mode: report_at_source
+ slack type: height
+
+ noise_region: above_low
+ pin name (net name)       width    height     slack
+ -----------------------------------------------------
+
+ noise_region: below_high
+ pin name (net name)       width    height     slack
+ -----------------------------------------------------
+
+ noise_region: below_low
+ pin name (net name)       width    height     slack
+ -----------------------------------------------------
+
+ noise_region: above_high
+ pin name (net name)       width    height     slack
+ -----------------------------------------------------
+
+1
+Information: Starting crosstalk aware static noise analysis. (NOISE-014)
+Information: Activating steady state resistance estimation mode for library N16ADFP_StdCelltt0p8v25c_ccs. (NOISE-001)
+****************************************
+Report : noise
+Design : flash_attention_top
+Version: P-2019.03-SP5
+Date   : Tue May 12 10:01:07 2026
+****************************************
+
+ analysis mode: report_at_source
+ slack type: height
+
+ noise_region: above_low
+ pin name (net name)       width    height     slack
+ -----------------------------------------------------
+
+ noise_region: below_high
+ pin name (net name)       width    height     slack
+ -----------------------------------------------------
+
+ noise_region: below_low
+ pin name (net name)       width    height     slack
+ -----------------------------------------------------
+
+ noise_region: above_high
+ pin name (net name)       width    height     slack
+ -----------------------------------------------------
+
+1

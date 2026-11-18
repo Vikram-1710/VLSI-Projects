@@ -1,0 +1,150 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-input_pins
+	-nets
+	-max_paths 1
+	-group inputs
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : flash_attention_top
+Version: P-2019.03-SP5
+Date   : Tue May 12 09:58:43 2026
+****************************************
+
+
+  Startpoint: hbm_rd_data[100]
+               (input port clocked by CLK)
+  Endpoint: li_regx2xx28x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: min
+
+  Point                             Fanout    Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------------
+  clock CLK (rise edge)                                 0.00       0.00       0.00
+  clock network delay (ideal)                                      0.00       0.00
+  input external delay                                             0.08       0.08 f
+  hbm_rd_data[100] (in)                                 0.01       0.00 $     0.08 f
+  hbm_rd_data[100] (net)               2     0.00 
+  U39061/A1 (ND2D1BWP16P90LVT)                          0.00       0.00 *     0.08 f
+  U39061/ZN (ND2D1BWP16P90LVT)                          0.00       0.00 *     0.09 r
+  n21413 (net)                         1     0.00 
+  U45854/B (OAI21D1BWP16P90LVT)                         0.00       0.00 *     0.09 r
+  U45854/ZN (OAI21D1BWP16P90LVT)                        0.00       0.01 *     0.09 f
+  n4105 (net)                          1     0.00 
+  li_regx2xx28x/D (DFQD2BWP16P90LVT)                    0.00       0.00 *     0.09 f
+  data arrival time                                                           0.09
+
+  clock CLK (rise edge)                                 0.00       0.00       0.00
+  clock network delay (ideal)                                      0.00       0.00
+  clock reconvergence pessimism                                    0.00       0.00
+  li_regx2xx28x/CP (DFQD2BWP16P90LVT)                                         0.00 r
+  library hold time                                                0.01 *     0.01
+  data required time                                                          0.01
+  -----------------------------------------------------------------------------------
+  data required time                                                          0.01
+  data arrival time                                                          -0.09
+  -----------------------------------------------------------------------------------
+  slack (MET)                                                                 0.09
+
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-input_pins
+	-nets
+	-max_paths 1
+	-group output
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : flash_attention_top
+Version: P-2019.03-SP5
+Date   : Tue May 12 09:58:43 2026
+****************************************
+
+
+  Startpoint: done_reg (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: done (output port clocked by CLK)
+  Path Group: output
+  Path Type: min
+
+  Point                       Fanout    Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  clock CLK (rise edge)                           0.00       0.00       0.00
+  clock network delay (ideal)                                0.00       0.00
+  done_reg/CP (DFCNQD2BWP16P90LVT)                0.00       0.00       0.00 r
+  done_reg/Q (DFCNQD2BWP16P90LVT)                 0.00       0.03 *     0.03 r
+  done (net)                     1     0.00 
+  done (out)                                      0.00       0.00 *     0.03 r
+  data arrival time                                                     0.03
+
+  clock CLK (rise edge)                           0.00       0.00       0.00
+  clock network delay (ideal)                                0.00       0.00
+  clock reconvergence pessimism                              0.00       0.00
+  output external delay                                     -0.12      -0.12
+  data required time                                                   -0.12
+  -----------------------------------------------------------------------------
+  data required time                                                   -0.12
+  data arrival time                                                    -0.03
+  -----------------------------------------------------------------------------
+  slack (MET)                                                           0.15
+
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-input_pins
+	-nets
+	-max_paths 1
+	-group reg2reg
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : flash_attention_top
+Version: P-2019.03-SP5
+Date   : Tue May 12 09:58:43 2026
+****************************************
+
+
+  Startpoint: j_cnt_regx0x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: j_cnt_regx0x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: min
+
+  Point                               Fanout    Cap      Trans       Incr       Path
+  -------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00       0.00
+  clock network delay (ideal)                                        0.00       0.00
+  j_cnt_regx0x/CP (DFCNQD2BWP16P90LVT)                    0.00       0.00       0.00 r
+  j_cnt_regx0x/Q (DFCNQD2BWP16P90LVT)                     0.00       0.03 *     0.03 r
+  j_cnt[0] (net)                         8     0.00 
+  U42517/B1 (OAI32D1BWP16P90LVT)                          0.00       0.00 *     0.03 r
+  U42517/ZN (OAI32D1BWP16P90LVT)                          0.00       0.01 *     0.04 f
+  n8359 (net)                            1     0.00 
+  j_cnt_regx0x/D (DFCNQD2BWP16P90LVT)                     0.00       0.00 *     0.04 f
+  data arrival time                                                             0.04
+
+  clock CLK (rise edge)                                   0.00       0.00       0.00
+  clock network delay (ideal)                                        0.00       0.00
+  clock reconvergence pessimism                                      0.00       0.00
+  j_cnt_regx0x/CP (DFCNQD2BWP16P90LVT)                                          0.00 r
+  library hold time                                                  0.01 *     0.01
+  data required time                                                            0.01
+  -------------------------------------------------------------------------------------
+  data required time                                                            0.01
+  data arrival time                                                            -0.04
+  -------------------------------------------------------------------------------------
+  slack (MET)                                                                   0.03
+
+
+1

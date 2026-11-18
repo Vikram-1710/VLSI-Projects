@@ -1,0 +1,119 @@
+Error: Library Compiler executable path is not set. (PT-063)
+
+                                 PrimeTime (R)
+
+               Version P-2019.03-SP5 for linux64 - Oct 15, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+
+Library Settings:
+========================================
+search_path:     "/soft/ece_soft_2/TSMCHOME/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/ /soft/ece_soft_2/TSMCHOME/Executable_Package/Collaterals/IP/stdio/N16ADFP_StdIO/NLDM/"
+link_library:    "* N16ADFP_StdCelltt0p8v25c_ccs.db N16ADFP_StdIOtt0p8v1p8v25c.db"
+target_library:  "N16ADFP_StdCelltt0p8v25c_ccs.db N16ADFP_StdIOtt0p8v1p8v25c.db"
+mw_reference_library:  "/soft/ece_soft_2/TSMCHOME/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/MILKYWAY/cell_frame_VHV_0d5_0/N16ADFP_StdCell/ /soft/ece_soft_2/TSMCHOME/Executable_Package/Collaterals/IP/stdio/N16ADFP_StdIO/MILKWAY/cell_frame/N16ADFP_StdIO"
+========================================
+
+
+Warning: Cannot use command line editor for terminal type 'xterm-256color'. (CLE-100)
+###################################################################
+set DESIGN_NAME flash_attention_top
+flash_attention_top
+foreach dir "outputs reports" {
+  if {![file isdirectory $dir]} { file mkdir $dir }
+  sh rm -rf $dir/*
+}
+redirect -file /dev/null {set start_time [clock seconds]}
+###################################################################
+puts "==>INFORMATION: Reading gate-level netlist."
+==>INFORMATION: Reading gate-level netlist.
+read_verilog ./inputs/${DESIGN_NAME}.vg
+1
+current_design ${DESIGN_NAME}
+Information: current_design won't return any data before link (DES-071)
+link_design
+Loading verilog file '/home/ragha084/labs/vd2_project3/FlashAttention/pt_run/inputs/flash_attention_top.vg'
+Loading db file '/soft/ece_soft_2/TSMCHOME/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCelltt0p8v25c_ccs.db'
+Loading db file '/soft/ece_soft_2/TSMCHOME/Executable_Package/Collaterals/IP/stdio/N16ADFP_StdIO/NLDM/N16ADFP_StdIOtt0p8v1p8v25c.db'
+Linking design flash_attention_top...
+Information: Removing 265 unneeded designs..... (LNK-034)
+Information: 1420 (95.95%) library cells are unused in library N16ADFP_StdCelltt0p8v25c_ccs..... (LNK-045)
+Information: 13 (100.00%) library cells are unused in library N16ADFP_StdIOtt0p8v1p8v25c..... (LNK-045)
+Information: total 1433 library cells are unused (LNK-046)
+Design 'flash_attention_top' was successfully linked.
+Information: There are 96647 leaf cells, ports, hiers and 157812 nets in the design (LNK-047)
+1
+###################################################################
+puts "==>INFORMATION: Setting clock constraints."
+==>INFORMATION: Setting clock constraints.
+create_clock -name clk -period 2 [get_ports clk]
+1
+set_input_delay 0.1 -clock clk [all_inputs]
+Warning: Setting input delay on clock port (clk) relative to a clock (clk) defined at the same port. Command is ignored. (UITE-489)
+1
+set_output_delay 0.1 -clock clk [all_outputs]
+1
+###################################################################
+set power_enable_analysis true
+Information: Checked out license 'PrimePower' (PT-019)
+true
+set power_analysis_mode averaged
+averaged
+###################################################################
+puts "==>INFORMATION: Reading VCD switching activity."
+==>INFORMATION: Reading VCD switching activity.
+read_vcd -strip_path tb_flash_attention_top/dut          ./inputs/${DESIGN_NAME}.vcd
+Information: Reading file flash_attention_top.vcd to annotate toggle rates on the design...
+Information: Reading vcd file '/home/ragha084/labs/vd2_project3/FlashAttention/pt_run/inputs/flash_attention_top.vcd'
+
+======================================================================
+Summary:
+Total number of nets = 124540
+Number of annotated nets = 331 (0.27%)
+Total number of leaf cells = 95859
+Number of fully annotated leaf cells = 0 (0.00%)
+======================================================================
+
+Information: Total number of synthesis invariant points = 7708 , annotated synthesis invariant points = 318, annotation_ratio = 4.13%
+1
+###################################################################
+set_operating_conditions tt0p8v25c
+1
+group_path -name inputs  -from [all_inputs]
+1
+group_path -name outputs -to   [all_outputs]
+1
+group_path -name reg2reg -from [all_registers -clock_pins]                          -to   [all_registers -data_pins]
+1
+###################################################################
+puts "==>INFORMATION: Generating timing report."
+==>INFORMATION: Generating timing report.
+redirect -file ./reports/${DESIGN_NAME}.timing.rpt {
+  report_timing -nworst 3 -nosplit -input_pins -slack_lesser_than 100
+}
+###################################################################
+puts "==>INFORMATION: Generating power report."
+==>INFORMATION: Generating power report.
+update_power
+Warning: Switching activity for constant net hbm_wr_addr[8] is reset by SAIF/VCD.  (PSW-208)
+Information: Running switching activity propagation with 4 threads!
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
+1
+redirect -file ./reports/${DESIGN_NAME}.power.rpt {
+  report_power
+}
+redirect -append -file ./reports/${DESIGN_NAME}.power.rpt {
+  report_power -hierarchy
+}
+###################################################################
+set elapsed_time [expr { ([clock seconds] - $start_time) / 60.0} ]
+0.433333333333
+puts [format "##### Done. Runtime: %.2f mins #####" $elapsed_time]
+##### Done. Runtime: 0.43 mins #####
+pt_shell> 

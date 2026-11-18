@@ -1,0 +1,31 @@
+****************************************
+Report : Clock Gate Savings
+	power_mode: Averaged
+Design : flash_attention_top
+Version: P-2019.03-SP5
+Date   : Mon May 11 15:53:17 2026
+****************************************
+
+------------------------------------------------------------------------------------
+Clock: CLK
+  + Clock Toggle Rate: 1
+  + Number of Registers: 7578
+      + Number of Un-gated Registers: 7578 (100.0 %)
+      + Number of Gated Registers: 0 (0.0 %)
+  + Number of Clock Gates: 0
+  + Max Number of Clock Gate Stage: 0
+  + Average Clock Toggle Rate at Registers: 1
+  + Average Register Gating Efficiency (savings with respect to root clock): 0.0%
+------------------------------------------------------------------------------------
+Toggle Savings                       Number of       % of
+Distribution                         Registers       Registers
+---------------------------------------------------------------------------
+100%                                 0               0.0%
+80% - 100%                           0               0.0%
+60% - 80%                            0               0.0%
+40% - 60%                            0               0.0%
+20% - 40%                            0               0.0%
+0% - 20%                             0               0.0%
+0%                                   7578            100.0%
+------------------------------------------------------------------------------------
+1

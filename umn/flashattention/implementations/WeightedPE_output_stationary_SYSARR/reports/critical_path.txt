@@ -1,0 +1,594 @@
+****************************************
+Report : timing CRITICAL PATH
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : flash_attention_top
+Version: U-2022.12-SP5
+Date   : Tue May 12 10:10:56 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: li_regx1xx35x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: O_norm_regx1xx3xx9x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_1
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_2
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_3
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_4
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_5
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_6
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_7
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_8
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_9
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_10
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_11
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_12
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_13
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_14
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_15
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_16
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_17
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_18
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_19
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_20
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_21
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_22
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_23
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_24
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_25
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_26
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_27
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_28
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_29
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_30
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_31
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_32
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_33
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_34
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_35
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_36
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_37
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_38
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_39
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_40
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_41
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_42
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_43
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_44
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_45
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_46
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_47
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_48
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_49
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_50
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_51
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_52
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_53
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_54
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_55
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_56
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_57
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_58
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_59
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_60
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_61
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_62
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_63
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_64
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_65
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_66
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_67
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_68
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_69
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_70
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_71
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_72
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_73
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_74
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_75
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_76
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_77
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_78
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_79
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  pe_unit_DATA_W16_ACC_W36_SHIFT8_0
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  matmul_unit_ROWS4_INNER16_COLS4_DATA_W16_ACC_W36_TRANSPOSE_B1
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  matmul_unit_ROWS4_INNER4_COLS16_DATA_W16_ACC_W36_TRANSPOSE_B1
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_9025
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_9024
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_9076
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_9075
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_sub_90
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_sub_89
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_8983
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_8982
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_3400
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_3397
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_4552
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_4549
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_sub_43
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_sub_40
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2108
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2060
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11398
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11399
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11475
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11543
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11456
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11396
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_10946
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11186
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11327
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11289
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11288
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11339
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11338
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11145
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11202
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_10970
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_10819
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_10231
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_10230
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_10223
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_10216
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_9130
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_9129
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_9412
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_9117
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_9116
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_8999
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_8998
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_8441
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_8570
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_6491
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_6490
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_6690
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_6689
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_6688
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_6032
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_6037
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_6036
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_6035
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_6016
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_6021
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_6020
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_6019
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_3032
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_3031
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_3030
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_3061
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2901
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2405
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2983
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2982
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2981
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2936
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2327
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2326
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2325
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2263
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2262
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11403
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2058
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_8284
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_8357
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2293
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2277
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2056
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_7420
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_7518
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11478
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11500
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2647
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11438
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_8324
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_8552
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2485
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_8583
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_2574
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_6744
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_6743
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_11392
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_10392
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_10391
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW01_add_8269
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  flash_attention_top_DW_inc_72
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                                                                 Incr       Path
+  --------------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                                 0.00       0.00
+  clock network delay (ideal)                                                           0.00       0.00
+  li_regx1xx35x/CP (DFQD2BWP16P90LVT)                                                   0.00 #     0.00 r
+  li_regx1xx35x/Q (DFQD2BWP16P90LVT)                                                    0.03       0.03 f
+  U19396/ZN (INVD4BWP16P90LVT)                                                          0.01       0.04 r
+  U26519/ZN (CKND16BWP16P90LVT)                                                         0.01       0.06 f
+  U12391/Z (XOR2D2BWP16P90LVT)                                                          0.03       0.08 r
+  U19733/Z (BUFFD4BWP16P90LVT)                                                          0.01       0.10 r
+  U30180/Z (BUFFD16BWP16P90LVT)                                                         0.02       0.11 r
+  U53535/ZN (ND4D1BWP16P90LVT)                                                          0.01       0.13 f
+  U13903/ZN (NR4D2BWP16P90LVT)                                                          0.02       0.15 r
+  U25403/ZN (ND4D4BWP16P90LVT)                                                          0.02       0.17 f
+  U9670/ZN (CKND2D2BWP16P90LVT)                                                         0.03       0.19 r
+  U9933/ZN (INVD4BWP16P90LVT)                                                           0.01       0.20 f
+  U9485/Z (BUFFD12BWP16P90LVT)                                                          0.01       0.22 f
+  U55152/ZN (AOI22D1BWP16P90LVT)                                                        0.01       0.23 r
+  U14606/ZN (AOI21D2BWP16P90LVT)                                                        0.01       0.23 f
+  U17310/Z (OA21D2BWP16P90LVT)                                                          0.01       0.25 f
+  U17309/ZN (ND2D2BWP16P90LVT)                                                          0.01       0.25 r
+  U25114/ZN (CKND2BWP16P90LVT)                                                          0.01       0.26 f
+  U13071/ZN (NR3D2BWP16P90LVT)                                                          0.01       0.27 r
+  U13070/ZN (ND3D2BWP16P90LVT)                                                          0.01       0.28 f
+  div_868_I4_I2_u_div_u_add_PartRem_10_2/A[3] (flash_attention_top_DW01_add_11398)      0.00       0.28 f
+  div_868_I4_I2_u_div_u_add_PartRem_10_2/U192/ZN (ND2D1BWP16P90LVT)                     0.01       0.29 r
+  div_868_I4_I2_u_div_u_add_PartRem_10_2/U218/ZN (OAI21D2BWP16P90LVT)                   0.01       0.30 f
+  div_868_I4_I2_u_div_u_add_PartRem_10_2/U213/Z (AO21D1BWP16P90LVT)                     0.01       0.31 f
+  div_868_I4_I2_u_div_u_add_PartRem_10_2/U219/Z (AN2D4BWP16P90LVT)                      0.01       0.32 f
+  div_868_I4_I2_u_div_u_add_PartRem_10_2/CO (flash_attention_top_DW01_add_11398)        0.00       0.32 f
+  U17983/ZN (INVD4BWP16P90LVT)                                                          0.01       0.33 r
+  U9898/Z (AN2D2BWP16P90LVT)                                                            0.01       0.34 r
+  U12214/ZN (AOI22D1BWP16P90LVT)                                                        0.01       0.35 f
+  U24598/ZN (ND2D2BWP16P90LVT)                                                          0.01       0.36 r
+  U12217/Z (MUX2D2BWP16P90LVT)                                                          0.02       0.38 r
+  div_868_I4_I2_u_div_u_add_PartRem_9_6/A[4] (flash_attention_top_DW01_add_11403)       0.00       0.38 r
+  div_868_I4_I2_u_div_u_add_PartRem_9_6/U207/ZN (ND2D1BWP16P90LVT)                      0.01       0.39 f
+  div_868_I4_I2_u_div_u_add_PartRem_9_6/U223/ZN (OAI21D2BWP16P90LVT)                    0.01       0.40 r
+  div_868_I4_I2_u_div_u_add_PartRem_9_6/U231/ZN (AOI21D4BWP16P90LVT)                    0.01       0.41 f
+  div_868_I4_I2_u_div_u_add_PartRem_9_6/U232/ZN (OAI21D2BWP16P90LVT)                    0.01       0.42 r
+  div_868_I4_I2_u_div_u_add_PartRem_9_6/CO (flash_attention_top_DW01_add_11403)         0.00       0.42 r
+  U21112/ZN (INVD2BWP16P90LVT)                                                          0.01       0.43 f
+  U18808/ZN (OAI21D2BWP16P90LVT)                                                        0.01       0.44 r
+  U19765/ZN (IND2D1BWP16P90LVT)                                                         0.01       0.45 r
+  U13428/ZN (CKND2D1BWP16P90LVT)                                                        0.01       0.46 f
+  U8744/ZN (CKND2BWP16P90LVT)                                                           0.01       0.47 r
+  U23471/ZN (ND3D2BWP16P90LVT)                                                          0.01       0.48 f
+  U20508/Z (AN2D2BWP16P90LVT)                                                           0.01       0.49 f
+  div_868_I4_I2_u_div_u_add_PartRem_8_4/A[6] (flash_attention_top_DW01_add_8357)        0.00       0.49 f
+  div_868_I4_I2_u_div_u_add_PartRem_8_4/U195/ZN (ND2D1BWP16P90LVT)                      0.01       0.50 r
+  div_868_I4_I2_u_div_u_add_PartRem_8_4/U241/ZN (OAI21D2BWP16P90LVT)                    0.01       0.51 f
+  div_868_I4_I2_u_div_u_add_PartRem_8_4/U238/ZN (AOI21D2BWP16P90LVT)                    0.01       0.52 r
+  div_868_I4_I2_u_div_u_add_PartRem_8_4/U229/ZN (OAI21D4BWP16P90LVT)                    0.01       0.53 f
+  div_868_I4_I2_u_div_u_add_PartRem_8_4/U247/ZN (IOAI21D4BWP16P90LVT)                   0.02       0.54 f
+  div_868_I4_I2_u_div_u_add_PartRem_8_4/CO (flash_attention_top_DW01_add_8357)          0.00       0.54 f
+  U13368/Z (BUFFD4BWP16P90LVT)                                                          0.01       0.56 f
+  U15017/ZN (CKND8BWP16P90LVT)                                                          0.01       0.56 r
+  U20935/ZN (ND3D2BWP16P90LVT)                                                          0.02       0.58 f
+  U18136/Z (AN2D4BWP16P90LVT)                                                           0.02       0.59 f
+  U17409/ZN (ND2D4BWP16P90LVT)                                                          0.00       0.60 r
+  U13044/Z (AN2D1BWP16P90LVT)                                                           0.01       0.61 r
+  U27015/ZN (ND4D2BWP16P90LVT)                                                          0.03       0.64 f
+  div_868_I4_I2_u_div_u_add_PartRem_7_4/A[9] (flash_attention_top_DW01_add_2293)        0.00       0.64 f
+  div_868_I4_I2_u_div_u_add_PartRem_7_4/U185/ZN (ND2D1BWP16P90LVT)                      0.01       0.65 r
+  div_868_I4_I2_u_div_u_add_PartRem_7_4/U255/ZN (OAI21D2BWP16P90LVT)                    0.01       0.65 f
+  div_868_I4_I2_u_div_u_add_PartRem_7_4/U264/ZN (AOI21D2BWP16P90LVT)                    0.01       0.66 r
+  div_868_I4_I2_u_div_u_add_PartRem_7_4/U262/ZN (OAI21D4BWP16P90LVT)                    0.01       0.67 f
+  div_868_I4_I2_u_div_u_add_PartRem_7_4/U263/Z (AO21D2BWP16P90LVT)                      0.03       0.70 f
+  div_868_I4_I2_u_div_u_add_PartRem_7_4/CO (flash_attention_top_DW01_add_2293)          0.00       0.70 f
+  U21314/ZN (CKND8BWP16P90LVT)                                                          0.01       0.71 r
+  U21248/ZN (OAI221D2BWP16P90LVT)                                                       0.02       0.73 f
+  U21247/ZN (CKND2D4BWP16P90LVT)                                                        0.01       0.74 r
+  U27142/ZN (INVD1BWP16P90)                                                             0.01       0.75 f
+  U55354/ZN (NR2D1BWP16P90LVT)                                                          0.01       0.75 r
+  U55355/ZN (AOI32D1BWP16P90LVT)                                                        0.01       0.76 f
+  U9516/Z (AN2D2BWP16P90LVT)                                                            0.01       0.77 f
+  U15297/Z (AN2D2BWP16P90LVT)                                                           0.01       0.78 f
+  U19341/ZN (ND2D2BWP16P90LVT)                                                          0.01       0.79 r
+  div_868_I4_I2_u_div_u_add_PartRem_6_2/A[9] (flash_attention_top_DW01_add_7420)        0.00       0.79 r
+  div_868_I4_I2_u_div_u_add_PartRem_6_2/U258/ZN (NR2D2BWP16P90LVT)                      0.01       0.80 f
+  div_868_I4_I2_u_div_u_add_PartRem_6_2/U265/ZN (CKNR2D2BWP16P90LVT)                    0.01       0.81 r
+  div_868_I4_I2_u_div_u_add_PartRem_6_2/U184/ZN (ND2D1BWP16P90LVT)                      0.01       0.81 f
+  div_868_I4_I2_u_div_u_add_PartRem_6_2/U183/ZN (OAI21D1BWP16P90LVT)                    0.01       0.82 r
+  div_868_I4_I2_u_div_u_add_PartRem_6_2/U304/Z (AO21D1BWP16P90LVT)                      0.01       0.83 r
+  div_868_I4_I2_u_div_u_add_PartRem_6_2/U255/Z (AN2D4BWP16P90LVT)                       0.01       0.85 r
+  div_868_I4_I2_u_div_u_add_PartRem_6_2/CO (flash_attention_top_DW01_add_7420)          0.00       0.85 r
+  U21467/ZN (INVD4BWP16P90LVT)                                                          0.01       0.86 f
+  U18334/ZN (AOI21D4BWP16P90LVT)                                                        0.01       0.86 r
+  U22817/ZN (OAI21D4BWP16P90LVT)                                                        0.01       0.87 f
+  U24115/Z (AN2D8BWP16P90LVT)                                                           0.02       0.89 f
+  U55399/ZN (AOI22D1BWP16P90LVT)                                                        0.01       0.90 r
+  U33569/ZN (ND4D1BWP16P90LVT)                                                          0.02       0.92 f
+  U25784/Z (BUFFD2BWP16P90LVT)                                                          0.02       0.94 f
+  div_868_I4_I2_u_div_u_add_PartRem_5_6/A[17] (flash_attention_top_DW01_add_11478)      0.00       0.94 f
+  div_868_I4_I2_u_div_u_add_PartRem_5_6/U384/ZN (NR2D1BWP16P90LVT)                      0.01       0.95 r
+  div_868_I4_I2_u_div_u_add_PartRem_5_6/U123/ZN (OAI21D1BWP16P90LVT)                    0.01       0.96 f
+  div_868_I4_I2_u_div_u_add_PartRem_5_6/U121/ZN (AOI21D1BWP16P90LVT)                    0.01       0.96 r
+  div_868_I4_I2_u_div_u_add_PartRem_5_6/U119/ZN (OAI21D1BWP16P90LVT)                    0.01       0.97 f
+  div_868_I4_I2_u_div_u_add_PartRem_5_6/U324/ZN (AOI21D2BWP16P90LVT)                    0.01       0.99 r
+  div_868_I4_I2_u_div_u_add_PartRem_5_6/U300/ZN (OAI21D2BWP16P90LVT)                    0.01       0.99 f
+  div_868_I4_I2_u_div_u_add_PartRem_5_6/CO (flash_attention_top_DW01_add_11478)         0.00       0.99 f
+  U20931/ZN (INVD2BWP16P90LVT)                                                          0.01       1.00 r
+  U55446/ZN (OAI22D1BWP16P90LVT)                                                        0.01       1.01 f
+  U24723/ZN (ND2D2BWP16P90LVT)                                                          0.01       1.02 r
+  U22349/ZN (ND2D2BWP16P90LVT)                                                          0.01       1.03 f
+  U21309/ZN (INVD4BWP16P90LVT)                                                          0.01       1.04 r
+  U21308/Z (AN2D8BWP16P90LVT)                                                           0.02       1.05 r
+  U16723/ZN (AOI22D1BWP16P90LVT)                                                        0.01       1.06 f
+  U11634/Z (AN2D2BWP16P90LVT)                                                           0.02       1.08 f
+  U13199/ZN (ND2D4BWP16P90LVT)                                                          0.01       1.09 r
+  div_868_I4_I2_u_div_u_add_PartRem_4_2/A[14] (flash_attention_top_DW01_add_8324)       0.00       1.09 r
+  div_868_I4_I2_u_div_u_add_PartRem_4_2/U301/ZN (ND2D1BWP16P90)                         0.01       1.10 f
+  div_868_I4_I2_u_div_u_add_PartRem_4_2/U164/ZN (OAI21D1BWP16P90LVT)                    0.02       1.12 r
+  div_868_I4_I2_u_div_u_add_PartRem_4_2/U136/ZN (AOI21D1BWP16P90LVT)                    0.01       1.13 f
+  div_868_I4_I2_u_div_u_add_PartRem_4_2/U311/ZN (OAI21D2BWP16P90LVT)                    0.01       1.14 r
+  div_868_I4_I2_u_div_u_add_PartRem_4_2/U310/ZN (AOI21D4BWP16P90LVT)                    0.01       1.15 f
+  div_868_I4_I2_u_div_u_add_PartRem_4_2/U294/ZN (OAI21D8BWP16P90LVT)                    0.01       1.16 r
+  div_868_I4_I2_u_div_u_add_PartRem_4_2/CO (flash_attention_top_DW01_add_8324)          0.00       1.16 r
+  U17938/ZN (INVD4BWP16P90LVT)                                                          0.01       1.16 f
+  U13868/ZN (OAI33D4BWP16P90LVT)                                                        0.02       1.18 r
+  U16933/ZN (INVD4BWP16P90LVT)                                                          0.01       1.19 f
+  U15381/Z (AN2D8BWP16P90LVT)                                                           0.01       1.21 f
+  U55542/ZN (AOI22D1BWP16P90LVT)                                                        0.01       1.22 r
+  U17242/ZN (ND4D2BWP16P90LVT)                                                          0.01       1.23 f
+  U25861/ZN (CKND2BWP16P90LVT)                                                          0.01       1.24 r
+  U12035/ZN (CKND2BWP16P90LVT)                                                          0.01       1.25 f
+  div_868_I4_I2_u_div_u_add_PartRem_3_3/A[19] (flash_attention_top_DW01_add_2485)       0.00       1.25 f
+  div_868_I4_I2_u_div_u_add_PartRem_3_3/U391/ZN (NR2D1BWP16P90)                         0.01       1.26 r
+  div_868_I4_I2_u_div_u_add_PartRem_3_3/U158/ZN (OAI21D1BWP16P90LVT)                    0.02       1.28 f
+  div_868_I4_I2_u_div_u_add_PartRem_3_3/U359/ZN (AOI21D2BWP16P90LVT)                    0.01       1.29 r
+  div_868_I4_I2_u_div_u_add_PartRem_3_3/U80/ZN (OAI21D1BWP16P90LVT)                     0.01       1.30 f
+  div_868_I4_I2_u_div_u_add_PartRem_3_3/U6/ZN (AOI21D1BWP16P90LVT)                      0.01       1.31 r
+  div_868_I4_I2_u_div_u_add_PartRem_3_3/U361/ZN (OAI21D4BWP16P90LVT)                    0.01       1.32 f
+  div_868_I4_I2_u_div_u_add_PartRem_3_3/CO (flash_attention_top_DW01_add_2485)          0.00       1.32 f
+  U55584/ZN (AOI22D1BWP16P90LVT)                                                        0.01       1.33 r
+  U19090/ZN (IND2D4BWP16P90LVT)                                                         0.01       1.34 r
+  U17384/Z (AN2D8BWP16P90LVT)                                                           0.02       1.36 r
+  U23776/ZN (ND2D4BWP16P90LVT)                                                          0.01       1.37 f
+  U20505/ZN (CKND8BWP16P90LVT)                                                          0.01       1.38 r
+  U16875/ZN (AOI22D1BWP16P90LVT)                                                        0.01       1.39 f
+  U32533/Z (AN4D1BWP16P90LVT)                                                           0.01       1.40 f
+  U27153/ZN (INVD1BWP16P90LVT)                                                          0.01       1.41 r
+  div_868_I4_I2_u_div_u_add_PartRem_2_4/A[27] (flash_attention_top_DW01_add_11396)      0.00       1.41 r
+  div_868_I4_I2_u_div_u_add_PartRem_2_4/U387/ZN (NR2D1BWP16P90)                         0.01       1.42 f
+  div_868_I4_I2_u_div_u_add_PartRem_2_4/U488/ZN (NR2D1BWP16P90LVT)                      0.01       1.44 r
+  div_868_I4_I2_u_div_u_add_PartRem_2_4/U46/ZN (ND2D1BWP16P90LVT)                       0.01       1.45 f
+  div_868_I4_I2_u_div_u_add_PartRem_2_4/U460/ZN (NR2D1BWP16P90LVT)                      0.01       1.46 r
+  div_868_I4_I2_u_div_u_add_PartRem_2_4/U8/ZN (ND2D1BWP16P90LVT)                        0.01       1.47 f
+  div_868_I4_I2_u_div_u_add_PartRem_2_4/U394/ZN (OAI21D4BWP16P90LVT)                    0.02       1.48 r
+  div_868_I4_I2_u_div_u_add_PartRem_2_4/CO (flash_attention_top_DW01_add_11396)         0.00       1.48 r
+  U14010/ZN (ND2D1BWP16P90)                                                             0.02       1.51 f
+  U17682/ZN (ND2D2BWP16P90LVT)                                                          0.01       1.51 r
+  U17681/ZN (IND2D4BWP16P90LVT)                                                         0.01       1.53 r
+  U13830/ZN (CKND8BWP16P90LVT)                                                          0.01       1.54 f
+  U55688/ZN (AOI22D1BWP16P90LVT)                                                        0.01       1.54 r
+  U33615/ZN (ND4D1BWP16P90LVT)                                                          0.02       1.56 f
+  U26728/Z (CKBD1BWP16P90)                                                              0.02       1.58 f
+  div_868_I4_I2_u_div_u_add_PartRem_1_5/A[29] (flash_attention_top_DW01_add_6744)       0.00       1.58 f
+  div_868_I4_I2_u_div_u_add_PartRem_1_5/U460/ZN (NR2D1BWP16P90)                         0.02       1.60 r
+  div_868_I4_I2_u_div_u_add_PartRem_1_5/U492/ZN (NR2D1BWP16P90LVT)                      0.01       1.61 f
+  div_868_I4_I2_u_div_u_add_PartRem_1_5/U84/ZN (AOI21D1BWP16P90LVT)                     0.01       1.63 r
+  div_868_I4_I2_u_div_u_add_PartRem_1_5/U11/ZN (OAI21D1BWP16P90LVT)                     0.01       1.64 f
+  div_868_I4_I2_u_div_u_add_PartRem_1_5/U9/ZN (AOI21D1BWP16P90LVT)                      0.01       1.65 r
+  div_868_I4_I2_u_div_u_add_PartRem_1_5/U394/ZN (OAI21D2BWP16P90LVT)                    0.01       1.65 f
+  div_868_I4_I2_u_div_u_add_PartRem_1_5/CO (flash_attention_top_DW01_add_6744)          0.00       1.65 f
+  U25492/ZN (OAI211D4BWP16P90LVT)                                                       0.02       1.67 r
+  U25491/ZN (INVD4BWP16P90LVT)                                                          0.01       1.68 f
+  U21740/Z (AN2D4BWP16P90LVT)                                                           0.01       1.69 f
+  U12276/ZN (AOI22D1BWP16P90LVT)                                                        0.02       1.71 r
+  U25192/ZN (ND4D4BWP16P90LVT)                                                          0.02       1.73 f
+  div_868_I4_I2_u_div_u_add_PartRem_0_3/A[26] (flash_attention_top_DW01_add_11392)      0.00       1.73 f
+  div_868_I4_I2_u_div_u_add_PartRem_0_3/U349/Z (OR2D1BWP16P90)                          0.02       1.75 f
+  div_868_I4_I2_u_div_u_add_PartRem_0_3/U102/ZN (AOI21D1BWP16P90LVT)                    0.01       1.76 r
+  div_868_I4_I2_u_div_u_add_PartRem_0_3/U100/ZN (OAI21D1BWP16P90LVT)                    0.01       1.77 f
+  div_868_I4_I2_u_div_u_add_PartRem_0_3/U84/ZN (AOI21D1BWP16P90LVT)                     0.01       1.78 r
+  div_868_I4_I2_u_div_u_add_PartRem_0_3/U49/ZN (OAI21D1BWP16P90LVT)                     0.01       1.78 f
+  div_868_I4_I2_u_div_u_add_PartRem_0_3/U5/ZN (AOI21D1BWP16P90LVT)                      0.01       1.79 r
+  div_868_I4_I2_u_div_u_add_PartRem_0_3/U3/ZN (OAI21D1BWP16P90LVT)                      0.01       1.80 f
+  div_868_I4_I2_u_div_u_add_PartRem_0_3/CO (flash_attention_top_DW01_add_11392)         0.00       1.80 f
+  U55937/ZN (IND2D1BWP16P90LVT)                                                         0.01       1.81 f
+  U34356/ZN (CKND1BWP16P90LVT)                                                          0.01       1.82 r
+  U24721/ZN (OAI33D2BWP16P90LVT)                                                        0.01       1.83 f
+  U13063/ZN (XNR2D4BWP16P90LVT)                                                         0.02       1.84 r
+  div_868_I4_I2_u_div_u_inc_QInc/a[0] (flash_attention_top_DW_inc_72)                   0.00       1.84 r
+  div_868_I4_I2_u_div_u_inc_QInc/U113/ZN (ND2D8BWP16P90LVT)                             0.01       1.85 f
+  div_868_I4_I2_u_div_u_inc_QInc/U114/Z (OR2D1BWP16P90LVT)                              0.01       1.87 f
+  div_868_I4_I2_u_div_u_inc_QInc/U121/ZN (XNR2D2BWP16P90LVT)                            0.01       1.88 r
+  div_868_I4_I2_u_div_u_inc_QInc/sum[9] (flash_attention_top_DW_inc_72)                 0.00       1.88 r
+  U56781/ZN (MOAI22D1BWP16P90LVT)                                                       0.01       1.89 r
+  O_norm_regx1xx3xx9x/D (DFQD2BWP16P90LVT)                                              0.00       1.89 r
+  data arrival time                                                                                1.89
+
+  clock CLK (rise edge)                                                                 1.50       1.50
+  clock network delay (ideal)                                                           0.00       1.50
+  O_norm_regx1xx3xx9x/CP (DFQD2BWP16P90LVT)                                             0.00       1.50 r
+  library setup time                                                                   -0.01       1.49
+  data required time                                                                               1.49
+  --------------------------------------------------------------------------------------------------------
+  data required time                                                                               1.49
+  data arrival time                                                                               -1.89
+  --------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                -0.40
+
+

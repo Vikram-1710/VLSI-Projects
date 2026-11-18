@@ -1,0 +1,213 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -group comb
+        -max_paths 10000
+        -transition_time
+        -capacitance
+Design : flash_attention_top
+Version: U-2022.12-SP5
+Date   : Fri May  1 16:31:51 2026
+****************************************
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: start (input port clocked by CLK)
+  Endpoint: hbm_rd_addr[2]
+            (output port clocked by CLK)
+  Path Group: comb
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  flash_attention_top ZeroWireload         N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  input external delay                                         0.08       0.08 f
+  start (in)                                         0.01      0.00       0.08 f
+  start (net)                    1         0.00                0.00       0.08 f
+  U25753/A3 (ND3D1BWP16P90LVT)                       0.01      0.00       0.08 f
+  U25753/ZN (ND3D1BWP16P90LVT)                       0.01      0.01       0.09 r
+  n20844 (net)                   3         0.00                0.00       0.09 r
+  U19648/B (OA21D1BWP16P90LVT)                       0.01      0.00       0.09 r
+  U19648/Z (OA21D1BWP16P90LVT)                       0.01      0.01       0.10 r
+  n21659 (net)                   1         0.00                0.00       0.10 r
+  U25750/B (OAI211D1BWP16P90LVT)                     0.01      0.00       0.10 r
+  U25750/ZN (OAI211D1BWP16P90LVT)                    0.02      0.01       0.12 f
+  n20847 (net)                   2         0.00                0.00       0.12 f
+  U25749/A2 (AOI21D1BWP16P90LVT)                     0.02      0.00       0.12 f
+  U25749/ZN (AOI21D1BWP16P90LVT)                     0.01      0.01       0.13 r
+  n21657 (net)                   1         0.00                0.00       0.13 r
+  U25748/A1 (OAI211D1BWP16P90LVT)                    0.01      0.00       0.13 r
+  U25748/ZN (OAI211D1BWP16P90LVT)                    0.04      0.03       0.15 f
+  n20871 (net)                   6         0.01                0.00       0.15 f
+  U24646/B (OAI21D1BWP16P90LVT)                      0.04      0.00       0.15 f
+  U24646/ZN (OAI21D1BWP16P90LVT)                     0.01      0.01       0.16 r
+  n21597 (net)                   2         0.00                0.00       0.16 r
+  U24645/A3 (ND3D1BWP16P90LVT)                       0.01      0.00       0.16 r
+  U24645/ZN (ND3D1BWP16P90LVT)                       0.02      0.01       0.18 f
+  n20872 (net)                   3         0.00                0.00       0.18 f
+  U25754/A2 (ND3D1BWP16P90LVT)                       0.02      0.00       0.18 f
+  U25754/ZN (ND3D1BWP16P90LVT)                       0.01      0.01       0.19 r
+  n21612 (net)                   2         0.00                0.00       0.19 r
+  U24644/A2 (ND2D1BWP16P90LVT)                       0.01      0.00       0.19 r
+  U24644/ZN (ND2D1BWP16P90LVT)                       0.02      0.01       0.20 f
+  n21602 (net)                   4         0.00                0.00       0.20 f
+  U25759/B2 (OAI22D1BWP16P90LVT)                     0.02      0.00       0.20 f
+  U25759/ZN (OAI22D1BWP16P90LVT)                     0.02      0.01       0.21 r
+  n21655 (net)                   1         0.00                0.00       0.21 r
+  U25756/A3 (NR3D1BWP16P90LVT)                       0.02      0.00       0.21 r
+  U25756/ZN (NR3D1BWP16P90LVT)                       0.02      0.01       0.22 f
+  hbm_rd_addr[2] (net)           1         0.00                0.00       0.22 f
+  hbm_rd_addr[2] (out)                               0.02      0.00       0.22 f
+  data arrival time                                                       0.22
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.12       0.88
+  data required time                                                      0.88
+  -------------------------------------------------------------------------------
+  data required time                                                      0.88
+  data arrival time                                                      -0.22
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.66
+
+
+  Startpoint: start (input port clocked by CLK)
+  Endpoint: hbm_rd_addr[4]
+            (output port clocked by CLK)
+  Path Group: comb
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  flash_attention_top ZeroWireload         N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  input external delay                                         0.08       0.08 r
+  start (in)                                         0.01      0.00       0.08 r
+  start (net)                    1         0.00                0.00       0.08 r
+  U25753/A3 (ND3D1BWP16P90LVT)                       0.01      0.00       0.08 r
+  U25753/ZN (ND3D1BWP16P90LVT)                       0.02      0.01       0.10 f
+  n20844 (net)                   3         0.00                0.00       0.10 f
+  U19648/B (OA21D1BWP16P90LVT)                       0.02      0.00       0.10 f
+  U19648/Z (OA21D1BWP16P90LVT)                       0.01      0.01       0.11 f
+  n21659 (net)                   1         0.00                0.00       0.11 f
+  U25750/B (OAI211D1BWP16P90LVT)                     0.01      0.00       0.11 f
+  U25750/ZN (OAI211D1BWP16P90LVT)                    0.02      0.01       0.12 r
+  n20847 (net)                   2         0.00                0.00       0.12 r
+  U25749/A2 (AOI21D1BWP16P90LVT)                     0.02      0.00       0.12 r
+  U25749/ZN (AOI21D1BWP16P90LVT)                     0.01      0.01       0.12 f
+  n21657 (net)                   1         0.00                0.00       0.12 f
+  U25748/A1 (OAI211D1BWP16P90LVT)                    0.01      0.00       0.12 f
+  U25748/ZN (OAI211D1BWP16P90LVT)                    0.03      0.02       0.14 r
+  n20871 (net)                   6         0.01                0.00       0.14 r
+  U24646/B (OAI21D1BWP16P90LVT)                      0.03      0.00       0.14 r
+  U24646/ZN (OAI21D1BWP16P90LVT)                     0.02      0.01       0.16 f
+  n21597 (net)                   2         0.00                0.00       0.16 f
+  U24645/A3 (ND3D1BWP16P90LVT)                       0.02      0.00       0.16 f
+  U24645/ZN (ND3D1BWP16P90LVT)                       0.02      0.01       0.17 r
+  n20872 (net)                   3         0.00                0.00       0.17 r
+  U25754/A2 (ND3D1BWP16P90LVT)                       0.02      0.00       0.17 r
+  U25754/ZN (ND3D1BWP16P90LVT)                       0.01      0.01       0.18 f
+  n21612 (net)                   2         0.00                0.00       0.18 f
+  U24644/A2 (ND2D1BWP16P90LVT)                       0.01      0.00       0.18 f
+  U24644/ZN (ND2D1BWP16P90LVT)                       0.01      0.01       0.19 r
+  n21602 (net)                   4         0.00                0.00       0.19 r
+  U24654/B2 (OAI22D1BWP16P90LVT)                     0.01      0.00       0.19 r
+  U24654/ZN (OAI22D1BWP16P90LVT)                     0.01      0.01       0.20 f
+  n21640 (net)                   1         0.00                0.00       0.20 f
+  U24651/A3 (NR3D1BWP16P90LVT)                       0.01      0.00       0.20 f
+  U24651/ZN (NR3D1BWP16P90LVT)                       0.03      0.02       0.22 r
+  hbm_rd_addr[4] (net)           1         0.00                0.00       0.22 r
+  hbm_rd_addr[4] (out)                               0.03      0.00       0.22 r
+  data arrival time                                                       0.22
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.12       0.88
+  data required time                                                      0.88
+  -------------------------------------------------------------------------------
+  data required time                                                      0.88
+  data arrival time                                                      -0.22
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.66
+
+
+  Startpoint: start (input port clocked by CLK)
+  Endpoint: hbm_rd_addr[3]
+            (output port clocked by CLK)
+  Path Group: comb
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  flash_attention_top ZeroWireload         N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  input external delay                                         0.08       0.08 f
+  start (in)                                         0.01      0.00       0.08 f
+  start (net)                    1         0.00                0.00       0.08 f
+  U25753/A3 (ND3D1BWP16P90LVT)                       0.01      0.00       0.08 f
+  U25753/ZN (ND3D1BWP16P90LVT)                       0.01      0.01       0.09 r
+  n20844 (net)                   3         0.00                0.00       0.09 r
+  U19648/B (OA21D1BWP16P90LVT)                       0.01      0.00       0.09 r
+  U19648/Z (OA21D1BWP16P90LVT)                       0.01      0.01       0.10 r
+  n21659 (net)                   1         0.00                0.00       0.10 r
+  U25750/B (OAI211D1BWP16P90LVT)                     0.01      0.00       0.10 r
+  U25750/ZN (OAI211D1BWP16P90LVT)                    0.02      0.01       0.12 f
+  n20847 (net)                   2         0.00                0.00       0.12 f
+  U25749/A2 (AOI21D1BWP16P90LVT)                     0.02      0.00       0.12 f
+  U25749/ZN (AOI21D1BWP16P90LVT)                     0.01      0.01       0.13 r
+  n21657 (net)                   1         0.00                0.00       0.13 r
+  U25748/A1 (OAI211D1BWP16P90LVT)                    0.01      0.00       0.13 r
+  U25748/ZN (OAI211D1BWP16P90LVT)                    0.04      0.03       0.15 f
+  n20871 (net)                   6         0.01                0.00       0.15 f
+  U24646/B (OAI21D1BWP16P90LVT)                      0.04      0.00       0.15 f
+  U24646/ZN (OAI21D1BWP16P90LVT)                     0.01      0.01       0.16 r
+  n21597 (net)                   2         0.00                0.00       0.16 r
+  U24645/A3 (ND3D1BWP16P90LVT)                       0.01      0.00       0.16 r
+  U24645/ZN (ND3D1BWP16P90LVT)                       0.02      0.01       0.18 f
+  n20872 (net)                   3         0.00                0.00       0.18 f
+  U25754/A2 (ND3D1BWP16P90LVT)                       0.02      0.00       0.18 f
+  U25754/ZN (ND3D1BWP16P90LVT)                       0.01      0.01       0.19 r
+  n21612 (net)                   2         0.00                0.00       0.19 r
+  U24644/A2 (ND2D1BWP16P90LVT)                       0.01      0.00       0.19 r
+  U24644/ZN (ND2D1BWP16P90LVT)                       0.02      0.01       0.20 f
+  n21602 (net)                   4         0.00                0.00       0.20 f
+  U24650/B1 (OAI22D1BWP16P90LVT)                     0.02      0.00       0.20 f
+  U24650/ZN (OAI22D1BWP16P90LVT)                     0.01      0.01       0.21 r
+  n21650 (net)                   1         0.00                0.00       0.21 r
+  U24647/A3 (NR3D1BWP16P90LVT)                       0.01      0.00       0.21 r
+  U24647/ZN (NR3D1BWP16P90LVT)                       0.02      0.01       0.22 f
+  hbm_rd_addr[3] (net)           1         0.00                0.00       0.22 f
+  hbm_rd_addr[3] (out)                               0.02      0.00       0.22 f
+  data arrival time                                                       0.22
+
+  clock CLK (rise edge)                                        1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  output external delay                                       -0.12       0.88
+  data required time                                                      0.88
+  -------------------------------------------------------------------------------
+  data required time                                                      0.88
+  data arrival time                                                      -0.22
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.66
+
+
+1
+LOGNAME = ragha084

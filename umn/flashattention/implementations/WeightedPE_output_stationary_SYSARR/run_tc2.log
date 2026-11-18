@@ -1,0 +1,292 @@
+Chronologic VCS simulator copyright 1991-2021
+Contains Synopsys proprietary information.
+Compiler version S-2021.09-SP2-7_Full64; Runtime version S-2021.09-SP2-7_Full64;  May 11 09:40 2026
+==============================================
+ FlashAttention tc2 Verification
+ N=64  D=4  Br=4  Bc=8  Tc=8  Tr=16
+ HBM_DW=64  RPT_QKV=1  Q_BASE=0  K_BASE=64  V_BASE=128  O_BASE=192
+==============================================
+[       0 ns] Q/K/V loaded into HBM (RPT_QKV=1 rows/word).
+[      55 ns] Asserting start.
+[   10035 ns] cycle=1000  hbm_rd=0@0  hbm_wr=0@426
+[   20035 ns] cycle=2000  hbm_rd=0@0  hbm_wr=0@425
+[   30035 ns] cycle=3000  hbm_rd=0@0  hbm_wr=0@423
+[   40035 ns] cycle=4000  hbm_rd=1@399  hbm_wr=0@422
+[   50035 ns] cycle=5000  hbm_rd=0@0  hbm_wr=0@420
+[   60035 ns] cycle=6000  hbm_rd=1@291  hbm_wr=0@419
+[   70035 ns] cycle=7000  hbm_rd=0@0  hbm_wr=0@417
+[   80035 ns] cycle=8000  hbm_rd=1@5  hbm_wr=0@416
+[   90035 ns] cycle=9000  hbm_rd=0@0  hbm_wr=0@430
+[   92805 ns] Done received. HBM transfer cycles = 3855
+  [row= 0][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 0][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 0][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 0][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 1][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 1][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 1][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 1][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 2][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 2][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 2][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 2][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 3][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 3][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 3][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 3][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 4][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 4][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 4][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 4][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 5][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 5][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 5][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 5][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 6][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 6][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 6][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 6][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 7][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 7][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 7][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 7][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 8][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 8][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 8][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 8][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 9][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 9][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 9][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row= 9][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=10][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=10][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=10][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=10][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=11][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=11][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=11][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=11][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=12][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=12][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=12][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=12][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=13][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=13][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=13][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=13][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=14][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=14][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=14][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=14][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=15][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=15][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=15][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=15][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=16][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=16][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=16][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=16][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=17][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=17][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=17][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=17][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=18][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=18][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=18][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=18][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=19][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=19][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=19][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=19][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=20][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=20][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=20][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=20][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=21][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=21][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=21][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=21][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=22][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=22][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=22][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=22][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=23][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=23][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=23][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=23][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=24][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=24][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=24][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=24][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=25][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=25][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=25][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=25][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=26][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=26][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=26][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=26][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=27][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=27][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=27][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=27][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=28][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=28][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=28][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=28][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=29][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=29][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=29][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=29][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=30][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=30][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=30][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=30][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=31][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=31][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=31][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=31][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=32][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=32][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=32][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=32][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=33][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=33][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=33][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=33][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=34][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=34][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=34][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=34][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=35][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=35][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=35][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=35][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=36][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=36][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=36][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=36][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=37][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=37][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=37][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=37][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=38][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=38][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=38][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=38][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=39][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=39][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=39][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=39][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=40][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=40][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=40][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=40][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=41][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=41][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=41][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=41][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=42][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=42][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=42][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=42][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=43][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=43][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=43][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=43][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=44][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=44][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=44][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=44][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=45][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=45][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=45][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=45][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=46][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=46][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=46][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=46][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=47][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=47][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=47][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=47][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=48][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=48][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=48][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=48][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=49][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=49][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=49][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=49][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=50][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=50][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=50][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=50][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=51][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=51][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=51][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=51][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=52][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=52][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=52][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=52][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=53][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=53][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=53][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=53][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=54][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=54][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=54][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=54][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=55][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=55][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=55][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=55][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=56][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=56][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=56][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=56][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=57][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=57][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=57][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=57][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=58][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=58][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=58][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=58][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=59][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=59][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=59][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=59][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=60][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=60][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=60][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=60][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=61][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=61][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=61][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=61][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=62][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=62][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=62][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=62][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=63][col=0]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=63][col=1]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=63][col=2]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+  [row=63][col=3]  got=0080 (  0.500)  exp=0080 (  0.500)  err=0 LSB          
+----------------------------------------------
+PASS  –  all 256 elements within 3 LSB of fa_tc2_O_flash.txt
+----------------------------------------------
+Cycle breakdown:
+  HBM transfers      : 3855
+  QK matmul          : 2304
+  PV matmul          : 2304
+  Vector ops         : 400
+  Total (start->done): 9273
+==============================================
+$finish called from file "tb_flash_attention_top.v", line 283.
+$finish at simulation time                92805
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 92805
+CPU Time:      0.430 seconds;       Data structure size:   0.2Mb
+Mon May 11 09:40:50 2026

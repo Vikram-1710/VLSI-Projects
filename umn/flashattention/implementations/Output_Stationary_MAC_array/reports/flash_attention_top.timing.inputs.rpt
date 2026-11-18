@@ -1,0 +1,443 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -group inputs
+        -max_paths 10
+        -transition_time
+        -capacitance
+Design : flash_attention_top
+Version: U-2022.12-SP5
+Date   : Sun May 10 16:20:46 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: hbm_rd_data[17]
+              (input port clocked by CLK)
+  Endpoint: Vj_regx0xx1xx1x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  flash_attention_top ZeroWireload         N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                         Fanout       Cap     Trans      Incr       Path
+  --------------------------------------------------------------------------------
+  clock CLK (rise edge)                                         0.00       0.00
+  clock network delay (ideal)                                   0.00       0.00
+  input external delay                                          0.08       0.08 r
+  hbm_rd_data[17] (in)                                0.01      0.00       0.08 r
+  hbm_rd_data[17] (net)           1         0.00                0.00       0.08 r
+  U33364/I (BUFFD1BWP16P90LVT)                        0.01      0.00       0.08 r
+  U33364/Z (BUFFD1BWP16P90LVT)                        0.08      0.05       0.13 r
+  n14560 (net)                   20         0.03                0.00       0.13 r
+  U29046/I (CKND1BWP16P90LVT)                         0.08      0.00       0.13 r
+  U29046/ZN (CKND1BWP16P90LVT)                        0.05      0.05       0.18 f
+  n36160 (net)                   18         0.02                0.00       0.18 f
+  U31488/B2 (IOA22D1BWP16P90LVT)                      0.05      0.00       0.18 f
+  U31488/ZN (IOA22D1BWP16P90LVT)                      0.02      0.01       0.19 r
+  n8341 (net)                     1         0.00                0.00       0.19 r
+  Vj_regx0xx1xx1x/D (DFQD2BWP16P90LVT)                0.02      0.00       0.19 r
+  data arrival time                                                        0.19
+
+  clock CLK (rise edge)                                         2.00       2.00
+  clock network delay (ideal)                                   0.00       2.00
+  Vj_regx0xx1xx1x/CP (DFQD2BWP16P90LVT)                         0.00       2.00 r
+  library setup time                                           -0.01       1.99
+  data required time                                                       1.99
+  --------------------------------------------------------------------------------
+  data required time                                                       1.99
+  data arrival time                                                       -0.19
+  --------------------------------------------------------------------------------
+  slack (MET)                                                              1.80
+
+
+  Startpoint: hbm_rd_data[17]
+              (input port clocked by CLK)
+  Endpoint: Qi_regx0xx1xx1x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  flash_attention_top ZeroWireload         N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                         Fanout       Cap     Trans      Incr       Path
+  --------------------------------------------------------------------------------
+  clock CLK (rise edge)                                         0.00       0.00
+  clock network delay (ideal)                                   0.00       0.00
+  input external delay                                          0.08       0.08 r
+  hbm_rd_data[17] (in)                                0.01      0.00       0.08 r
+  hbm_rd_data[17] (net)           1         0.00                0.00       0.08 r
+  U33364/I (BUFFD1BWP16P90LVT)                        0.01      0.00       0.08 r
+  U33364/Z (BUFFD1BWP16P90LVT)                        0.08      0.05       0.13 r
+  n14560 (net)                   20         0.03                0.00       0.13 r
+  U29046/I (CKND1BWP16P90LVT)                         0.08      0.00       0.13 r
+  U29046/ZN (CKND1BWP16P90LVT)                        0.05      0.05       0.18 f
+  n36160 (net)                   18         0.02                0.00       0.18 f
+  U30135/B2 (IOA22D1BWP16P90LVT)                      0.05      0.00       0.18 f
+  U30135/ZN (IOA22D1BWP16P90LVT)                      0.02      0.01       0.19 r
+  n7591 (net)                     1         0.00                0.00       0.19 r
+  Qi_regx0xx1xx1x/D (DFQD2BWP16P90LVT)                0.02      0.00       0.19 r
+  data arrival time                                                        0.19
+
+  clock CLK (rise edge)                                         2.00       2.00
+  clock network delay (ideal)                                   0.00       2.00
+  Qi_regx0xx1xx1x/CP (DFQD2BWP16P90LVT)                         0.00       2.00 r
+  library setup time                                           -0.01       1.99
+  data required time                                                       1.99
+  --------------------------------------------------------------------------------
+  data required time                                                       1.99
+  data arrival time                                                       -0.19
+  --------------------------------------------------------------------------------
+  slack (MET)                                                              1.80
+
+
+  Startpoint: hbm_rd_data[17]
+              (input port clocked by CLK)
+  Endpoint: Kj_regx0xx1xx1x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  flash_attention_top ZeroWireload         N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                         Fanout       Cap     Trans      Incr       Path
+  --------------------------------------------------------------------------------
+  clock CLK (rise edge)                                         0.00       0.00
+  clock network delay (ideal)                                   0.00       0.00
+  input external delay                                          0.08       0.08 r
+  hbm_rd_data[17] (in)                                0.01      0.00       0.08 r
+  hbm_rd_data[17] (net)           1         0.00                0.00       0.08 r
+  U33364/I (BUFFD1BWP16P90LVT)                        0.01      0.00       0.08 r
+  U33364/Z (BUFFD1BWP16P90LVT)                        0.08      0.05       0.13 r
+  n14560 (net)                   20         0.03                0.00       0.13 r
+  U29046/I (CKND1BWP16P90LVT)                         0.08      0.00       0.13 r
+  U29046/ZN (CKND1BWP16P90LVT)                        0.05      0.05       0.18 f
+  n36160 (net)                   18         0.02                0.00       0.18 f
+  U31427/B2 (IOA22D1BWP16P90LVT)                      0.05      0.00       0.18 f
+  U31427/ZN (IOA22D1BWP16P90LVT)                      0.02      0.01       0.19 r
+  n7335 (net)                     1         0.00                0.00       0.19 r
+  Kj_regx0xx1xx1x/D (DFQD2BWP16P90LVT)                0.02      0.00       0.19 r
+  data arrival time                                                        0.19
+
+  clock CLK (rise edge)                                         2.00       2.00
+  clock network delay (ideal)                                   0.00       2.00
+  Kj_regx0xx1xx1x/CP (DFQD2BWP16P90LVT)                         0.00       2.00 r
+  library setup time                                           -0.01       1.99
+  data required time                                                       1.99
+  --------------------------------------------------------------------------------
+  data required time                                                       1.99
+  data arrival time                                                       -0.19
+  --------------------------------------------------------------------------------
+  slack (MET)                                                              1.80
+
+
+  Startpoint: hbm_rd_data[17]
+              (input port clocked by CLK)
+  Endpoint: Kj_regx2xx1xx1x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  flash_attention_top ZeroWireload         N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                         Fanout       Cap     Trans      Incr       Path
+  --------------------------------------------------------------------------------
+  clock CLK (rise edge)                                         0.00       0.00
+  clock network delay (ideal)                                   0.00       0.00
+  input external delay                                          0.08       0.08 r
+  hbm_rd_data[17] (in)                                0.01      0.00       0.08 r
+  hbm_rd_data[17] (net)           1         0.00                0.00       0.08 r
+  U33364/I (BUFFD1BWP16P90LVT)                        0.01      0.00       0.08 r
+  U33364/Z (BUFFD1BWP16P90LVT)                        0.08      0.05       0.13 r
+  n14560 (net)                   20         0.03                0.00       0.13 r
+  U29046/I (CKND1BWP16P90LVT)                         0.08      0.00       0.13 r
+  U29046/ZN (CKND1BWP16P90LVT)                        0.05      0.05       0.18 f
+  n36160 (net)                   18         0.02                0.00       0.18 f
+  U31422/B2 (IOA22D1BWP16P90LVT)                      0.05      0.00       0.18 f
+  U31422/ZN (IOA22D1BWP16P90LVT)                      0.02      0.01       0.19 r
+  n7207 (net)                     1         0.00                0.00       0.19 r
+  Kj_regx2xx1xx1x/D (DFQD2BWP16P90LVT)                0.02      0.00       0.19 r
+  data arrival time                                                        0.19
+
+  clock CLK (rise edge)                                         2.00       2.00
+  clock network delay (ideal)                                   0.00       2.00
+  Kj_regx2xx1xx1x/CP (DFQD2BWP16P90LVT)                         0.00       2.00 r
+  library setup time                                           -0.01       1.99
+  data required time                                                       1.99
+  --------------------------------------------------------------------------------
+  data required time                                                       1.99
+  data arrival time                                                       -0.19
+  --------------------------------------------------------------------------------
+  slack (MET)                                                              1.80
+
+
+  Startpoint: hbm_rd_data[17]
+              (input port clocked by CLK)
+  Endpoint: Kj_regx8xx1xx1x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  flash_attention_top ZeroWireload         N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                         Fanout       Cap     Trans      Incr       Path
+  --------------------------------------------------------------------------------
+  clock CLK (rise edge)                                         0.00       0.00
+  clock network delay (ideal)                                   0.00       0.00
+  input external delay                                          0.08       0.08 r
+  hbm_rd_data[17] (in)                                0.01      0.00       0.08 r
+  hbm_rd_data[17] (net)           1         0.00                0.00       0.08 r
+  U33364/I (BUFFD1BWP16P90LVT)                        0.01      0.00       0.08 r
+  U33364/Z (BUFFD1BWP16P90LVT)                        0.08      0.05       0.13 r
+  n14560 (net)                   20         0.03                0.00       0.13 r
+  U29046/I (CKND1BWP16P90LVT)                         0.08      0.00       0.13 r
+  U29046/ZN (CKND1BWP16P90LVT)                        0.05      0.05       0.18 f
+  n36160 (net)                   18         0.02                0.00       0.18 f
+  U30639/B2 (IOA22D1BWP16P90LVT)                      0.05      0.00       0.18 f
+  U30639/ZN (IOA22D1BWP16P90LVT)                      0.02      0.01       0.19 r
+  n7079 (net)                     1         0.00                0.00       0.19 r
+  Kj_regx8xx1xx1x/D (DFQD2BWP16P90LVT)                0.02      0.00       0.19 r
+  data arrival time                                                        0.19
+
+  clock CLK (rise edge)                                         2.00       2.00
+  clock network delay (ideal)                                   0.00       2.00
+  Kj_regx8xx1xx1x/CP (DFQD2BWP16P90LVT)                         0.00       2.00 r
+  library setup time                                           -0.01       1.99
+  data required time                                                       1.99
+  --------------------------------------------------------------------------------
+  data required time                                                       1.99
+  data arrival time                                                       -0.19
+  --------------------------------------------------------------------------------
+  slack (MET)                                                              1.80
+
+
+  Startpoint: hbm_rd_data[17]
+              (input port clocked by CLK)
+  Endpoint: Kj_regx10xx1xx1x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  flash_attention_top ZeroWireload         N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                          Fanout       Cap     Trans      Incr       Path
+  ---------------------------------------------------------------------------------
+  clock CLK (rise edge)                                          0.00       0.00
+  clock network delay (ideal)                                    0.00       0.00
+  input external delay                                           0.08       0.08 r
+  hbm_rd_data[17] (in)                                 0.01      0.00       0.08 r
+  hbm_rd_data[17] (net)            1         0.00                0.00       0.08 r
+  U33364/I (BUFFD1BWP16P90LVT)                         0.01      0.00       0.08 r
+  U33364/Z (BUFFD1BWP16P90LVT)                         0.08      0.05       0.13 r
+  n14560 (net)                    20         0.03                0.00       0.13 r
+  U29046/I (CKND1BWP16P90LVT)                          0.08      0.00       0.13 r
+  U29046/ZN (CKND1BWP16P90LVT)                         0.05      0.05       0.18 f
+  n36160 (net)                    18         0.02                0.00       0.18 f
+  U30644/B2 (IOA22D1BWP16P90LVT)                       0.05      0.00       0.18 f
+  U30644/ZN (IOA22D1BWP16P90LVT)                       0.02      0.01       0.19 r
+  n6951 (net)                      1         0.00                0.00       0.19 r
+  Kj_regx10xx1xx1x/D (DFQD2BWP16P90LVT)                0.02      0.00       0.19 r
+  data arrival time                                                         0.19
+
+  clock CLK (rise edge)                                          2.00       2.00
+  clock network delay (ideal)                                    0.00       2.00
+  Kj_regx10xx1xx1x/CP (DFQD2BWP16P90LVT)                         0.00       2.00 r
+  library setup time                                            -0.01       1.99
+  data required time                                                        1.99
+  ---------------------------------------------------------------------------------
+  data required time                                                        1.99
+  data arrival time                                                        -0.19
+  ---------------------------------------------------------------------------------
+  slack (MET)                                                               1.80
+
+
+  Startpoint: hbm_rd_data[47]
+              (input port clocked by CLK)
+  Endpoint: Kj_regx0xx2xx15x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  flash_attention_top ZeroWireload         N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                          Fanout       Cap     Trans      Incr       Path
+  ---------------------------------------------------------------------------------
+  clock CLK (rise edge)                                          0.00       0.00
+  clock network delay (ideal)                                    0.00       0.00
+  input external delay                                           0.08       0.08 r
+  hbm_rd_data[47] (in)                                 0.01      0.00       0.08 r
+  hbm_rd_data[47] (net)            1         0.00                0.00       0.08 r
+  U33386/I (BUFFD1BWP16P90LVT)                         0.01      0.00       0.08 r
+  U33386/Z (BUFFD1BWP16P90LVT)                         0.08      0.05       0.13 r
+  n14590 (net)                    19         0.03                0.00       0.13 r
+  U29083/I (CKND1BWP16P90LVT)                          0.08      0.00       0.13 r
+  U29083/ZN (CKND1BWP16P90LVT)                         0.05      0.04       0.18 f
+  n36130 (net)                    18         0.02                0.00       0.18 f
+  U31364/B2 (IOA22D1BWP16P90LVT)                       0.05      0.00       0.18 f
+  U31364/ZN (IOA22D1BWP16P90LVT)                       0.02      0.01       0.19 r
+  n7430 (net)                      1         0.00                0.00       0.19 r
+  Kj_regx0xx2xx15x/D (DFQD2BWP16P90LVT)                0.02      0.00       0.19 r
+  data arrival time                                                         0.19
+
+  clock CLK (rise edge)                                          2.00       2.00
+  clock network delay (ideal)                                    0.00       2.00
+  Kj_regx0xx2xx15x/CP (DFQD2BWP16P90LVT)                         0.00       2.00 r
+  library setup time                                            -0.01       1.99
+  data required time                                                        1.99
+  ---------------------------------------------------------------------------------
+  data required time                                                        1.99
+  data arrival time                                                        -0.19
+  ---------------------------------------------------------------------------------
+  slack (MET)                                                               1.80
+
+
+  Startpoint: hbm_rd_data[54]
+              (input port clocked by CLK)
+  Endpoint: Kj_regx0xx3xx6x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  flash_attention_top ZeroWireload         N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                         Fanout       Cap     Trans      Incr       Path
+  --------------------------------------------------------------------------------
+  clock CLK (rise edge)                                         0.00       0.00
+  clock network delay (ideal)                                   0.00       0.00
+  input external delay                                          0.08       0.08 r
+  hbm_rd_data[54] (in)                                0.01      0.00       0.08 r
+  hbm_rd_data[54] (net)           1         0.00                0.00       0.08 r
+  U33381/I (BUFFD1BWP16P90LVT)                        0.01      0.00       0.08 r
+  U33381/Z (BUFFD1BWP16P90LVT)                        0.08      0.05       0.13 r
+  n14597 (net)                   19         0.03                0.00       0.13 r
+  U29092/I (CKND1BWP16P90LVT)                         0.08      0.00       0.13 r
+  U29092/ZN (CKND1BWP16P90LVT)                        0.05      0.04       0.18 f
+  n36123 (net)                   18         0.02                0.00       0.18 f
+  U31355/B2 (IOA22D1BWP16P90LVT)                      0.05      0.00       0.18 f
+  U31355/ZN (IOA22D1BWP16P90LVT)                      0.02      0.01       0.19 r
+  n7356 (net)                     1         0.00                0.00       0.19 r
+  Kj_regx0xx3xx6x/D (DFQD2BWP16P90LVT)                0.02      0.00       0.19 r
+  data arrival time                                                        0.19
+
+  clock CLK (rise edge)                                         2.00       2.00
+  clock network delay (ideal)                                   0.00       2.00
+  Kj_regx0xx3xx6x/CP (DFQD2BWP16P90LVT)                         0.00       2.00 r
+  library setup time                                           -0.01       1.99
+  data required time                                                       1.99
+  --------------------------------------------------------------------------------
+  data required time                                                       1.99
+  data arrival time                                                       -0.19
+  --------------------------------------------------------------------------------
+  slack (MET)                                                              1.80
+
+
+  Startpoint: hbm_rd_data[47]
+              (input port clocked by CLK)
+  Endpoint: Kj_regx2xx2xx15x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  flash_attention_top ZeroWireload         N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                          Fanout       Cap     Trans      Incr       Path
+  ---------------------------------------------------------------------------------
+  clock CLK (rise edge)                                          0.00       0.00
+  clock network delay (ideal)                                    0.00       0.00
+  input external delay                                           0.08       0.08 r
+  hbm_rd_data[47] (in)                                 0.01      0.00       0.08 r
+  hbm_rd_data[47] (net)            1         0.00                0.00       0.08 r
+  U33386/I (BUFFD1BWP16P90LVT)                         0.01      0.00       0.08 r
+  U33386/Z (BUFFD1BWP16P90LVT)                         0.08      0.05       0.13 r
+  n14590 (net)                    19         0.03                0.00       0.13 r
+  U29083/I (CKND1BWP16P90LVT)                          0.08      0.00       0.13 r
+  U29083/ZN (CKND1BWP16P90LVT)                         0.05      0.04       0.18 f
+  n36130 (net)                    18         0.02                0.00       0.18 f
+  U31335/B2 (IOA22D1BWP16P90LVT)                       0.05      0.00       0.18 f
+  U31335/ZN (IOA22D1BWP16P90LVT)                       0.02      0.01       0.19 r
+  n7302 (net)                      1         0.00                0.00       0.19 r
+  Kj_regx2xx2xx15x/D (DFQD2BWP16P90LVT)                0.02      0.00       0.19 r
+  data arrival time                                                         0.19
+
+  clock CLK (rise edge)                                          2.00       2.00
+  clock network delay (ideal)                                    0.00       2.00
+  Kj_regx2xx2xx15x/CP (DFQD2BWP16P90LVT)                         0.00       2.00 r
+  library setup time                                            -0.01       1.99
+  data required time                                                        1.99
+  ---------------------------------------------------------------------------------
+  data required time                                                        1.99
+  data arrival time                                                        -0.19
+  ---------------------------------------------------------------------------------
+  slack (MET)                                                               1.80
+
+
+  Startpoint: hbm_rd_data[54]
+              (input port clocked by CLK)
+  Endpoint: Kj_regx2xx3xx6x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  flash_attention_top ZeroWireload         N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                         Fanout       Cap     Trans      Incr       Path
+  --------------------------------------------------------------------------------
+  clock CLK (rise edge)                                         0.00       0.00
+  clock network delay (ideal)                                   0.00       0.00
+  input external delay                                          0.08       0.08 r
+  hbm_rd_data[54] (in)                                0.01      0.00       0.08 r
+  hbm_rd_data[54] (net)           1         0.00                0.00       0.08 r
+  U33381/I (BUFFD1BWP16P90LVT)                        0.01      0.00       0.08 r
+  U33381/Z (BUFFD1BWP16P90LVT)                        0.08      0.05       0.13 r
+  n14597 (net)                   19         0.03                0.00       0.13 r
+  U29092/I (CKND1BWP16P90LVT)                         0.08      0.00       0.13 r
+  U29092/ZN (CKND1BWP16P90LVT)                        0.05      0.04       0.18 f
+  n36123 (net)                   18         0.02                0.00       0.18 f
+  U31329/B2 (IOA22D1BWP16P90LVT)                      0.05      0.00       0.18 f
+  U31329/ZN (IOA22D1BWP16P90LVT)                      0.02      0.01       0.19 r
+  n7295 (net)                     1         0.00                0.00       0.19 r
+  Kj_regx2xx3xx6x/D (DFQD2BWP16P90LVT)                0.02      0.00       0.19 r
+  data arrival time                                                        0.19
+
+  clock CLK (rise edge)                                         2.00       2.00
+  clock network delay (ideal)                                   0.00       2.00
+  Kj_regx2xx3xx6x/CP (DFQD2BWP16P90LVT)                         0.00       2.00 r
+  library setup time                                           -0.01       1.99
+  data required time                                                       1.99
+  --------------------------------------------------------------------------------
+  data required time                                                       1.99
+  data arrival time                                                       -0.19
+  --------------------------------------------------------------------------------
+  slack (MET)                                                              1.80
+
+
+1
+LOGNAME = ragha084

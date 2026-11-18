@@ -1,0 +1,33 @@
+ 
+****************************************
+Report : area
+Design : flash_attention_top
+Version: U-2022.12-SP5
+Date   : Mon May 11 18:40:57 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'flash_attention_top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    N16ADFP_StdCelltt0p8v25c_ccs (File: /soft/ece_soft_2/TSMCHOME/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCelltt0p8v25c_ccs.db)
+
+Number of ports:                       213664
+Number of nets:                        538173
+Number of cells:                       379197
+Number of combinational cells:         363528
+Number of sequential cells:             13820
+Number of macros/black boxes:               0
+Number of buf/inv:                      65181
+Number of references:                    1748
+
+Combinational area:             115416.163628
+Buf/Inv area:                    11359.958805
+Noncombinational area:           14855.685566
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                130271.849194
+Total area:                 undefined
+1
+LOGNAME = ragha084

@@ -1,0 +1,28 @@
+
+Noise immunity check:
+
+  Noise immunity type            above_low  below_high  above_high   below_low
+  ----------------------------------------------------------------------------
+  user hyperbolic curve                  0           0           0           0
+  user margin                            0           0           0           0
+  library immunity table                 0           0           0           0
+  library hyperbolic curve               0           0           0           0
+  library CCS noise immunity        784457      784457           0           0
+  default margin                         0           0      784457      784457
+  none                                   0           0           0           0
+
+1
+
+Noise immunity check:
+
+  Noise immunity type            above_low  below_high  above_high   below_low
+  ----------------------------------------------------------------------------
+  user hyperbolic curve                  0           0           0           0
+  user margin                            0           0           0           0
+  library immunity table                 0           0           0           0
+  library hyperbolic curve               0           0           0           0
+  library CCS noise immunity        784457      784457           0           0
+  default margin                         0           0      784457      784457
+  none                                   0           0           0           0
+
+1
