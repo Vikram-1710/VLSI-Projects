@@ -1,0 +1,1223 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu May 14 15:56:06 2026
+| Host         : ece-kh2120-09.ece.umn.edu running 64-bit Rocky Linux release 8.10 (Green Obsidian)
+| Command      : report_timing -sort_by group -max_paths 10 -delay_type max -significant_digits 2 -input_pins -file ./output/post_synth/fft256_post_synth_timing.rpt
+| Design       : fft256_top
+| Device       : 7a200t-fbg676
+| Speed File   : -2  PRODUCTION 1.23 2018-06-13
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (VIOLATED) :        -1.24ns  (required time - arrival time)
+  Source:                 FSM_onehot_state_reg_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Destination:            u_core/s1_r_re_reg[161][13]/D
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Path Group:             clk_i
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.00ns  (clk_i rise@10.00ns - clk_i rise@0.00ns)
+  Data Path Delay:        11.12ns  (logic 5.75ns (51.71%)  route 5.37ns (48.29%))
+  Logic Levels:           18  (CARRY4=11 LUT1=1 LUT2=3 LUT4=3)
+  Clock Path Skew:        -0.15ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.88ns = ( 11.88 - 10.00 ) 
+    Source Clock Delay      (SCD):    2.19ns
+    Clock Pessimism Removal (CPR):    0.17ns
+  Clock Uncertainty:      0.04ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.07ns
+    Total Input Jitter      (TIJ):    0.00ns
+    Discrete Jitter          (DJ):    0.00ns
+    Phase Error              (PE):    0.00ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_i rise edge)       0.00      0.00 r  
+                                                       0.00      0.00 r  clk_i (IN)
+                         net (fo=0)                    0.00      0.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.88      0.88 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.65      1.53    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08      1.61 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.58      2.19    clk_i_IBUF_BUFG
+                         FDCE                                         r  FSM_onehot_state_reg_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)          0.38      2.57 r  FSM_onehot_state_reg_reg[2]/Q
+                         net (fo=12292, unplaced)      0.74      3.31    u_core/u_stage1/Q[0]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_4/I1
+                         LUT4 (Prop_lut4_I1_O)         0.23      3.54 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_4/O
+                         net (fo=2, unplaced)          0.55      4.09    u_core/u_stage1/ch0_in_im_reg[33][3][1]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1/DI[1]
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                       0.42      4.51 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1/CO[3]
+                         net (fo=1, unplaced)          0.01      4.52    u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                       0.19      4.71 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1/O[0]
+                         net (fo=18, unplaced)         0.88      5.58    u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1_n_612186
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__324/S[3]
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                       0.45      6.03 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__324/O[3]
+                         net (fo=2, unplaced)          0.53      6.56    u_core/u_stage1/(null)[0].(null)[33].yr_out1__324_n_612183
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25      6.81 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4/O
+                         net (fo=2, unplaced)          0.55      7.36    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8/I3
+                         LUT4 (Prop_lut4_I3_O)         0.27      7.63 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8/O
+                         net (fo=1, unplaced)          0.00      7.63    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365/S[0]
+                         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                       0.50      8.14 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365/O[3]
+                         net (fo=2, unplaced)          0.53      8.67    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_n_612183
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4/I0
+                         LUT2 (Prop_lut2_I0_O)         0.25      8.92 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4/O
+                         net (fo=2, unplaced)          0.55      9.47    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8/I3
+                         LUT4 (Prop_lut4_I3_O)         0.27      9.74 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8/O
+                         net (fo=1, unplaced)          0.00      9.74    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374/S[0]
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                       0.44     10.18 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374/CO[3]
+                         net (fo=1, unplaced)          0.00     10.18    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__375/CI
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                       0.10     10.28 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__375/CO[3]
+                         net (fo=1, unplaced)          0.00     10.28    u_core/u_stage1/(null)[0].(null)[33].yr_out1__375_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__376/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     10.56 f  u_core/u_stage1/(null)[0].(null)[33].yr_out1__376/O[3]
+                         net (fo=1, unplaced)          0.52     11.07    u_core/u_stage1/(null)[0].(null)[33].yr_out1__376_n_612183
+                                                                      f  u_core/u_stage1/s1_r_re[161][7]_i_19/I0
+                         LUT1 (Prop_lut1_I0_O)         0.25     11.32 r  u_core/u_stage1/s1_r_re[161][7]_i_19/O
+                         net (fo=1, unplaced)          0.00     11.32    u_core/u_stage1/s1_r_re[161][7]_i_19_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][7]_i_15/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     11.66 r  u_core/u_stage1/s1_r_re_reg[161][7]_i_15/CO[3]
+                         net (fo=1, unplaced)          0.00     11.66    u_core/u_stage1/s1_r_re_reg[161][7]_i_15_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][11]_i_15/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     11.93 r  u_core/u_stage1/s1_r_re_reg[161][11]_i_15/O[3]
+                         net (fo=1, unplaced)          0.52     12.45    u_core/u_stage1/s1_r_re_reg[161][11]_i_15_n_612183
+                                                                      r  u_core/u_stage1/s1_r_re[161][11]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25     12.70 r  u_core/u_stage1/s1_r_re[161][11]_i_3/O
+                         net (fo=1, unplaced)          0.00     12.70    u_core/u_stage1/s1_r_re[161][11]_i_3_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][11]_i_1/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     13.03 r  u_core/u_stage1/s1_r_re_reg[161][11]_i_1/CO[3]
+                         net (fo=1, unplaced)          0.00     13.03    u_core/u_stage1/s1_r_re_reg[161][11]_i_1_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][13]_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                       0.28     13.31 r  u_core/u_stage1/s1_r_re_reg[161][13]_i_1/O[1]
+                         net (fo=1, unplaced)          0.00     13.31    u_core/s1_c_re[161]__0__0[13]
+                         FDCE                                         r  u_core/s1_r_re_reg[161][13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_i rise edge)      10.00     10.00 r  
+                                                       0.00     10.00 r  clk_i (IN)
+                         net (fo=0)                    0.00     10.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.75     10.75 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.61     11.36    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08     11.44 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.44     11.88    u_core/clk_i_IBUF_BUFG
+                         FDCE                                         r  u_core/s1_r_re_reg[161][13]/C
+                         clock pessimism               0.17     12.05    
+                         clock uncertainty            -0.04     12.01    
+                         FDCE (Setup_fdce_C_D)         0.06     12.07    u_core/s1_r_re_reg[161][13]
+  -------------------------------------------------------------------
+                         required time                          12.07    
+                         arrival time                          -13.31    
+  -------------------------------------------------------------------
+                         slack                                  -1.24    
+
+Slack (VIOLATED) :        -1.18ns  (required time - arrival time)
+  Source:                 FSM_onehot_state_reg_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Destination:            u_core/s1_r_re_reg[161][15]/D
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Path Group:             clk_i
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.00ns  (clk_i rise@10.00ns - clk_i rise@0.00ns)
+  Data Path Delay:        11.05ns  (logic 5.69ns (51.44%)  route 5.37ns (48.56%))
+  Logic Levels:           18  (CARRY4=11 LUT1=1 LUT2=3 LUT4=3)
+  Clock Path Skew:        -0.15ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.88ns = ( 11.88 - 10.00 ) 
+    Source Clock Delay      (SCD):    2.19ns
+    Clock Pessimism Removal (CPR):    0.17ns
+  Clock Uncertainty:      0.04ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.07ns
+    Total Input Jitter      (TIJ):    0.00ns
+    Discrete Jitter          (DJ):    0.00ns
+    Phase Error              (PE):    0.00ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_i rise edge)       0.00      0.00 r  
+                                                       0.00      0.00 r  clk_i (IN)
+                         net (fo=0)                    0.00      0.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.88      0.88 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.65      1.53    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08      1.61 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.58      2.19    clk_i_IBUF_BUFG
+                         FDCE                                         r  FSM_onehot_state_reg_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)          0.38      2.57 r  FSM_onehot_state_reg_reg[2]/Q
+                         net (fo=12292, unplaced)      0.74      3.31    u_core/u_stage1/Q[0]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_4/I1
+                         LUT4 (Prop_lut4_I1_O)         0.23      3.54 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_4/O
+                         net (fo=2, unplaced)          0.55      4.09    u_core/u_stage1/ch0_in_im_reg[33][3][1]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1/DI[1]
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                       0.42      4.51 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1/CO[3]
+                         net (fo=1, unplaced)          0.01      4.52    u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                       0.19      4.71 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1/O[0]
+                         net (fo=18, unplaced)         0.88      5.58    u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1_n_612186
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__324/S[3]
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                       0.45      6.03 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__324/O[3]
+                         net (fo=2, unplaced)          0.53      6.56    u_core/u_stage1/(null)[0].(null)[33].yr_out1__324_n_612183
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25      6.81 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4/O
+                         net (fo=2, unplaced)          0.55      7.36    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8/I3
+                         LUT4 (Prop_lut4_I3_O)         0.27      7.63 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8/O
+                         net (fo=1, unplaced)          0.00      7.63    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365/S[0]
+                         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                       0.50      8.14 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365/O[3]
+                         net (fo=2, unplaced)          0.53      8.67    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_n_612183
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4/I0
+                         LUT2 (Prop_lut2_I0_O)         0.25      8.92 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4/O
+                         net (fo=2, unplaced)          0.55      9.47    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8/I3
+                         LUT4 (Prop_lut4_I3_O)         0.27      9.74 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8/O
+                         net (fo=1, unplaced)          0.00      9.74    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374/S[0]
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                       0.44     10.18 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374/CO[3]
+                         net (fo=1, unplaced)          0.00     10.18    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__375/CI
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                       0.10     10.28 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__375/CO[3]
+                         net (fo=1, unplaced)          0.00     10.28    u_core/u_stage1/(null)[0].(null)[33].yr_out1__375_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__376/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     10.56 f  u_core/u_stage1/(null)[0].(null)[33].yr_out1__376/O[3]
+                         net (fo=1, unplaced)          0.52     11.07    u_core/u_stage1/(null)[0].(null)[33].yr_out1__376_n_612183
+                                                                      f  u_core/u_stage1/s1_r_re[161][7]_i_19/I0
+                         LUT1 (Prop_lut1_I0_O)         0.25     11.32 r  u_core/u_stage1/s1_r_re[161][7]_i_19/O
+                         net (fo=1, unplaced)          0.00     11.32    u_core/u_stage1/s1_r_re[161][7]_i_19_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][7]_i_15/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     11.66 r  u_core/u_stage1/s1_r_re_reg[161][7]_i_15/CO[3]
+                         net (fo=1, unplaced)          0.00     11.66    u_core/u_stage1/s1_r_re_reg[161][7]_i_15_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][11]_i_15/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     11.93 r  u_core/u_stage1/s1_r_re_reg[161][11]_i_15/O[3]
+                         net (fo=1, unplaced)          0.52     12.45    u_core/u_stage1/s1_r_re_reg[161][11]_i_15_n_612183
+                                                                      r  u_core/u_stage1/s1_r_re[161][11]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25     12.70 r  u_core/u_stage1/s1_r_re[161][11]_i_3/O
+                         net (fo=1, unplaced)          0.00     12.70    u_core/u_stage1/s1_r_re[161][11]_i_3_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][11]_i_1/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     13.03 r  u_core/u_stage1/s1_r_re_reg[161][11]_i_1/CO[3]
+                         net (fo=1, unplaced)          0.00     13.03    u_core/u_stage1/s1_r_re_reg[161][11]_i_1_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][13]_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                       0.21     13.25 r  u_core/u_stage1/s1_r_re_reg[161][13]_i_1/O[2]
+                         net (fo=1, unplaced)          0.00     13.25    u_core/s1_c_re[161]__0[14]
+                         FDCE                                         r  u_core/s1_r_re_reg[161][15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_i rise edge)      10.00     10.00 r  
+                                                       0.00     10.00 r  clk_i (IN)
+                         net (fo=0)                    0.00     10.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.75     10.75 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.61     11.36    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08     11.44 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.44     11.88    u_core/clk_i_IBUF_BUFG
+                         FDCE                                         r  u_core/s1_r_re_reg[161][15]/C
+                         clock pessimism               0.17     12.05    
+                         clock uncertainty            -0.04     12.01    
+                         FDCE (Setup_fdce_C_D)         0.06     12.07    u_core/s1_r_re_reg[161][15]
+  -------------------------------------------------------------------
+                         required time                          12.07    
+                         arrival time                          -13.25    
+  -------------------------------------------------------------------
+                         slack                                  -1.18    
+
+Slack (VIOLATED) :        -1.15ns  (required time - arrival time)
+  Source:                 FSM_onehot_state_reg_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Destination:            u_core/s1_r_re_reg[161][12]/D
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Path Group:             clk_i
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.00ns  (clk_i rise@10.00ns - clk_i rise@0.00ns)
+  Data Path Delay:        11.03ns  (logic 5.66ns (51.34%)  route 5.37ns (48.66%))
+  Logic Levels:           18  (CARRY4=11 LUT1=1 LUT2=3 LUT4=3)
+  Clock Path Skew:        -0.15ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.88ns = ( 11.88 - 10.00 ) 
+    Source Clock Delay      (SCD):    2.19ns
+    Clock Pessimism Removal (CPR):    0.17ns
+  Clock Uncertainty:      0.04ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.07ns
+    Total Input Jitter      (TIJ):    0.00ns
+    Discrete Jitter          (DJ):    0.00ns
+    Phase Error              (PE):    0.00ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_i rise edge)       0.00      0.00 r  
+                                                       0.00      0.00 r  clk_i (IN)
+                         net (fo=0)                    0.00      0.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.88      0.88 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.65      1.53    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08      1.61 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.58      2.19    clk_i_IBUF_BUFG
+                         FDCE                                         r  FSM_onehot_state_reg_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)          0.38      2.57 r  FSM_onehot_state_reg_reg[2]/Q
+                         net (fo=12292, unplaced)      0.74      3.31    u_core/u_stage1/Q[0]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_4/I1
+                         LUT4 (Prop_lut4_I1_O)         0.23      3.54 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_4/O
+                         net (fo=2, unplaced)          0.55      4.09    u_core/u_stage1/ch0_in_im_reg[33][3][1]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1/DI[1]
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                       0.42      4.51 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1/CO[3]
+                         net (fo=1, unplaced)          0.01      4.52    u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                       0.19      4.71 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1/O[0]
+                         net (fo=18, unplaced)         0.88      5.58    u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1_n_612186
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__324/S[3]
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                       0.45      6.03 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__324/O[3]
+                         net (fo=2, unplaced)          0.53      6.56    u_core/u_stage1/(null)[0].(null)[33].yr_out1__324_n_612183
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25      6.81 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4/O
+                         net (fo=2, unplaced)          0.55      7.36    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8/I3
+                         LUT4 (Prop_lut4_I3_O)         0.27      7.63 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8/O
+                         net (fo=1, unplaced)          0.00      7.63    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365/S[0]
+                         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                       0.50      8.14 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365/O[3]
+                         net (fo=2, unplaced)          0.53      8.67    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_n_612183
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4/I0
+                         LUT2 (Prop_lut2_I0_O)         0.25      8.92 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4/O
+                         net (fo=2, unplaced)          0.55      9.47    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8/I3
+                         LUT4 (Prop_lut4_I3_O)         0.27      9.74 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8/O
+                         net (fo=1, unplaced)          0.00      9.74    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374/S[0]
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                       0.44     10.18 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374/CO[3]
+                         net (fo=1, unplaced)          0.00     10.18    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__375/CI
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                       0.10     10.28 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__375/CO[3]
+                         net (fo=1, unplaced)          0.00     10.28    u_core/u_stage1/(null)[0].(null)[33].yr_out1__375_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__376/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     10.56 f  u_core/u_stage1/(null)[0].(null)[33].yr_out1__376/O[3]
+                         net (fo=1, unplaced)          0.52     11.07    u_core/u_stage1/(null)[0].(null)[33].yr_out1__376_n_612183
+                                                                      f  u_core/u_stage1/s1_r_re[161][7]_i_19/I0
+                         LUT1 (Prop_lut1_I0_O)         0.25     11.32 r  u_core/u_stage1/s1_r_re[161][7]_i_19/O
+                         net (fo=1, unplaced)          0.00     11.32    u_core/u_stage1/s1_r_re[161][7]_i_19_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][7]_i_15/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     11.66 r  u_core/u_stage1/s1_r_re_reg[161][7]_i_15/CO[3]
+                         net (fo=1, unplaced)          0.00     11.66    u_core/u_stage1/s1_r_re_reg[161][7]_i_15_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][11]_i_15/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     11.93 r  u_core/u_stage1/s1_r_re_reg[161][11]_i_15/O[3]
+                         net (fo=1, unplaced)          0.52     12.45    u_core/u_stage1/s1_r_re_reg[161][11]_i_15_n_612183
+                                                                      r  u_core/u_stage1/s1_r_re[161][11]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25     12.70 r  u_core/u_stage1/s1_r_re[161][11]_i_3/O
+                         net (fo=1, unplaced)          0.00     12.70    u_core/u_stage1/s1_r_re[161][11]_i_3_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][11]_i_1/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     13.03 r  u_core/u_stage1/s1_r_re_reg[161][11]_i_1/CO[3]
+                         net (fo=1, unplaced)          0.00     13.03    u_core/u_stage1/s1_r_re_reg[161][11]_i_1_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][13]_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                       0.19     13.22 r  u_core/u_stage1/s1_r_re_reg[161][13]_i_1/O[0]
+                         net (fo=1, unplaced)          0.00     13.22    u_core/s1_c_re[161]__0[12]
+                         FDCE                                         r  u_core/s1_r_re_reg[161][12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_i rise edge)      10.00     10.00 r  
+                                                       0.00     10.00 r  clk_i (IN)
+                         net (fo=0)                    0.00     10.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.75     10.75 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.61     11.36    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08     11.44 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.44     11.88    u_core/clk_i_IBUF_BUFG
+                         FDCE                                         r  u_core/s1_r_re_reg[161][12]/C
+                         clock pessimism               0.17     12.05    
+                         clock uncertainty            -0.04     12.01    
+                         FDCE (Setup_fdce_C_D)         0.06     12.07    u_core/s1_r_re_reg[161][12]
+  -------------------------------------------------------------------
+                         required time                          12.07    
+                         arrival time                          -13.22    
+  -------------------------------------------------------------------
+                         slack                                  -1.15    
+
+Slack (VIOLATED) :        -1.14ns  (required time - arrival time)
+  Source:                 FSM_onehot_state_reg_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Destination:            u_core/s1_r_re_reg[161][9]/D
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Path Group:             clk_i
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.00ns  (clk_i rise@10.00ns - clk_i rise@0.00ns)
+  Data Path Delay:        11.02ns  (logic 5.65ns (51.28%)  route 5.37ns (48.72%))
+  Logic Levels:           17  (CARRY4=10 LUT1=1 LUT2=3 LUT4=3)
+  Clock Path Skew:        -0.15ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.88ns = ( 11.88 - 10.00 ) 
+    Source Clock Delay      (SCD):    2.19ns
+    Clock Pessimism Removal (CPR):    0.17ns
+  Clock Uncertainty:      0.04ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.07ns
+    Total Input Jitter      (TIJ):    0.00ns
+    Discrete Jitter          (DJ):    0.00ns
+    Phase Error              (PE):    0.00ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_i rise edge)       0.00      0.00 r  
+                                                       0.00      0.00 r  clk_i (IN)
+                         net (fo=0)                    0.00      0.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.88      0.88 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.65      1.53    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08      1.61 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.58      2.19    clk_i_IBUF_BUFG
+                         FDCE                                         r  FSM_onehot_state_reg_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)          0.38      2.57 r  FSM_onehot_state_reg_reg[2]/Q
+                         net (fo=12292, unplaced)      0.74      3.31    u_core/u_stage1/Q[0]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_4/I1
+                         LUT4 (Prop_lut4_I1_O)         0.23      3.54 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_4/O
+                         net (fo=2, unplaced)          0.55      4.09    u_core/u_stage1/ch0_in_im_reg[33][3][1]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1/DI[1]
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                       0.42      4.51 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1/CO[3]
+                         net (fo=1, unplaced)          0.01      4.52    u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                       0.19      4.71 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1/O[0]
+                         net (fo=18, unplaced)         0.88      5.58    u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1_n_612186
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__324/S[3]
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                       0.45      6.03 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__324/O[3]
+                         net (fo=2, unplaced)          0.53      6.56    u_core/u_stage1/(null)[0].(null)[33].yr_out1__324_n_612183
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25      6.81 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4/O
+                         net (fo=2, unplaced)          0.55      7.36    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8/I3
+                         LUT4 (Prop_lut4_I3_O)         0.27      7.63 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8/O
+                         net (fo=1, unplaced)          0.00      7.63    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365/S[0]
+                         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                       0.50      8.14 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365/O[3]
+                         net (fo=2, unplaced)          0.53      8.67    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_n_612183
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4/I0
+                         LUT2 (Prop_lut2_I0_O)         0.25      8.92 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4/O
+                         net (fo=2, unplaced)          0.55      9.47    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8/I3
+                         LUT4 (Prop_lut4_I3_O)         0.27      9.74 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8/O
+                         net (fo=1, unplaced)          0.00      9.74    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374/S[0]
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                       0.44     10.18 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374/CO[3]
+                         net (fo=1, unplaced)          0.00     10.18    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__375/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     10.46 f  u_core/u_stage1/(null)[0].(null)[33].yr_out1__375/O[3]
+                         net (fo=1, unplaced)          0.52     10.98    u_core/u_stage1/(null)[0].(null)[33].yr_out1__375_n_612183
+                                                                      f  u_core/u_stage1/s1_r_re[161][3]_i_41/I0
+                         LUT1 (Prop_lut1_I0_O)         0.25     11.23 r  u_core/u_stage1/s1_r_re[161][3]_i_41/O
+                         net (fo=1, unplaced)          0.00     11.23    u_core/u_stage1/s1_r_re[161][3]_i_41_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][3]_i_22/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     11.56 r  u_core/u_stage1/s1_r_re_reg[161][3]_i_22/CO[3]
+                         net (fo=1, unplaced)          0.00     11.56    u_core/u_stage1/s1_r_re_reg[161][3]_i_22_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][7]_i_15/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     11.83 r  u_core/u_stage1/s1_r_re_reg[161][7]_i_15/O[3]
+                         net (fo=1, unplaced)          0.52     12.35    u_core/u_stage1/s1_r_re_reg[161][7]_i_15_n_612183
+                                                                      r  u_core/u_stage1/s1_r_re[161][7]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25     12.60 r  u_core/u_stage1/s1_r_re[161][7]_i_3/O
+                         net (fo=1, unplaced)          0.00     12.60    u_core/u_stage1/s1_r_re[161][7]_i_3_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][7]_i_1/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     12.93 r  u_core/u_stage1/s1_r_re_reg[161][7]_i_1/CO[3]
+                         net (fo=1, unplaced)          0.00     12.93    u_core/u_stage1/s1_r_re_reg[161][7]_i_1_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][11]_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                       0.28     13.21 r  u_core/u_stage1/s1_r_re_reg[161][11]_i_1/O[1]
+                         net (fo=1, unplaced)          0.00     13.21    u_core/s1_c_re[161]__0[9]
+                         FDCE                                         r  u_core/s1_r_re_reg[161][9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_i rise edge)      10.00     10.00 r  
+                                                       0.00     10.00 r  clk_i (IN)
+                         net (fo=0)                    0.00     10.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.75     10.75 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.61     11.36    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08     11.44 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.44     11.88    u_core/clk_i_IBUF_BUFG
+                         FDCE                                         r  u_core/s1_r_re_reg[161][9]/C
+                         clock pessimism               0.17     12.05    
+                         clock uncertainty            -0.04     12.01    
+                         FDCE (Setup_fdce_C_D)         0.06     12.07    u_core/s1_r_re_reg[161][9]
+  -------------------------------------------------------------------
+                         required time                          12.07    
+                         arrival time                          -13.21    
+  -------------------------------------------------------------------
+                         slack                                  -1.14    
+
+Slack (VIOLATED) :        -1.14ns  (required time - arrival time)
+  Source:                 FSM_onehot_state_reg_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Destination:            u_core/s1_r_re_reg[161][11]/D
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Path Group:             clk_i
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.00ns  (clk_i rise@10.00ns - clk_i rise@0.00ns)
+  Data Path Delay:        11.02ns  (logic 5.65ns (51.28%)  route 5.37ns (48.72%))
+  Logic Levels:           17  (CARRY4=10 LUT1=1 LUT2=3 LUT4=3)
+  Clock Path Skew:        -0.15ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.88ns = ( 11.88 - 10.00 ) 
+    Source Clock Delay      (SCD):    2.19ns
+    Clock Pessimism Removal (CPR):    0.17ns
+  Clock Uncertainty:      0.04ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.07ns
+    Total Input Jitter      (TIJ):    0.00ns
+    Discrete Jitter          (DJ):    0.00ns
+    Phase Error              (PE):    0.00ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_i rise edge)       0.00      0.00 r  
+                                                       0.00      0.00 r  clk_i (IN)
+                         net (fo=0)                    0.00      0.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.88      0.88 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.65      1.53    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08      1.61 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.58      2.19    clk_i_IBUF_BUFG
+                         FDCE                                         r  FSM_onehot_state_reg_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)          0.38      2.57 r  FSM_onehot_state_reg_reg[2]/Q
+                         net (fo=12292, unplaced)      0.74      3.31    u_core/u_stage1/Q[0]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_4/I1
+                         LUT4 (Prop_lut4_I1_O)         0.23      3.54 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_4/O
+                         net (fo=2, unplaced)          0.55      4.09    u_core/u_stage1/ch0_in_im_reg[33][3][1]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1/DI[1]
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                       0.42      4.51 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1/CO[3]
+                         net (fo=1, unplaced)          0.01      4.52    u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                       0.19      4.71 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1/O[0]
+                         net (fo=18, unplaced)         0.88      5.58    u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1_n_612186
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__324/S[3]
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                       0.45      6.03 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__324/O[3]
+                         net (fo=2, unplaced)          0.53      6.56    u_core/u_stage1/(null)[0].(null)[33].yr_out1__324_n_612183
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25      6.81 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4/O
+                         net (fo=2, unplaced)          0.55      7.36    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8/I3
+                         LUT4 (Prop_lut4_I3_O)         0.27      7.63 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8/O
+                         net (fo=1, unplaced)          0.00      7.63    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365/S[0]
+                         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                       0.50      8.14 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365/O[3]
+                         net (fo=2, unplaced)          0.53      8.67    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_n_612183
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4/I0
+                         LUT2 (Prop_lut2_I0_O)         0.25      8.92 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4/O
+                         net (fo=2, unplaced)          0.55      9.47    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8/I3
+                         LUT4 (Prop_lut4_I3_O)         0.27      9.74 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8/O
+                         net (fo=1, unplaced)          0.00      9.74    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374/S[0]
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                       0.44     10.18 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374/CO[3]
+                         net (fo=1, unplaced)          0.00     10.18    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__375/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     10.46 f  u_core/u_stage1/(null)[0].(null)[33].yr_out1__375/O[3]
+                         net (fo=1, unplaced)          0.52     10.98    u_core/u_stage1/(null)[0].(null)[33].yr_out1__375_n_612183
+                                                                      f  u_core/u_stage1/s1_r_re[161][3]_i_41/I0
+                         LUT1 (Prop_lut1_I0_O)         0.25     11.23 r  u_core/u_stage1/s1_r_re[161][3]_i_41/O
+                         net (fo=1, unplaced)          0.00     11.23    u_core/u_stage1/s1_r_re[161][3]_i_41_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][3]_i_22/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     11.56 r  u_core/u_stage1/s1_r_re_reg[161][3]_i_22/CO[3]
+                         net (fo=1, unplaced)          0.00     11.56    u_core/u_stage1/s1_r_re_reg[161][3]_i_22_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][7]_i_15/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     11.83 r  u_core/u_stage1/s1_r_re_reg[161][7]_i_15/O[3]
+                         net (fo=1, unplaced)          0.52     12.35    u_core/u_stage1/s1_r_re_reg[161][7]_i_15_n_612183
+                                                                      r  u_core/u_stage1/s1_r_re[161][7]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25     12.60 r  u_core/u_stage1/s1_r_re[161][7]_i_3/O
+                         net (fo=1, unplaced)          0.00     12.60    u_core/u_stage1/s1_r_re[161][7]_i_3_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][7]_i_1/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     12.93 r  u_core/u_stage1/s1_r_re_reg[161][7]_i_1/CO[3]
+                         net (fo=1, unplaced)          0.00     12.93    u_core/u_stage1/s1_r_re_reg[161][7]_i_1_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][11]_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     13.21 r  u_core/u_stage1/s1_r_re_reg[161][11]_i_1/O[3]
+                         net (fo=1, unplaced)          0.00     13.21    u_core/s1_c_re[161]__0[11]
+                         FDCE                                         r  u_core/s1_r_re_reg[161][11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_i rise edge)      10.00     10.00 r  
+                                                       0.00     10.00 r  clk_i (IN)
+                         net (fo=0)                    0.00     10.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.75     10.75 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.61     11.36    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08     11.44 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.44     11.88    u_core/clk_i_IBUF_BUFG
+                         FDCE                                         r  u_core/s1_r_re_reg[161][11]/C
+                         clock pessimism               0.17     12.05    
+                         clock uncertainty            -0.04     12.01    
+                         FDCE (Setup_fdce_C_D)         0.06     12.07    u_core/s1_r_re_reg[161][11]
+  -------------------------------------------------------------------
+                         required time                          12.07    
+                         arrival time                          -13.21    
+  -------------------------------------------------------------------
+                         slack                                  -1.14    
+
+Slack (VIOLATED) :        -1.08ns  (required time - arrival time)
+  Source:                 FSM_onehot_state_reg_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Destination:            u_core/s1_r_re_reg[161][10]/D
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Path Group:             clk_i
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.00ns  (clk_i rise@10.00ns - clk_i rise@0.00ns)
+  Data Path Delay:        10.96ns  (logic 5.59ns (51.00%)  route 5.37ns (49.00%))
+  Logic Levels:           17  (CARRY4=10 LUT1=1 LUT2=3 LUT4=3)
+  Clock Path Skew:        -0.15ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.88ns = ( 11.88 - 10.00 ) 
+    Source Clock Delay      (SCD):    2.19ns
+    Clock Pessimism Removal (CPR):    0.17ns
+  Clock Uncertainty:      0.04ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.07ns
+    Total Input Jitter      (TIJ):    0.00ns
+    Discrete Jitter          (DJ):    0.00ns
+    Phase Error              (PE):    0.00ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_i rise edge)       0.00      0.00 r  
+                                                       0.00      0.00 r  clk_i (IN)
+                         net (fo=0)                    0.00      0.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.88      0.88 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.65      1.53    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08      1.61 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.58      2.19    clk_i_IBUF_BUFG
+                         FDCE                                         r  FSM_onehot_state_reg_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)          0.38      2.57 r  FSM_onehot_state_reg_reg[2]/Q
+                         net (fo=12292, unplaced)      0.74      3.31    u_core/u_stage1/Q[0]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_4/I1
+                         LUT4 (Prop_lut4_I1_O)         0.23      3.54 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_4/O
+                         net (fo=2, unplaced)          0.55      4.09    u_core/u_stage1/ch0_in_im_reg[33][3][1]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1/DI[1]
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                       0.42      4.51 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1/CO[3]
+                         net (fo=1, unplaced)          0.01      4.52    u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                       0.19      4.71 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1/O[0]
+                         net (fo=18, unplaced)         0.88      5.58    u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1_n_612186
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__324/S[3]
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                       0.45      6.03 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__324/O[3]
+                         net (fo=2, unplaced)          0.53      6.56    u_core/u_stage1/(null)[0].(null)[33].yr_out1__324_n_612183
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25      6.81 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4/O
+                         net (fo=2, unplaced)          0.55      7.36    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8/I3
+                         LUT4 (Prop_lut4_I3_O)         0.27      7.63 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8/O
+                         net (fo=1, unplaced)          0.00      7.63    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365/S[0]
+                         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                       0.50      8.14 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365/O[3]
+                         net (fo=2, unplaced)          0.53      8.67    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_n_612183
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4/I0
+                         LUT2 (Prop_lut2_I0_O)         0.25      8.92 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4/O
+                         net (fo=2, unplaced)          0.55      9.47    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8/I3
+                         LUT4 (Prop_lut4_I3_O)         0.27      9.74 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8/O
+                         net (fo=1, unplaced)          0.00      9.74    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374/S[0]
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                       0.44     10.18 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374/CO[3]
+                         net (fo=1, unplaced)          0.00     10.18    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__375/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     10.46 f  u_core/u_stage1/(null)[0].(null)[33].yr_out1__375/O[3]
+                         net (fo=1, unplaced)          0.52     10.98    u_core/u_stage1/(null)[0].(null)[33].yr_out1__375_n_612183
+                                                                      f  u_core/u_stage1/s1_r_re[161][3]_i_41/I0
+                         LUT1 (Prop_lut1_I0_O)         0.25     11.23 r  u_core/u_stage1/s1_r_re[161][3]_i_41/O
+                         net (fo=1, unplaced)          0.00     11.23    u_core/u_stage1/s1_r_re[161][3]_i_41_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][3]_i_22/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     11.56 r  u_core/u_stage1/s1_r_re_reg[161][3]_i_22/CO[3]
+                         net (fo=1, unplaced)          0.00     11.56    u_core/u_stage1/s1_r_re_reg[161][3]_i_22_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][7]_i_15/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     11.83 r  u_core/u_stage1/s1_r_re_reg[161][7]_i_15/O[3]
+                         net (fo=1, unplaced)          0.52     12.35    u_core/u_stage1/s1_r_re_reg[161][7]_i_15_n_612183
+                                                                      r  u_core/u_stage1/s1_r_re[161][7]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25     12.60 r  u_core/u_stage1/s1_r_re[161][7]_i_3/O
+                         net (fo=1, unplaced)          0.00     12.60    u_core/u_stage1/s1_r_re[161][7]_i_3_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][7]_i_1/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     12.93 r  u_core/u_stage1/s1_r_re_reg[161][7]_i_1/CO[3]
+                         net (fo=1, unplaced)          0.00     12.93    u_core/u_stage1/s1_r_re_reg[161][7]_i_1_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][11]_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                       0.21     13.15 r  u_core/u_stage1/s1_r_re_reg[161][11]_i_1/O[2]
+                         net (fo=1, unplaced)          0.00     13.15    u_core/s1_c_re[161]__0[10]
+                         FDCE                                         r  u_core/s1_r_re_reg[161][10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_i rise edge)      10.00     10.00 r  
+                                                       0.00     10.00 r  clk_i (IN)
+                         net (fo=0)                    0.00     10.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.75     10.75 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.61     11.36    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08     11.44 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.44     11.88    u_core/clk_i_IBUF_BUFG
+                         FDCE                                         r  u_core/s1_r_re_reg[161][10]/C
+                         clock pessimism               0.17     12.05    
+                         clock uncertainty            -0.04     12.01    
+                         FDCE (Setup_fdce_C_D)         0.06     12.07    u_core/s1_r_re_reg[161][10]
+  -------------------------------------------------------------------
+                         required time                          12.07    
+                         arrival time                          -13.15    
+  -------------------------------------------------------------------
+                         slack                                  -1.08    
+
+Slack (VIOLATED) :        -1.05ns  (required time - arrival time)
+  Source:                 FSM_onehot_state_reg_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Destination:            u_core/s1_r_re_reg[161][8]/D
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Path Group:             clk_i
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.00ns  (clk_i rise@10.00ns - clk_i rise@0.00ns)
+  Data Path Delay:        10.93ns  (logic 5.57ns (50.90%)  route 5.37ns (49.10%))
+  Logic Levels:           17  (CARRY4=10 LUT1=1 LUT2=3 LUT4=3)
+  Clock Path Skew:        -0.15ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.88ns = ( 11.88 - 10.00 ) 
+    Source Clock Delay      (SCD):    2.19ns
+    Clock Pessimism Removal (CPR):    0.17ns
+  Clock Uncertainty:      0.04ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.07ns
+    Total Input Jitter      (TIJ):    0.00ns
+    Discrete Jitter          (DJ):    0.00ns
+    Phase Error              (PE):    0.00ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_i rise edge)       0.00      0.00 r  
+                                                       0.00      0.00 r  clk_i (IN)
+                         net (fo=0)                    0.00      0.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.88      0.88 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.65      1.53    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08      1.61 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.58      2.19    clk_i_IBUF_BUFG
+                         FDCE                                         r  FSM_onehot_state_reg_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)          0.38      2.57 r  FSM_onehot_state_reg_reg[2]/Q
+                         net (fo=12292, unplaced)      0.74      3.31    u_core/u_stage1/Q[0]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_4/I1
+                         LUT4 (Prop_lut4_I1_O)         0.23      3.54 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_4/O
+                         net (fo=2, unplaced)          0.55      4.09    u_core/u_stage1/ch0_in_im_reg[33][3][1]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1/DI[1]
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                       0.42      4.51 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1/CO[3]
+                         net (fo=1, unplaced)          0.01      4.52    u_core/u_stage1/(null)[0].(null)[33].yr_out1__315_i_1_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                       0.19      4.71 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1/O[0]
+                         net (fo=18, unplaced)         0.88      5.58    u_core/u_stage1/(null)[0].(null)[33].yr_out1__316_i_1_n_612186
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__324/S[3]
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                       0.45      6.03 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__324/O[3]
+                         net (fo=2, unplaced)          0.53      6.56    u_core/u_stage1/(null)[0].(null)[33].yr_out1__324_n_612183
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25      6.81 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4/O
+                         net (fo=2, unplaced)          0.55      7.36    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_4_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8/I3
+                         LUT4 (Prop_lut4_I3_O)         0.27      7.63 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8/O
+                         net (fo=1, unplaced)          0.00      7.63    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_i_8_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365/S[0]
+                         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                       0.50      8.14 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__365/O[3]
+                         net (fo=2, unplaced)          0.53      8.67    u_core/u_stage1/(null)[0].(null)[33].yr_out1__365_n_612183
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4/I0
+                         LUT2 (Prop_lut2_I0_O)         0.25      8.92 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4/O
+                         net (fo=2, unplaced)          0.55      9.47    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_4_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8/I3
+                         LUT4 (Prop_lut4_I3_O)         0.27      9.74 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8/O
+                         net (fo=1, unplaced)          0.00      9.74    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_i_8_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374/S[0]
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                       0.44     10.18 r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__374/CO[3]
+                         net (fo=1, unplaced)          0.00     10.18    u_core/u_stage1/(null)[0].(null)[33].yr_out1__374_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[33].yr_out1__375/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     10.46 f  u_core/u_stage1/(null)[0].(null)[33].yr_out1__375/O[3]
+                         net (fo=1, unplaced)          0.52     10.98    u_core/u_stage1/(null)[0].(null)[33].yr_out1__375_n_612183
+                                                                      f  u_core/u_stage1/s1_r_re[161][3]_i_41/I0
+                         LUT1 (Prop_lut1_I0_O)         0.25     11.23 r  u_core/u_stage1/s1_r_re[161][3]_i_41/O
+                         net (fo=1, unplaced)          0.00     11.23    u_core/u_stage1/s1_r_re[161][3]_i_41_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][3]_i_22/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     11.56 r  u_core/u_stage1/s1_r_re_reg[161][3]_i_22/CO[3]
+                         net (fo=1, unplaced)          0.00     11.56    u_core/u_stage1/s1_r_re_reg[161][3]_i_22_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][7]_i_15/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     11.83 r  u_core/u_stage1/s1_r_re_reg[161][7]_i_15/O[3]
+                         net (fo=1, unplaced)          0.52     12.35    u_core/u_stage1/s1_r_re_reg[161][7]_i_15_n_612183
+                                                                      r  u_core/u_stage1/s1_r_re[161][7]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25     12.60 r  u_core/u_stage1/s1_r_re[161][7]_i_3/O
+                         net (fo=1, unplaced)          0.00     12.60    u_core/u_stage1/s1_r_re[161][7]_i_3_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][7]_i_1/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     12.93 r  u_core/u_stage1/s1_r_re_reg[161][7]_i_1/CO[3]
+                         net (fo=1, unplaced)          0.00     12.93    u_core/u_stage1/s1_r_re_reg[161][7]_i_1_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[161][11]_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                       0.19     13.13 r  u_core/u_stage1/s1_r_re_reg[161][11]_i_1/O[0]
+                         net (fo=1, unplaced)          0.00     13.13    u_core/s1_c_re[161]__0[8]
+                         FDCE                                         r  u_core/s1_r_re_reg[161][8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_i rise edge)      10.00     10.00 r  
+                                                       0.00     10.00 r  clk_i (IN)
+                         net (fo=0)                    0.00     10.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.75     10.75 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.61     11.36    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08     11.44 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.44     11.88    u_core/clk_i_IBUF_BUFG
+                         FDCE                                         r  u_core/s1_r_re_reg[161][8]/C
+                         clock pessimism               0.17     12.05    
+                         clock uncertainty            -0.04     12.01    
+                         FDCE (Setup_fdce_C_D)         0.06     12.07    u_core/s1_r_re_reg[161][8]
+  -------------------------------------------------------------------
+                         required time                          12.07    
+                         arrival time                          -13.13    
+  -------------------------------------------------------------------
+                         slack                                  -1.05    
+
+Slack (VIOLATED) :        -1.04ns  (required time - arrival time)
+  Source:                 FSM_onehot_state_reg_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Destination:            u_core/s1_r_re_reg[132][13]/D
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Path Group:             clk_i
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.00ns  (clk_i rise@10.00ns - clk_i rise@0.00ns)
+  Data Path Delay:        10.92ns  (logic 5.93ns (54.32%)  route 4.99ns (45.68%))
+  Logic Levels:           18  (CARRY4=12 LUT1=1 LUT2=1 LUT3=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.15ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.88ns = ( 11.88 - 10.00 ) 
+    Source Clock Delay      (SCD):    2.19ns
+    Clock Pessimism Removal (CPR):    0.17ns
+  Clock Uncertainty:      0.04ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.07ns
+    Total Input Jitter      (TIJ):    0.00ns
+    Discrete Jitter          (DJ):    0.00ns
+    Phase Error              (PE):    0.00ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_i rise edge)       0.00      0.00 r  
+                                                       0.00      0.00 r  clk_i (IN)
+                         net (fo=0)                    0.00      0.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.88      0.88 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.65      1.53    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08      1.61 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.58      2.19    clk_i_IBUF_BUFG
+                         FDCE                                         r  FSM_onehot_state_reg_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)          0.38      2.57 r  FSM_onehot_state_reg_reg[2]/Q
+                         net (fo=12292, unplaced)      0.74      3.31    u_core/u_stage1/Q[0]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[4].yi_out0_i_30/I1
+                         LUT4 (Prop_lut4_I1_O)         0.23      3.54 r  u_core/u_stage1/(null)[0].(null)[4].yi_out0_i_30/O
+                         net (fo=2, unplaced)          0.55      4.09    u_core/u_stage1/ch0_in_im_reg[4][3][1]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[4].yi_out0_i_4__1/DI[1]
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                       0.42      4.51 r  u_core/u_stage1/(null)[0].(null)[4].yi_out0_i_4__1/CO[3]
+                         net (fo=1, unplaced)          0.01      4.52    u_core/u_stage1/(null)[0].(null)[4].yi_out0_i_4__1_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[4].yi_out0_i_3__1/CI
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                       0.19      4.71 r  u_core/u_stage1/(null)[0].(null)[4].yi_out0_i_3__1/O[0]
+                         net (fo=12, unplaced)         0.86      5.57    u_core/u_stage1/(null)[0].(null)[4].yi_out0_i_3__1_n_612186
+                                                                      r  u_core/u_stage1/s1_r_re_reg[132][3]_i_226/S[2]
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                       0.57      6.14 r  u_core/u_stage1/s1_r_re_reg[132][3]_i_226/CO[3]
+                         net (fo=1, unplaced)          0.00      6.14    u_core/u_stage1/s1_r_re_reg[132][3]_i_226_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[132][3]_i_220/CI
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                       0.28      6.41 r  u_core/u_stage1/s1_r_re_reg[132][3]_i_220/O[1]
+                         net (fo=1, unplaced)          0.56      6.98    u_core/u_stage1/s1_r_re_reg[132][3]_i_220_n_612185
+                                                                      r  u_core/u_stage1/s1_r_re_reg[132][3]_i_184/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                       0.70      7.68 r  u_core/u_stage1/s1_r_re_reg[132][3]_i_184/CO[3]
+                         net (fo=1, unplaced)          0.00      7.68    u_core/u_stage1/s1_r_re_reg[132][3]_i_184_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[132][3]_i_161/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28      7.95 r  u_core/u_stage1/s1_r_re_reg[132][3]_i_161/O[3]
+                         net (fo=3, unplaced)          0.54      8.49    u_core/u_stage1/s1_r_re_reg[132][3]_i_161_n_612183
+                                                                      r  u_core/u_stage1/s1_r_re[132][3]_i_163/I1
+                         LUT3 (Prop_lut3_I1_O)         0.25      8.74 r  u_core/u_stage1/s1_r_re[132][3]_i_163/O
+                         net (fo=2, unplaced)          0.36      9.10    u_core/u_stage1/s1_r_re[132][3]_i_163_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re[132][3]_i_116/I1
+                         LUT5 (Prop_lut5_I1_O)         0.11      9.20 r  u_core/u_stage1/s1_r_re[132][3]_i_116/O
+                         net (fo=2, unplaced)          0.34      9.54    u_core/u_stage1/s1_r_re[132][3]_i_116_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re[132][3]_i_120/I0
+                         LUT6 (Prop_lut6_I0_O)         0.11      9.65 r  u_core/u_stage1/s1_r_re[132][3]_i_120/O
+                         net (fo=1, unplaced)          0.00      9.65    u_core/u_stage1/s1_r_re[132][3]_i_120_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[132][3]_i_79/S[0]
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                       0.44     10.09 r  u_core/u_stage1/s1_r_re_reg[132][3]_i_79/CO[3]
+                         net (fo=1, unplaced)          0.00     10.09    u_core/u_stage1/s1_r_re_reg[132][3]_i_79_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[132][7]_i_35/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     10.36 f  u_core/u_stage1/s1_r_re_reg[132][7]_i_35/O[3]
+                         net (fo=1, unplaced)          0.52     10.88    u_core/u_stage1/s1_r_re_reg[132][7]_i_35_n_612183
+                                                                      f  u_core/u_stage1/s1_r_re[132][7]_i_19/I0
+                         LUT1 (Prop_lut1_I0_O)         0.25     11.13 r  u_core/u_stage1/s1_r_re[132][7]_i_19/O
+                         net (fo=1, unplaced)          0.00     11.13    u_core/u_stage1/s1_r_re[132][7]_i_19_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[132][7]_i_15/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     11.46 r  u_core/u_stage1/s1_r_re_reg[132][7]_i_15/CO[3]
+                         net (fo=1, unplaced)          0.00     11.46    u_core/u_stage1/s1_r_re_reg[132][7]_i_15_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[132][11]_i_15/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     11.74 r  u_core/u_stage1/s1_r_re_reg[132][11]_i_15/O[3]
+                         net (fo=1, unplaced)          0.52     12.26    u_core/u_stage1/s1_r_re_reg[132][11]_i_15_n_612183
+                                                                      r  u_core/u_stage1/s1_r_re[132][11]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25     12.51 r  u_core/u_stage1/s1_r_re[132][11]_i_3/O
+                         net (fo=1, unplaced)          0.00     12.51    u_core/u_stage1/s1_r_re[132][11]_i_3_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[132][11]_i_1/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     12.84 r  u_core/u_stage1/s1_r_re_reg[132][11]_i_1/CO[3]
+                         net (fo=1, unplaced)          0.00     12.84    u_core/u_stage1/s1_r_re_reg[132][11]_i_1_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[132][15]_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                       0.28     13.11 r  u_core/u_stage1/s1_r_re_reg[132][15]_i_1/O[1]
+                         net (fo=1, unplaced)          0.00     13.11    u_core/s1_c_re[132]_1494[13]
+                         FDCE                                         r  u_core/s1_r_re_reg[132][13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_i rise edge)      10.00     10.00 r  
+                                                       0.00     10.00 r  clk_i (IN)
+                         net (fo=0)                    0.00     10.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.75     10.75 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.61     11.36    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08     11.44 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.44     11.88    u_core/clk_i_IBUF_BUFG
+                         FDCE                                         r  u_core/s1_r_re_reg[132][13]/C
+                         clock pessimism               0.17     12.05    
+                         clock uncertainty            -0.04     12.01    
+                         FDCE (Setup_fdce_C_D)         0.06     12.07    u_core/s1_r_re_reg[132][13]
+  -------------------------------------------------------------------
+                         required time                          12.07    
+                         arrival time                          -13.11    
+  -------------------------------------------------------------------
+                         slack                                  -1.04    
+
+Slack (VIOLATED) :        -1.04ns  (required time - arrival time)
+  Source:                 FSM_onehot_state_reg_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Destination:            u_core/s1_r_re_reg[252][13]/D
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Path Group:             clk_i
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.00ns  (clk_i rise@10.00ns - clk_i rise@0.00ns)
+  Data Path Delay:        10.92ns  (logic 5.93ns (54.32%)  route 4.99ns (45.68%))
+  Logic Levels:           18  (CARRY4=12 LUT1=1 LUT2=1 LUT3=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.15ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.88ns = ( 11.88 - 10.00 ) 
+    Source Clock Delay      (SCD):    2.19ns
+    Clock Pessimism Removal (CPR):    0.17ns
+  Clock Uncertainty:      0.04ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.07ns
+    Total Input Jitter      (TIJ):    0.00ns
+    Discrete Jitter          (DJ):    0.00ns
+    Phase Error              (PE):    0.00ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_i rise edge)       0.00      0.00 r  
+                                                       0.00      0.00 r  clk_i (IN)
+                         net (fo=0)                    0.00      0.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.88      0.88 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.65      1.53    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08      1.61 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.58      2.19    clk_i_IBUF_BUFG
+                         FDCE                                         r  FSM_onehot_state_reg_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)          0.38      2.57 r  FSM_onehot_state_reg_reg[2]/Q
+                         net (fo=12292, unplaced)      0.74      3.31    u_core/u_stage1/Q[0]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[124].yi_out0_i_30/I1
+                         LUT4 (Prop_lut4_I1_O)         0.23      3.54 r  u_core/u_stage1/(null)[0].(null)[124].yi_out0_i_30/O
+                         net (fo=2, unplaced)          0.55      4.09    u_core/u_stage1/ch0_in_im_reg[124][3][1]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[124].yi_out0_i_4/DI[1]
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                       0.42      4.51 r  u_core/u_stage1/(null)[0].(null)[124].yi_out0_i_4/CO[3]
+                         net (fo=1, unplaced)          0.01      4.52    u_core/u_stage1/(null)[0].(null)[124].yi_out0_i_4_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[124].yi_out0_i_3/CI
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                       0.19      4.71 r  u_core/u_stage1/(null)[0].(null)[124].yi_out0_i_3/O[0]
+                         net (fo=12, unplaced)         0.86      5.57    u_core/u_stage1/(null)[0].(null)[124].yi_out0_i_3_n_612186
+                                                                      r  u_core/u_stage1/s1_r_re_reg[252][3]_i_218/S[2]
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                       0.57      6.14 r  u_core/u_stage1/s1_r_re_reg[252][3]_i_218/CO[3]
+                         net (fo=1, unplaced)          0.00      6.14    u_core/u_stage1/s1_r_re_reg[252][3]_i_218_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[252][3]_i_212/CI
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                       0.28      6.41 r  u_core/u_stage1/s1_r_re_reg[252][3]_i_212/O[1]
+                         net (fo=1, unplaced)          0.56      6.98    u_core/u_stage1/s1_r_re_reg[252][3]_i_212_n_612185
+                                                                      r  u_core/u_stage1/s1_r_re_reg[252][3]_i_174/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                       0.70      7.68 r  u_core/u_stage1/s1_r_re_reg[252][3]_i_174/CO[3]
+                         net (fo=1, unplaced)          0.00      7.68    u_core/u_stage1/s1_r_re_reg[252][3]_i_174_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[252][3]_i_142/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28      7.95 r  u_core/u_stage1/s1_r_re_reg[252][3]_i_142/O[3]
+                         net (fo=3, unplaced)          0.54      8.49    u_core/u_stage1/s1_r_re_reg[252][3]_i_142_n_612183
+                                                                      r  u_core/u_stage1/s1_r_re[252][3]_i_144/I1
+                         LUT3 (Prop_lut3_I1_O)         0.25      8.74 r  u_core/u_stage1/s1_r_re[252][3]_i_144/O
+                         net (fo=2, unplaced)          0.36      9.10    u_core/u_stage1/s1_r_re[252][3]_i_144_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re[252][3]_i_103/I1
+                         LUT5 (Prop_lut5_I1_O)         0.11      9.20 r  u_core/u_stage1/s1_r_re[252][3]_i_103/O
+                         net (fo=2, unplaced)          0.34      9.54    u_core/u_stage1/s1_r_re[252][3]_i_103_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re[252][3]_i_107/I0
+                         LUT6 (Prop_lut6_I0_O)         0.11      9.65 r  u_core/u_stage1/s1_r_re[252][3]_i_107/O
+                         net (fo=1, unplaced)          0.00      9.65    u_core/u_stage1/s1_r_re[252][3]_i_107_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[252][3]_i_73/S[0]
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                       0.44     10.09 r  u_core/u_stage1/s1_r_re_reg[252][3]_i_73/CO[3]
+                         net (fo=1, unplaced)          0.00     10.09    u_core/u_stage1/s1_r_re_reg[252][3]_i_73_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[252][7]_i_25/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     10.36 f  u_core/u_stage1/s1_r_re_reg[252][7]_i_25/O[3]
+                         net (fo=1, unplaced)          0.52     10.88    u_core/u_stage1/s1_r_re_reg[252][7]_i_25_n_612183
+                                                                      f  u_core/u_stage1/s1_r_re[252][7]_i_21/I0
+                         LUT1 (Prop_lut1_I0_O)         0.25     11.13 r  u_core/u_stage1/s1_r_re[252][7]_i_21/O
+                         net (fo=1, unplaced)          0.00     11.13    u_core/u_stage1/s1_r_re[252][7]_i_21_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[252][7]_i_12/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     11.46 r  u_core/u_stage1/s1_r_re_reg[252][7]_i_12/CO[3]
+                         net (fo=1, unplaced)          0.00     11.46    u_core/u_stage1/s1_r_re_reg[252][7]_i_12_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[252][11]_i_12/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     11.74 r  u_core/u_stage1/s1_r_re_reg[252][11]_i_12/O[3]
+                         net (fo=1, unplaced)          0.52     12.26    u_core/u_stage1/s1_r_re_reg[252][11]_i_12_n_612183
+                                                                      r  u_core/u_stage1/s1_r_re[252][11]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25     12.51 r  u_core/u_stage1/s1_r_re[252][11]_i_3/O
+                         net (fo=1, unplaced)          0.00     12.51    u_core/u_stage1/s1_r_re[252][11]_i_3_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[252][11]_i_1/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     12.84 r  u_core/u_stage1/s1_r_re_reg[252][11]_i_1/CO[3]
+                         net (fo=1, unplaced)          0.00     12.84    u_core/u_stage1/s1_r_re_reg[252][11]_i_1_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[252][15]_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                       0.28     13.11 r  u_core/u_stage1/s1_r_re_reg[252][15]_i_1/O[1]
+                         net (fo=1, unplaced)          0.00     13.11    u_core/s1_c_re[252]_1461[13]
+                         FDCE                                         r  u_core/s1_r_re_reg[252][13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_i rise edge)      10.00     10.00 r  
+                                                       0.00     10.00 r  clk_i (IN)
+                         net (fo=0)                    0.00     10.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.75     10.75 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.61     11.36    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08     11.44 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.44     11.88    u_core/clk_i_IBUF_BUFG
+                         FDCE                                         r  u_core/s1_r_re_reg[252][13]/C
+                         clock pessimism               0.17     12.05    
+                         clock uncertainty            -0.04     12.01    
+                         FDCE (Setup_fdce_C_D)         0.06     12.07    u_core/s1_r_re_reg[252][13]
+  -------------------------------------------------------------------
+                         required time                          12.07    
+                         arrival time                          -13.11    
+  -------------------------------------------------------------------
+                         slack                                  -1.04    
+
+Slack (VIOLATED) :        -1.03ns  (required time - arrival time)
+  Source:                 FSM_onehot_state_reg_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Destination:            u_core/s1_r_re_reg[240][13]/D
+                            (rising edge-triggered cell FDCE clocked by clk_i  {rise@0.00ns fall@5.00ns period=10.00ns})
+  Path Group:             clk_i
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.00ns  (clk_i rise@10.00ns - clk_i rise@0.00ns)
+  Data Path Delay:        10.91ns  (logic 5.93ns (54.39%)  route 4.98ns (45.61%))
+  Logic Levels:           18  (CARRY4=12 LUT1=1 LUT2=1 LUT3=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.15ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.88ns = ( 11.88 - 10.00 ) 
+    Source Clock Delay      (SCD):    2.19ns
+    Clock Pessimism Removal (CPR):    0.17ns
+  Clock Uncertainty:      0.04ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.07ns
+    Total Input Jitter      (TIJ):    0.00ns
+    Discrete Jitter          (DJ):    0.00ns
+    Phase Error              (PE):    0.00ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_i rise edge)       0.00      0.00 r  
+                                                       0.00      0.00 r  clk_i (IN)
+                         net (fo=0)                    0.00      0.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.88      0.88 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.65      1.53    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08      1.61 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.58      2.19    clk_i_IBUF_BUFG
+                         FDCE                                         r  FSM_onehot_state_reg_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)          0.38      2.57 r  FSM_onehot_state_reg_reg[2]/Q
+                         net (fo=12292, unplaced)      0.74      3.31    u_core/u_stage1/Q[0]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[112].yi_out0_i_30/I1
+                         LUT4 (Prop_lut4_I1_O)         0.23      3.54 r  u_core/u_stage1/(null)[0].(null)[112].yi_out0_i_30/O
+                         net (fo=2, unplaced)          0.55      4.09    u_core/u_stage1/ch0_in_im_reg[112][3][1]
+                                                                      r  u_core/u_stage1/(null)[0].(null)[112].yi_out0_i_4/DI[1]
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                       0.42      4.51 r  u_core/u_stage1/(null)[0].(null)[112].yi_out0_i_4/CO[3]
+                         net (fo=1, unplaced)          0.01      4.52    u_core/u_stage1/(null)[0].(null)[112].yi_out0_i_4_n_612179
+                                                                      r  u_core/u_stage1/(null)[0].(null)[112].yi_out0_i_3/CI
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                       0.19      4.71 r  u_core/u_stage1/(null)[0].(null)[112].yi_out0_i_3/O[0]
+                         net (fo=7, unplaced)          0.85      5.55    u_core/u_stage1/(null)[0].(null)[112].yi_out0_i_3_n_612186
+                                                                      r  u_core/u_stage1/s1_r_re_reg[240][3]_i_236/S[2]
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                       0.57      6.12 r  u_core/u_stage1/s1_r_re_reg[240][3]_i_236/CO[3]
+                         net (fo=1, unplaced)          0.00      6.12    u_core/u_stage1/s1_r_re_reg[240][3]_i_236_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[240][3]_i_233/CI
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                       0.28      6.40 r  u_core/u_stage1/s1_r_re_reg[240][3]_i_233/O[1]
+                         net (fo=1, unplaced)          0.56      6.96    u_core/u_stage1/s1_r_re_reg[240][3]_i_233_n_612185
+                                                                      r  u_core/u_stage1/s1_r_re_reg[240][3]_i_210/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                       0.70      7.66 r  u_core/u_stage1/s1_r_re_reg[240][3]_i_210/CO[3]
+                         net (fo=1, unplaced)          0.00      7.66    u_core/u_stage1/s1_r_re_reg[240][3]_i_210_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[240][3]_i_168/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28      7.94 r  u_core/u_stage1/s1_r_re_reg[240][3]_i_168/O[3]
+                         net (fo=3, unplaced)          0.54      8.48    u_core/u_stage1/s1_r_re_reg[240][3]_i_168_n_612183
+                                                                      r  u_core/u_stage1/s1_r_re[240][3]_i_170/I1
+                         LUT3 (Prop_lut3_I1_O)         0.25      8.73 r  u_core/u_stage1/s1_r_re[240][3]_i_170/O
+                         net (fo=2, unplaced)          0.36      9.08    u_core/u_stage1/s1_r_re[240][3]_i_170_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re[240][3]_i_114/I1
+                         LUT5 (Prop_lut5_I1_O)         0.11      9.19 r  u_core/u_stage1/s1_r_re[240][3]_i_114/O
+                         net (fo=2, unplaced)          0.34      9.53    u_core/u_stage1/s1_r_re[240][3]_i_114_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re[240][3]_i_118/I0
+                         LUT6 (Prop_lut6_I0_O)         0.11      9.63 r  u_core/u_stage1/s1_r_re[240][3]_i_118/O
+                         net (fo=1, unplaced)          0.00      9.63    u_core/u_stage1/s1_r_re[240][3]_i_118_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[240][3]_i_77/S[0]
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                       0.44     10.07 r  u_core/u_stage1/s1_r_re_reg[240][3]_i_77/CO[3]
+                         net (fo=1, unplaced)          0.00     10.07    u_core/u_stage1/s1_r_re_reg[240][3]_i_77_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[240][7]_i_25/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     10.35 f  u_core/u_stage1/s1_r_re_reg[240][7]_i_25/O[3]
+                         net (fo=1, unplaced)          0.52     10.87    u_core/u_stage1/P__2[23]
+                                                                      f  u_core/u_stage1/s1_r_re[240][7]_i_21/I0
+                         LUT1 (Prop_lut1_I0_O)         0.25     11.12 r  u_core/u_stage1/s1_r_re[240][7]_i_21/O
+                         net (fo=1, unplaced)          0.00     11.12    u_core/u_stage1/s1_r_re[240][7]_i_21_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[240][7]_i_12/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     11.45 r  u_core/u_stage1/s1_r_re_reg[240][7]_i_12/CO[3]
+                         net (fo=1, unplaced)          0.00     11.45    u_core/u_stage1/s1_r_re_reg[240][7]_i_12_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[240][11]_i_12/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                       0.28     11.72 r  u_core/u_stage1/s1_r_re_reg[240][11]_i_12/O[3]
+                         net (fo=1, unplaced)          0.52     12.24    u_core/u_stage1/s1_r_re_reg[240][11]_i_12_n_612183
+                                                                      r  u_core/u_stage1/s1_r_re[240][11]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)         0.25     12.49 r  u_core/u_stage1/s1_r_re[240][11]_i_3/O
+                         net (fo=1, unplaced)          0.00     12.49    u_core/u_stage1/s1_r_re[240][11]_i_3_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[240][11]_i_1/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                       0.33     12.82 r  u_core/u_stage1/s1_r_re_reg[240][11]_i_1/CO[3]
+                         net (fo=1, unplaced)          0.00     12.82    u_core/u_stage1/s1_r_re_reg[240][11]_i_1_n_612179
+                                                                      r  u_core/u_stage1/s1_r_re_reg[240][15]_i_1/CI
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                       0.28     13.10 r  u_core/u_stage1/s1_r_re_reg[240][15]_i_1/O[1]
+                         net (fo=1, unplaced)          0.00     13.10    u_core/s1_c_re[240]_1500[13]
+                         FDCE                                         r  u_core/s1_r_re_reg[240][13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_i rise edge)      10.00     10.00 r  
+                                                       0.00     10.00 r  clk_i (IN)
+                         net (fo=0)                    0.00     10.00    clk_i
+                                                                      r  clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)          0.75     10.75 r  clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)          0.61     11.36    clk_i_IBUF
+                                                                      r  clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)          0.08     11.44 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=95744, unplaced)      0.44     11.88    u_core/clk_i_IBUF_BUFG
+                         FDCE                                         r  u_core/s1_r_re_reg[240][13]/C
+                         clock pessimism               0.17     12.05    
+                         clock uncertainty            -0.04     12.01    
+                         FDCE (Setup_fdce_C_D)         0.06     12.07    u_core/s1_r_re_reg[240][13]
+  -------------------------------------------------------------------
+                         required time                          12.07    
+                         arrival time                          -13.10    
+  -------------------------------------------------------------------
+                         slack                                  -1.03    
+
+
+
+

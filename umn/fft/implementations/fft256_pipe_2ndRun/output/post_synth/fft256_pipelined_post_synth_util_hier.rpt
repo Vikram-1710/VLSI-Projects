@@ -1,0 +1,29 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu May 14 20:30:07 2026
+| Host         : ece-kh2120-09.ece.umn.edu running 64-bit Rocky Linux release 8.10 (Green Obsidian)
+| Command      : report_utilization -hierarchical -file ./output/post_synth/fft256_pipelined_post_synth_util_hier.rpt
+| Design       : fft256_top
+| Device       : 7a200tfbg676-2
+| Design State : Synthesized
+----------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------+-------------+------------+------------+---------+------+-------+--------+--------+------------+
+|    Instance    |    Module   | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP Blocks |
++----------------+-------------+------------+------------+---------+------+-------+--------+--------+------------+
+| fft256_top     |       (top) |      33007 |      32991 |       0 |   16 | 41906 |      0 |      0 |          4 |
+|   (fft256_top) |       (top) |      12301 |      12301 |       0 |    0 | 33038 |      0 |      0 |          0 |
+|   u_core       | fft256_core |      20708 |      20692 |       0 |   16 |  8868 |      0 |      0 |          4 |
++----------------+-------------+------------+------------+---------+------+-------+--------+--------+------------+
+
+

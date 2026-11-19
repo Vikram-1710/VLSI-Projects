@@ -1,0 +1,36 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu May 14 15:56:10 2026
+| Host         : ece-kh2120-09.ece.umn.edu running 64-bit Rocky Linux release 8.10 (Green Obsidian)
+| Command      : report_utilization -hierarchical -file ./output/post_synth/fft256_post_synth_util_hier.rpt
+| Design       : fft256_top
+| Device       : 7a200tfbg676-2
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------+----------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+|    Instance    |              Module              | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP Blocks |
++----------------+----------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+| fft256_top     |                            (top) |     397961 |     397961 |       0 |    0 | 95724 |      0 |      0 |        740 |
+|   (fft256_top) |                            (top) |     260202 |     260202 |       0 |    0 | 32520 |      0 |      0 |          0 |
+|   u_core       |                      fft256_core |     137766 |     137766 |       0 |    0 | 63204 |      0 |      0 |        740 |
+|     (u_core)   |                      fft256_core |      98746 |      98746 |       0 |    0 | 63204 |      0 |      0 |          0 |
+|     u_stage1   |                 fft_stage_scaled |      28800 |      28800 |       0 |    0 |     0 |      0 |      0 |        162 |
+|     u_stage2   | fft_stage_scaled__parameterized0 |       2208 |       2208 |       0 |    0 |     0 |      0 |      0 |        148 |
+|     u_stage3   | fft_stage_scaled__parameterized1 |       2560 |       2560 |       0 |    0 |     0 |      0 |      0 |        160 |
+|     u_stage4   | fft_stage_scaled__parameterized2 |       2048 |       2048 |       0 |    0 |     0 |      0 |      0 |        128 |
+|     u_stage5   | fft_stage_scaled__parameterized3 |       2048 |       2048 |       0 |    0 |     0 |      0 |      0 |        128 |
+|     u_stage6   | fft_stage_scaled__parameterized4 |       1358 |       1358 |       0 |    0 |     0 |      0 |      0 |         14 |
++----------------+----------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+
+

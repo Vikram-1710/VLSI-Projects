@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 14 14:45:17 2026
+# Process ID: 1353538
+# Current directory: /home/ragha084/dsp_vlsi/Backup/fft256
+# Command line: xsim -mode tcl -source {xsim.dir/top_sim/xsim_script.tcl}
+# Log file: /home/ragha084/dsp_vlsi/Backup/fft256/xsim.log
+# Journal file: /home/ragha084/dsp_vlsi/Backup/fft256/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/top_sim/xsim_script.tcl
+# xsim {top_sim} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+
+====================================================
+ MATLAB Vector Comparison TB
+ 256-point 2-channel 2-parallel contiguous DIF FFT
+====================================================
+
+====================================================
+Comparing test: zero
+====================================================
+PASS: zero
+
+====================================================
+Comparing test: impulse
+====================================================
+PASS: impulse
+
+====================================================
+Comparing test: cosine
+====================================================
+PASS: cosine
+
+====================================================
+Comparing test: random
+====================================================
+PASS: random
+
+====================================================
+ALL MATLAB VECTOR TESTS PASSED
+====================================================
+$finish called at time : 21375 ns : File "/home/ragha084/dsp_vlsi/Backup/fft256/tb/tb_fft256.sv" Line 400
+exit
+INFO: [Common 17-206] Exiting xsim at Thu May 14 14:45:26 2026...

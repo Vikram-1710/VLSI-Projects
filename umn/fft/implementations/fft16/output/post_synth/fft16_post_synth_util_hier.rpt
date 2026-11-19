@@ -1,0 +1,34 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu May 14 15:42:46 2026
+| Host         : ece-kh2120-09.ece.umn.edu running 64-bit Rocky Linux release 8.10 (Green Obsidian)
+| Command      : report_utilization -hierarchical -file ./output/post_synth/fft16_post_synth_util_hier.rpt
+| Design       : fft16
+| Device       : 7a200tfbg676-2
+| Design State : Synthesized
+-----------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------+----------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|   Instance   |                 Module                 | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------+----------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| fft16        |                                  (top) |       3462 |       3462 |       0 |    0 | 3312 |      0 |      0 |         67 |
+|   (fft16)    |                                  (top) |        571 |        571 |       0 |    0 | 2070 |      0 |      0 |          0 |
+|   u_core     |                fft16_dif_pipeline_core |       2891 |       2891 |       0 |    0 | 1242 |      0 |      0 |         67 |
+|     (u_core) |                fft16_dif_pipeline_core |          4 |          4 |       0 |    0 | 1242 |      0 |      0 |          0 |
+|     u_stage1 |                 fft16_dif_stage_scaled |       1091 |       1091 |       0 |    0 |    0 |      0 |      0 |         25 |
+|     u_stage2 | fft16_dif_stage_scaled__parameterized0 |        644 |        644 |       0 |    0 |    0 |      0 |      0 |         18 |
+|     u_stage3 | fft16_dif_stage_scaled__parameterized1 |        776 |        776 |       0 |    0 |    0 |      0 |      0 |          8 |
+|     u_stage4 | fft16_dif_stage_scaled__parameterized2 |        376 |        376 |       0 |    0 |    0 |      0 |      0 |         16 |
++--------------+----------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+
