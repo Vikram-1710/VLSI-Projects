@@ -1,0 +1,4 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='U-2023.03-SP2 linux6' PARAM_COUNT=0
+.TITLE '** run 2x1_tgmux file'
+ tpd_srise_outfall tpd_sfall_outrise temper           alter#          
+  4.412e-10       -3.978e-10         25.0000        1               

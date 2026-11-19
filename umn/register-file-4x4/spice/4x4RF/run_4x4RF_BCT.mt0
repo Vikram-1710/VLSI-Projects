@@ -1,0 +1,4 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='U-2023.03-SP2 linux6' PARAM_COUNT=0
+.TITLE '*******************************************************'
+ t_clk_to_net43   temper           alter#          
+  1.764e-11         25.0000        1               

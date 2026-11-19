@@ -1,0 +1,6 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='U-2023.03-SP2 linux6' PARAM_COUNT=0
+.TITLE '*******************************************************'
+ t_clk_net49_rise t_clk_net20_rise t_clk_net1_rise  t_clk_net13_rise
+ temper           alter#          
+  3.958e-11        3.958e-11        3.958e-11        3.958e-11      
+   25.0000        1               

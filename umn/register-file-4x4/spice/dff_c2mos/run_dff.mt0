@@ -1,0 +1,4 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='U-2023.03-SP2 linux6' PARAM_COUNT=0
+.TITLE '** dff file'
+ thl              tlh              temper           alter#          
+ -8.836e-11       -1.112e-10         25.0000        1               
