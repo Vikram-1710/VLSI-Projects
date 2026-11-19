@@ -1,0 +1,10 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='U-2023.03-SP2 linux6' PARAM_COUNT=0
+.TITLE '** auto-generated testbench for tlrelu_topdff, x=17, t=2'
+ m_out0           m_out1           m_out2           m_out3          
+ m_out4           m_out5           m_out6           m_out7          
+ m_out8           m_out9           m_out10          temper          
+ alter#          
+  6.492e-04        6.492e-04        6.492e-04          0.7998       
+  6.492e-04        6.492e-04        6.492e-04          0.7998       
+  6.492e-04        6.492e-04        6.492e-04         25.0000       
+1               
